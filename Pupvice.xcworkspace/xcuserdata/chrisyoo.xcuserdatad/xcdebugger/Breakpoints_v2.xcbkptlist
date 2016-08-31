@@ -41,84 +41,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pupvice/DetailPlaceViewController.swift"
-            timestampString = "494365822.896521"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "DetailPlaceViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.DetailPlaceViewController.ratingLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "Pupvice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceViewController.swift"
-                  timestampString = "494365822.908102"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.DetailPlaceViewController.ratingLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "Pupvice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceViewController.swift"
-                  timestampString = "494365822.908318"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "42">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.DetailPlaceViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Pupvice.DetailPlaceViewController"
-                  moduleName = "Pupvice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceViewController.swift"
-                  timestampString = "494365822.90847"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "174">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.DetailPlaceViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Pupvice.DetailPlaceViewController&gt;"
-                  moduleName = "Pupvice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceViewController.swift"
-                  timestampString = "494365822.90862"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "88">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Pupvice/GoogleData.swift"
             timestampString = "494365959.79725"
             startingColumnNumber = "9223372036854775807"
@@ -127,38 +49,6 @@
             endingLineNumber = "37"
             landmarkName = "fetchPlacesNearCoordinate(_:radius:keywords:completion:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.GoogleDataProvider.(fetchPlacesNearCoordinate (__C.CLLocationCoordinate2D, radius : Swift.Double, keywords : Swift.Array&lt;Swift.String&gt;, completion : (Swift.Array&lt;Pupvice.GooglePlace&gt;) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "Pupvice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/GoogleData.swift"
-                  timestampString = "494365959.802266"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "505">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.GoogleDataProvider.(fetchPlacesNearCoordinate (__C.CLLocationCoordinate2D, radius : Swift.Double, keywords : Swift.Array&lt;Swift.String&gt;, completion : (Swift.Array&lt;Pupvice.GooglePlace&gt;) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "Pupvice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/GoogleData.swift"
-                  timestampString = "494365959.802564"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "1356">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

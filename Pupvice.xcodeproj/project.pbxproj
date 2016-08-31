@@ -12,7 +12,7 @@
 		405C6A1F1D7500CE00CDBB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405C6A1E1D7500CE00CDBB3E /* Assets.xcassets */; };
 		405C6A221D7500CE00CDBB3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405C6A201D7500CE00CDBB3E /* LaunchScreen.storyboard */; };
 		405C6A2C1D7534B600CDBB3E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A2B1D7534B600CDBB3E /* MainTableViewController.swift */; };
-		405C6A511D7603B700CDBB3E /* GoogleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A501D7603B700CDBB3E /* GoogleData.swift */; };
+		405C6A511D7603B700CDBB3E /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A501D7603B700CDBB3E /* GoogleDataProvider.swift */; };
 		405C6A541D76052F00CDBB3E /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A531D76052F00CDBB3E /* GooglePlace.swift */; };
 		405C6A7A1D7627D300CDBB3E /* SearchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */; };
 		405C6A7C1D7627F600CDBB3E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A7B1D7627F600CDBB3E /* MapViewController.swift */; };
@@ -35,7 +35,7 @@
 		405C6A211D7500CE00CDBB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		405C6A231D7500CF00CDBB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		405C6A2B1D7534B600CDBB3E /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		405C6A501D7603B700CDBB3E /* GoogleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleData.swift; sourceTree = "<group>"; };
+		405C6A501D7603B700CDBB3E /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		405C6A531D76052F00CDBB3E /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesTableViewController.swift; sourceTree = "<group>"; };
 		405C6A7B1D7627F600CDBB3E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		405C6A7E1D76280300CDBB3E /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
-				405C6A501D7603B700CDBB3E /* GoogleData.swift */,
+				405C6A501D7603B700CDBB3E /* GoogleDataProvider.swift */,
 				40AC49641D7734FA0007F65E /* ListModelController.swift */,
 			);
 			name = ModelController;
@@ -291,7 +291,7 @@
 				405C6A2C1D7534B600CDBB3E /* MainTableViewController.swift in Sources */,
 				405C6A541D76052F00CDBB3E /* GooglePlace.swift in Sources */,
 				40AC49651D7734FA0007F65E /* ListModelController.swift in Sources */,
-				405C6A511D7603B700CDBB3E /* GoogleData.swift in Sources */,
+				405C6A511D7603B700CDBB3E /* GoogleDataProvider.swift in Sources */,
 				40AC49691D774DA30007F65E /* DetailPlaceViewController.swift in Sources */,
 				40E2CFD21D76874800B53A80 /* MarkerInfoView.swift in Sources */,
 				40AC493E1D768E420007F65E /* PlaceMarker.swift in Sources */,

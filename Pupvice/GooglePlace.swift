@@ -15,15 +15,24 @@ class GooglePlace {
     let address: String
     let coordinate: CLLocationCoordinate2D
     let placeKeyword: String
+    let rating: String
+    let phoneNumber: String
+    let website: String
+    let cost: String
     var photoReference: String?
     var photo: UIImage?
+    
+    //developers.google.com/places/web-service/details#PlaceDetailsResults
     
     init(dictionary:[String : AnyObject], acceptedKeywords: [String])
     {
         let json = JSON(dictionary)
         name = json["name"].stringValue
+        rating = json["rating"].stringValue
         address = json["vicinity"].stringValue
-        
+        phoneNumber = json["formatted_phone_number"].stringValue
+        website = json["website"].stringValue
+        cost = json["price_level"].stringValue
         let lat = json["geometry"]["location"]["lat"].doubleValue as CLLocationDegrees
         let lng = json["geometry"]["location"]["lng"].doubleValue as CLLocationDegrees
         coordinate = CLLocationCoordinate2DMake(lat, lng)

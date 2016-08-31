@@ -18,7 +18,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         self.locationManager.requestAlwaysAuthorization()
         
         // For use in foreground
@@ -37,7 +37,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         print("locations = \(locValue.latitude) \(locValue.longitude)")
         ListModelController.sharedController.fetchNearbyPlaces(locationValue)
         tableView.reloadData()
-
+        
     }
     
     // MARK: - Table view data source
@@ -62,11 +62,16 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     
     
-     // MARK: - Navigation
-
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
+    // MARK: - Navigation
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "placeDetailSegue" {
+            if let detailViewController = segue.destinationViewController as? DetailPlaceViewController, indexPath = tableView.indexPathForSelectedRow
+            {
+                let detailPlace = ListModelController.sharedController.placesArray[indexPath.row]
+                detailViewController.detailPlace = detailPlace
+                
+            }
+        }
+    }
 }

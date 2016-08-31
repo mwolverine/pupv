@@ -18,7 +18,7 @@ class PupMapViewController: UIViewController {
     var searchedKeywords = ["dog park"]
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
-    let searchRadius: Double = 5000
+    let searchRadius: Double = 2000
 
     
     override func viewDidLoad() {
