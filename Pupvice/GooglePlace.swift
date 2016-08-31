@@ -30,7 +30,7 @@ class GooglePlace {
         
         photoReference = json["photos"][0]["photo_reference"].string
         
-        var foundKeyword = "dog park"
+        let foundKeyword = "dog park"
         //    let possibleKeywords = acceptedKeywords.count > 0 ? acceptedKeywords : ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant"]
         //    for keyword in json["keyword"].arrayObject as! [String] {
         //      if possibleKeywords.contains(keyword) {

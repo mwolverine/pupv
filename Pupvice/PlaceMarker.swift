@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import GoogleMaps
 
-class PlaceMarker: GMSM {
+class PlaceMarker: GMSMarker {
     let place: GooglePlace
     
     init(place: GooglePlace) {
@@ -21,3 +22,4 @@ class PlaceMarker: GMSM {
         appearAnimation = kGMSMarkerAnimationPop
     }
 }
+

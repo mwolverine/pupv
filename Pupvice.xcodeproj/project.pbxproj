@@ -14,12 +14,12 @@
 		405C6A2C1D7534B600CDBB3E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A2B1D7534B600CDBB3E /* MainTableViewController.swift */; };
 		405C6A511D7603B700CDBB3E /* GoogleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A501D7603B700CDBB3E /* GoogleData.swift */; };
 		405C6A541D76052F00CDBB3E /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A531D76052F00CDBB3E /* GooglePlace.swift */; };
-		405C6A561D76058E00CDBB3E /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A551D76058E00CDBB3E /* PlaceMarker.swift */; };
 		405C6A7A1D7627D300CDBB3E /* SearchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */; };
-		405C6A7C1D7627F600CDBB3E /* PupMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A7B1D7627F600CDBB3E /* PupMapViewController.swift */; };
+		405C6A7C1D7627F600CDBB3E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A7B1D7627F600CDBB3E /* MapViewController.swift */; };
+		40AC493E1D768E420007F65E /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC493D1D768E420007F65E /* PlaceMarker.swift */; };
 		40E2CFCB1D762D2700B53A80 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFCA1D762D2700B53A80 /* SwiftyJSON.swift */; };
-		40E2CFD21D76874800B53A80 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFD11D76874800B53A80 /* MarkerView.swift */; };
-		40E2CFD51D7687CD00B53A80 /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E2CFD41D7687CD00B53A80 /* MarkerView.xib */; };
+		40E2CFD21D76874800B53A80 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFD11D76874800B53A80 /* MarkerInfoView.swift */; };
+		40E2CFD51D7687CD00B53A80 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E2CFD41D7687CD00B53A80 /* MarkerInfoView.xib */; };
 		40E2CFD71D7687F000B53A80 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFD61D7687F000B53A80 /* UIView.swift */; };
 		A57874F3DDE15D4974E8FB86 /* libPods-Pupvice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */; };
 /* End PBXBuildFile section */
@@ -35,13 +35,13 @@
 		405C6A2B1D7534B600CDBB3E /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		405C6A501D7603B700CDBB3E /* GoogleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleData.swift; sourceTree = "<group>"; };
 		405C6A531D76052F00CDBB3E /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
-		405C6A551D76058E00CDBB3E /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesTableViewController.swift; sourceTree = "<group>"; };
-		405C6A7B1D7627F600CDBB3E /* PupMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupMapViewController.swift; sourceTree = "<group>"; };
+		405C6A7B1D7627F600CDBB3E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		40AC493D1D768E420007F65E /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		40E2CFCA1D762D2700B53A80 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		40E2CFCD1D763D1A00B53A80 /* Pupvice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pupvice-Bridging-Header.h"; sourceTree = "<group>"; };
-		40E2CFD11D76874800B53A80 /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
-		40E2CFD41D7687CD00B53A80 /* MarkerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
+		40E2CFD11D76874800B53A80 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		40E2CFD41D7687CD00B53A80 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
 		40E2CFD61D7687F000B53A80 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		55EAEF43DAAF38ECD9765208 /* Pods-Pupvice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pupvice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pupvice/Pods-Pupvice.release.xcconfig"; sourceTree = "<group>"; };
 		5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pupvice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				405C6A531D76052F00CDBB3E /* GooglePlace.swift */,
-				405C6A551D76058E00CDBB3E /* PlaceMarker.swift */,
+				40AC493D1D768E420007F65E /* PlaceMarker.swift */,
 				40E2CFCA1D762D2700B53A80 /* SwiftyJSON.swift */,
 			);
 			name = Model;
@@ -118,7 +118,7 @@
 			children = (
 				405C6A2B1D7534B600CDBB3E /* MainTableViewController.swift */,
 				405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */,
-				405C6A7B1D7627F600CDBB3E /* PupMapViewController.swift */,
+				405C6A7B1D7627F600CDBB3E /* MapViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 		40E2CFD31D76875D00B53A80 /* Marker */ = {
 			isa = PBXGroup;
 			children = (
-				40E2CFD11D76874800B53A80 /* MarkerView.swift */,
-				40E2CFD41D7687CD00B53A80 /* MarkerView.xib */,
+				40E2CFD11D76874800B53A80 /* MarkerInfoView.swift */,
+				40E2CFD41D7687CD00B53A80 /* MarkerInfoView.xib */,
 				40E2CFD61D7687F000B53A80 /* UIView.swift */,
 			);
 			name = Marker;
@@ -219,7 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E2CFD51D7687CD00B53A80 /* MarkerView.xib in Resources */,
+				40E2CFD51D7687CD00B53A80 /* MarkerInfoView.xib in Resources */,
 				405C6A221D7500CE00CDBB3E /* LaunchScreen.storyboard in Resources */,
 				405C6A1F1D7500CE00CDBB3E /* Assets.xcassets in Resources */,
 				405C6A1D1D7500CE00CDBB3E /* Main.storyboard in Resources */,
@@ -284,13 +284,13 @@
 				40E2CFD71D7687F000B53A80 /* UIView.swift in Sources */,
 				405C6A2C1D7534B600CDBB3E /* MainTableViewController.swift in Sources */,
 				405C6A541D76052F00CDBB3E /* GooglePlace.swift in Sources */,
-				405C6A561D76058E00CDBB3E /* PlaceMarker.swift in Sources */,
 				405C6A511D7603B700CDBB3E /* GoogleData.swift in Sources */,
-				40E2CFD21D76874800B53A80 /* MarkerView.swift in Sources */,
+				40E2CFD21D76874800B53A80 /* MarkerInfoView.swift in Sources */,
+				40AC493E1D768E420007F65E /* PlaceMarker.swift in Sources */,
 				405C6A7A1D7627D300CDBB3E /* SearchesTableViewController.swift in Sources */,
 				40E2CFCB1D762D2700B53A80 /* SwiftyJSON.swift in Sources */,
 				405C6A181D7500CE00CDBB3E /* AppDelegate.swift in Sources */,
-				405C6A7C1D7627F600CDBB3E /* PupMapViewController.swift in Sources */,
+				405C6A7C1D7627F600CDBB3E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
