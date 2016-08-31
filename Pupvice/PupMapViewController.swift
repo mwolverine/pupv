@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import GoogleMaps
 
-class MapViewController: UIViewController {
+class PupMapViewController: UIViewController {
     
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var mapCenterPinImage: UIImageView!
@@ -17,7 +18,7 @@ class MapViewController: UIViewController {
     var searchedKeywords = ["dog park"]
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
-    let searchRadius: Double = 1000
+    let searchRadius: Double = 5000
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,7 @@ class MapViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "Types Segue" {
+        if segue.identifier == "Searches Segue" {
             let navigationController = segue.destinationViewController as! UINavigationController
             let controller = navigationController.topViewController as! SearchesTableViewController
             controller.selectedSearches = searchedKeywords
@@ -74,7 +75,7 @@ class MapViewController: UIViewController {
 }
 
 // MARK: - SearchesTableViewControllerDelegate
-extension MapViewController: SearchesTableViewControllerDelegate {
+extension PupMapViewController: SearchesTableViewControllerDelegate {
     func searchesController(controller: SearchesTableViewController, didSelectSearch searches: [String]) {
         searchedKeywords = controller.selectedSearches.sort()
         dismissViewControllerAnimated(true, completion: nil)
@@ -83,7 +84,7 @@ extension MapViewController: SearchesTableViewControllerDelegate {
 }
 
 // MARK: - CLLocationManagerDelegate
-extension MapViewController: CLLocationManagerDelegate {
+extension PupMapViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .AuthorizedWhenInUse {
             locationManager.startUpdatingLocation()
@@ -102,7 +103,7 @@ extension MapViewController: CLLocationManagerDelegate {
 }
 
 // MARK: - GMSMapViewDelegate
-extension MapViewController: GMSMapViewDelegate {
+extension PupMapViewController: GMSMapViewDelegate {
     func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
         reverseGeocodeCoordinate(position.target)
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlaceMarker: GMSMarker {
+class PlaceMarker: GMSM {
     let place: GooglePlace
     
     init(place: GooglePlace) {

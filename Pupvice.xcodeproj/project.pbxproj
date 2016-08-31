@@ -16,11 +16,16 @@
 		405C6A541D76052F00CDBB3E /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A531D76052F00CDBB3E /* GooglePlace.swift */; };
 		405C6A561D76058E00CDBB3E /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A551D76058E00CDBB3E /* PlaceMarker.swift */; };
 		405C6A7A1D7627D300CDBB3E /* SearchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */; };
-		405C6A7C1D7627F600CDBB3E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A7B1D7627F600CDBB3E /* MapViewController.swift */; };
+		405C6A7C1D7627F600CDBB3E /* PupMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A7B1D7627F600CDBB3E /* PupMapViewController.swift */; };
 		40E2CFCB1D762D2700B53A80 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFCA1D762D2700B53A80 /* SwiftyJSON.swift */; };
+		40E2CFD21D76874800B53A80 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFD11D76874800B53A80 /* MarkerView.swift */; };
+		40E2CFD51D7687CD00B53A80 /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E2CFD41D7687CD00B53A80 /* MarkerView.xib */; };
+		40E2CFD71D7687F000B53A80 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFD61D7687F000B53A80 /* UIView.swift */; };
+		A57874F3DDE15D4974E8FB86 /* libPods-Pupvice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2083F83DCC089E4D8C3C7500 /* Pods-Pupvice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pupvice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pupvice/Pods-Pupvice.debug.xcconfig"; sourceTree = "<group>"; };
 		405C6A141D7500CE00CDBB3E /* Pupvice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pupvice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405C6A171D7500CE00CDBB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		405C6A1C1D7500CE00CDBB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,8 +37,14 @@
 		405C6A531D76052F00CDBB3E /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		405C6A551D76058E00CDBB3E /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesTableViewController.swift; sourceTree = "<group>"; };
-		405C6A7B1D7627F600CDBB3E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		405C6A7B1D7627F600CDBB3E /* PupMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupMapViewController.swift; sourceTree = "<group>"; };
 		40E2CFCA1D762D2700B53A80 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
+		40E2CFCD1D763D1A00B53A80 /* Pupvice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pupvice-Bridging-Header.h"; sourceTree = "<group>"; };
+		40E2CFD11D76874800B53A80 /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		40E2CFD41D7687CD00B53A80 /* MarkerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
+		40E2CFD61D7687F000B53A80 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		55EAEF43DAAF38ECD9765208 /* Pods-Pupvice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pupvice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pupvice/Pods-Pupvice.release.xcconfig"; sourceTree = "<group>"; };
+		5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pupvice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +52,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57874F3DDE15D4974E8FB86 /* libPods-Pupvice.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281DBF734C42D3EC284124B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2083F83DCC089E4D8C3C7500 /* Pods-Pupvice.debug.xcconfig */,
+				55EAEF43DAAF38ECD9765208 /* Pods-Pupvice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		405C6A0B1D7500CE00CDBB3E = {
 			isa = PBXGroup;
 			children = (
 				405C6A161D7500CE00CDBB3E /* Pupvice */,
 				405C6A151D7500CE00CDBB3E /* Products */,
+				281DBF734C42D3EC284124B6 /* Pods */,
+				6211AEF51728F869435DADDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				405C6A171D7500CE00CDBB3E /* AppDelegate.swift */,
+				40E2CFD31D76875D00B53A80 /* Marker */,
 				40E2CFCC1D76302900B53A80 /* View */,
 				405C6A7D1D7627FA00CDBB3E /* ViewController */,
 				405C6A7E1D76280300CDBB3E /* ModelController */,
@@ -74,6 +98,7 @@
 				405C6A1E1D7500CE00CDBB3E /* Assets.xcassets */,
 				405C6A201D7500CE00CDBB3E /* LaunchScreen.storyboard */,
 				405C6A231D7500CF00CDBB3E /* Info.plist */,
+				40E2CFCD1D763D1A00B53A80 /* Pupvice-Bridging-Header.h */,
 			);
 			path = Pupvice;
 			sourceTree = "<group>";
@@ -93,7 +118,7 @@
 			children = (
 				405C6A2B1D7534B600CDBB3E /* MainTableViewController.swift */,
 				405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */,
-				405C6A7B1D7627F600CDBB3E /* MapViewController.swift */,
+				405C6A7B1D7627F600CDBB3E /* PupMapViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -114,6 +139,24 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		40E2CFD31D76875D00B53A80 /* Marker */ = {
+			isa = PBXGroup;
+			children = (
+				40E2CFD11D76874800B53A80 /* MarkerView.swift */,
+				40E2CFD41D7687CD00B53A80 /* MarkerView.xib */,
+				40E2CFD61D7687F000B53A80 /* UIView.swift */,
+			);
+			name = Marker;
+			sourceTree = "<group>";
+		};
+		6211AEF51728F869435DADDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 405C6A261D7500CF00CDBB3E /* Build configuration list for PBXNativeTarget "Pupvice" */;
 			buildPhases = (
+				2FC3A9B390A05E1C575AD939 /* [CP] Check Pods Manifest.lock */,
 				405C6A101D7500CE00CDBB3E /* Sources */,
 				405C6A111D7500CE00CDBB3E /* Frameworks */,
 				405C6A121D7500CE00CDBB3E /* Resources */,
+				A6C74DE46E19CBE48922D78D /* [CP] Embed Pods Frameworks */,
+				5FB146F5E4E099157BBA220D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +192,7 @@
 				TargetAttributes = {
 					405C6A131D7500CE00CDBB3E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 54XFUGG23H;
 					};
 				};
 			};
@@ -172,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E2CFD51D7687CD00B53A80 /* MarkerView.xib in Resources */,
 				405C6A221D7500CE00CDBB3E /* LaunchScreen.storyboard in Resources */,
 				405C6A1F1D7500CE00CDBB3E /* Assets.xcassets in Resources */,
 				405C6A1D1D7500CE00CDBB3E /* Main.storyboard in Resources */,
@@ -180,19 +228,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FC3A9B390A05E1C575AD939 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5FB146F5E4E099157BBA220D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pupvice/Pods-Pupvice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6C74DE46E19CBE48922D78D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pupvice/Pods-Pupvice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		405C6A101D7500CE00CDBB3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E2CFD71D7687F000B53A80 /* UIView.swift in Sources */,
 				405C6A2C1D7534B600CDBB3E /* MainTableViewController.swift in Sources */,
 				405C6A541D76052F00CDBB3E /* GooglePlace.swift in Sources */,
 				405C6A561D76058E00CDBB3E /* PlaceMarker.swift in Sources */,
 				405C6A511D7603B700CDBB3E /* GoogleData.swift in Sources */,
+				40E2CFD21D76874800B53A80 /* MarkerView.swift in Sources */,
 				405C6A7A1D7627D300CDBB3E /* SearchesTableViewController.swift in Sources */,
 				40E2CFCB1D762D2700B53A80 /* SwiftyJSON.swift in Sources */,
 				405C6A181D7500CE00CDBB3E /* AppDelegate.swift in Sources */,
-				405C6A7C1D7627F600CDBB3E /* MapViewController.swift in Sources */,
+				405C6A7C1D7627F600CDBB3E /* PupMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,23 +401,36 @@
 		};
 		405C6A271D7500CF00CDBB3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2083F83DCC089E4D8C3C7500 /* Pods-Pupvice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pupvice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisYoo.Pupvice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pupvice/Pupvice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		405C6A281D7500CF00CDBB3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55EAEF43DAAF38ECD9765208 /* Pods-Pupvice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pupvice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisYoo.Pupvice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pupvice/Pupvice-Bridging-Header.h";
 			};
 			name = Release;
 		};

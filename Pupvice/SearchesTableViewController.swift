@@ -15,7 +15,7 @@ protocol SearchesTableViewControllerDelegate: class {
 
 class SearchesTableViewController: UITableViewController {
     
-    let possibleSearchesDictionary = ["bakery":"Bakery", "bar":"Bar", "cafe":"Cafe", "grocery_or_supermarket":"Supermarket", "restaurant":"Restaurant"]
+    let possibleSearchesDictionary = ["dog park":"Dog park", "dog trail":"dog trail"]
     var selectedSearches: [String]!
     weak var delegate: SearchesTableViewControllerDelegate!
     var sortedKeys: [String] {
