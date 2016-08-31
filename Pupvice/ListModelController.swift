@@ -18,12 +18,12 @@ class ListModelController {
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
     let searchRadius: Double = 5000
-    var placesArray2: [GooglePlace] = []
+    var placesArray: [GooglePlace] = []
 
     func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
         dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, keywords: searchedKeywords) { places in
             for place: GooglePlace in places {
-                self.placesArray2.append(place)
+                self.placesArray.append(place)
             }
         }
     }

@@ -23,7 +23,6 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
-        
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
@@ -49,13 +48,12 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ListModelController.sharedController.placesArray2.count
+        return ListModelController.sharedController.placesArray.count
     }
-    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("listCell", forIndexPath: indexPath)
-        let place = ListModelController.sharedController.placesArray2[indexPath.row]
+        let place = ListModelController.sharedController.placesArray[indexPath.row]
         cell.textLabel?.text = place.name
         cell.detailTextLabel?.text = place.placeKeyword
         return cell
@@ -63,14 +61,12 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     
     
-    /*
+    
      // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
+
      override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
      }
-     */
     
 }

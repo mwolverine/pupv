@@ -58,7 +58,7 @@ class PupMapViewController: UIViewController {
             }
         }
     }
-    
+
     func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
         mapView.clear()
         dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, keywords: searchedKeywords) { places in
@@ -68,7 +68,7 @@ class PupMapViewController: UIViewController {
             }
         }
     }
-    
+
     @IBAction func refreshPlaces(sender: AnyObject) {
         fetchNearbyPlaces(mapView.camera.target)
     }

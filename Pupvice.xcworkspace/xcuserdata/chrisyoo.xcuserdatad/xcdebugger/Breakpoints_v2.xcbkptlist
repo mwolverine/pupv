@@ -9,76 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pupvice/MapViewController.swift"
-            timestampString = "494358487.458285"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "searchesController(_:didSelectSearch:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pupvice/MapViewController.swift"
-            timestampString = "494358502.053257"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "fetchNearbyPlaces(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pupvice/MapViewController.swift"
-            timestampString = "494358502.923849"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "fetchNearbyPlaces(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pupvice/MapViewController.swift"
-            timestampString = "494358503.583682"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "fetchNearbyPlaces(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Pupvice/GoogleData.swift"
-            timestampString = "494358560.504444"
+            timestampString = "494364487.847854"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "fetchPlacesNearCoordinate(_:radius:keywords:completion:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pupvice/GoogleData.swift"
-            timestampString = "494358574.839401"
+            timestampString = "494364488.519942"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "fetchPlacesNearCoordinate(_:radius:keywords:completion:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -105,44 +41,74 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pupvice/GoogleData.swift"
-            timestampString = "494358590.710041"
+            filePath = "Pupvice/DetailPlaceViewController.swift"
+            timestampString = "494365822.896521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "fetchPlacesNearCoordinate(_:radius:keywords:completion:)"
-            landmarkType = "5">
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "DetailPlaceViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.GoogleDataProvider.fetchPlacesNearCoordinate (__C.CLLocationCoordinate2D, radius : Swift.Double, keywords : Swift.Array&lt;Swift.String&gt;, completion : (Swift.Array&lt;Pupvice.GooglePlace&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "Pupvice.DetailPlaceViewController.ratingLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "Pupvice"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/GoogleData.swift"
-                  timestampString = "494359095.880025"
+                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceViewController.swift"
+                  timestampString = "494365822.908102"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "1544">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "27">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.GoogleDataProvider.fetchPlacesNearCoordinate (__C.CLLocationCoordinate2D, radius : Swift.Double, keywords : Swift.Array&lt;Swift.String&gt;, completion : (Swift.Array&lt;Pupvice.GooglePlace&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "Pupvice.DetailPlaceViewController.ratingLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "Pupvice"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/GoogleData.swift"
-                  timestampString = "494359095.880144"
+                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceViewController.swift"
+                  timestampString = "494365822.908318"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "1589">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pupvice.DetailPlaceViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Pupvice.DetailPlaceViewController"
+                  moduleName = "Pupvice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceViewController.swift"
+                  timestampString = "494365822.90847"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "174">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pupvice.DetailPlaceViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Pupvice.DetailPlaceViewController&gt;"
+                  moduleName = "Pupvice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceViewController.swift"
+                  timestampString = "494365822.90862"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -154,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pupvice/GoogleData.swift"
-            timestampString = "494358591.358014"
+            timestampString = "494365959.79725"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "fetchPlacesNearCoordinate(_:radius:keywords:completion:)"
             landmarkType = "5">
             <Locations>
@@ -166,16 +132,16 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.GoogleDataProvider.fetchPlacesNearCoordinate (__C.CLLocationCoordinate2D, radius : Swift.Double, keywords : Swift.Array&lt;Swift.String&gt;, completion : (Swift.Array&lt;Pupvice.GooglePlace&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "Pupvice.GoogleDataProvider.(fetchPlacesNearCoordinate (__C.CLLocationCoordinate2D, radius : Swift.Double, keywords : Swift.Array&lt;Swift.String&gt;, completion : (Swift.Array&lt;Pupvice.GooglePlace&gt;) -&gt; ()) -&gt; ()).(closure #1)"
                   moduleName = "Pupvice"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/GoogleData.swift"
-                  timestampString = "494359095.880908"
+                  timestampString = "494365959.802266"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "2152">
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "505">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -185,12 +151,12 @@
                   moduleName = "Pupvice"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/GoogleData.swift"
-                  timestampString = "494359095.88106"
+                  timestampString = "494365959.802564"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "87">
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1356">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -198,11 +164,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pupvice/GoogleData.swift"
-            timestampString = "494358591.98246"
+            timestampString = "494365973.971551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -218,61 +184,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pupvice/GoogleData.swift"
-            timestampString = "494358592.416344"
+            timestampString = "494365978.808468"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "fetchPlacesNearCoordinate(_:radius:keywords:completion:)"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pupvice/GoogleData.swift"
-            timestampString = "494358634.276954"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "fetchPlacesNearCoordinate(_:radius:keywords:completion:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.GoogleDataProvider.(fetchPlacesNearCoordinate (__C.CLLocationCoordinate2D, radius : Swift.Double, keywords : Swift.Array&lt;Swift.String&gt;, completion : (Swift.Array&lt;Pupvice.GooglePlace&gt;) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "Pupvice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/GoogleData.swift"
-                  timestampString = "494359095.882788"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "275">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pupvice.GoogleDataProvider.(fetchPlacesNearCoordinate (__C.CLLocationCoordinate2D, radius : Swift.Double, keywords : Swift.Array&lt;Swift.String&gt;, completion : (Swift.Array&lt;Pupvice.GooglePlace&gt;) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "Pupvice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/GoogleData.swift"
-                  timestampString = "494359095.88293"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "323">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -281,13 +199,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pupvice/MapViewController.swift"
-            timestampString = "494358875.843282"
+            filePath = "Pupvice/GoogleData.swift"
+            timestampString = "494366024.929559"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "fetchNearbyPlaces(_:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchPlacesNearCoordinate(_:radius:keywords:completion:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
