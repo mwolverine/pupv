@@ -48,7 +48,6 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         tableView.reloadData()
     }
     
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ListModelController.sharedController.placesArray.count
     }

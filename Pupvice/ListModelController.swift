@@ -17,7 +17,7 @@ class ListModelController {
     var searchedKeywords = ["dog park"]
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
-    let searchRadius: Double = 10000
+    let searchRadius: Double = 5000
     var placesArray: [GooglePlace] = []
 
     func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
