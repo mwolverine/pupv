@@ -19,6 +19,7 @@ class PupMapViewController: UIViewController {
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
     let searchRadius: Double = 5000
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

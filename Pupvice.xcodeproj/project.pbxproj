@@ -17,6 +17,8 @@
 		405C6A7A1D7627D300CDBB3E /* SearchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */; };
 		405C6A7C1D7627F600CDBB3E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A7B1D7627F600CDBB3E /* MapViewController.swift */; };
 		40AC493E1D768E420007F65E /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC493D1D768E420007F65E /* PlaceMarker.swift */; };
+		40AC49651D7734FA0007F65E /* ListModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC49641D7734FA0007F65E /* ListModelController.swift */; };
+		40AC49671D7746490007F65E /* DetailPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC49661D7746490007F65E /* DetailPlaceViewController.swift */; };
 		40E2CFCB1D762D2700B53A80 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFCA1D762D2700B53A80 /* SwiftyJSON.swift */; };
 		40E2CFD21D76874800B53A80 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFD11D76874800B53A80 /* MarkerInfoView.swift */; };
 		40E2CFD51D7687CD00B53A80 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E2CFD41D7687CD00B53A80 /* MarkerInfoView.xib */; };
@@ -38,6 +40,8 @@
 		405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesTableViewController.swift; sourceTree = "<group>"; };
 		405C6A7B1D7627F600CDBB3E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		40AC493D1D768E420007F65E /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		40AC49641D7734FA0007F65E /* ListModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModelController.swift; sourceTree = "<group>"; };
+		40AC49661D7746490007F65E /* DetailPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewController.swift; sourceTree = "<group>"; };
 		40E2CFCA1D762D2700B53A80 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		40E2CFCD1D763D1A00B53A80 /* Pupvice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pupvice-Bridging-Header.h"; sourceTree = "<group>"; };
 		40E2CFD11D76874800B53A80 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
@@ -90,11 +94,11 @@
 			isa = PBXGroup;
 			children = (
 				405C6A171D7500CE00CDBB3E /* AppDelegate.swift */,
-				40E2CFD31D76875D00B53A80 /* Marker */,
 				40E2CFCC1D76302900B53A80 /* View */,
-				405C6A7D1D7627FA00CDBB3E /* ViewController */,
-				405C6A7E1D76280300CDBB3E /* ModelController */,
+				40E2CFD31D76875D00B53A80 /* Marker */,
 				405C6A521D7603BD00CDBB3E /* Model */,
+				405C6A7E1D76280300CDBB3E /* ModelController */,
+				405C6A7D1D7627FA00CDBB3E /* ViewController */,
 				405C6A1E1D7500CE00CDBB3E /* Assets.xcassets */,
 				405C6A201D7500CE00CDBB3E /* LaunchScreen.storyboard */,
 				405C6A231D7500CF00CDBB3E /* Info.plist */,
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				405C6A2B1D7534B600CDBB3E /* MainTableViewController.swift */,
+				40AC49661D7746490007F65E /* DetailPlaceViewController.swift */,
 				405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */,
 				405C6A7B1D7627F600CDBB3E /* MapViewController.swift */,
 			);
@@ -127,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				405C6A501D7603B700CDBB3E /* GoogleData.swift */,
+				40AC49641D7734FA0007F65E /* ListModelController.swift */,
 			);
 			name = ModelController;
 			sourceTree = "<group>";
@@ -284,7 +290,9 @@
 				40E2CFD71D7687F000B53A80 /* UIView.swift in Sources */,
 				405C6A2C1D7534B600CDBB3E /* MainTableViewController.swift in Sources */,
 				405C6A541D76052F00CDBB3E /* GooglePlace.swift in Sources */,
+				40AC49651D7734FA0007F65E /* ListModelController.swift in Sources */,
 				405C6A511D7603B700CDBB3E /* GoogleData.swift in Sources */,
+				40AC49671D7746490007F65E /* DetailPlaceViewController.swift in Sources */,
 				40E2CFD21D76874800B53A80 /* MarkerInfoView.swift in Sources */,
 				40AC493E1D768E420007F65E /* PlaceMarker.swift in Sources */,
 				405C6A7A1D7627D300CDBB3E /* SearchesTableViewController.swift in Sources */,
