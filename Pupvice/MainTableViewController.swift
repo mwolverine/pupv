@@ -49,13 +49,13 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ListModelController.sharedController.placesArray.count
+        return ListModelController.sharedController.placesArray2.count
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("listCell", forIndexPath: indexPath)
-        let place = ListModelController.sharedController.placesArray[indexPath.row]
+        let place = ListModelController.sharedController.placesArray2[indexPath.row]
         cell.textLabel?.text = place.name
         cell.detailTextLabel?.text = place.placeKeyword
         return cell
