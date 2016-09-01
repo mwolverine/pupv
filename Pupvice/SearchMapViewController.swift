@@ -10,9 +10,9 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-class SearchMapViewController: UIViewController,UISearchBarDelegate, LocateOnTheMap {
+class ViewController: UIViewController,UISearchBarDelegate, LocateOnTheMap {
     
-    var searchResultController:SearchResultsTableViewController!
+    var searchResultController:SearchResultsController!
     var resultsArray = [String]()
     var googleMapsView:GMSMapView!
     
@@ -29,7 +29,7 @@ class SearchMapViewController: UIViewController,UISearchBarDelegate, LocateOnThe
         super.viewDidAppear(animated)
         self.googleMapsView =  GMSMapView(frame: self.mapViewContainer.frame)
         self.view.addSubview(self.googleMapsView)
-        searchResultController = SearchResultsTableViewController()
+        searchResultController = SearchResultsController()
         searchResultController.delegate = self
         
     }
