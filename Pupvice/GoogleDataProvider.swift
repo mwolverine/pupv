@@ -12,6 +12,7 @@ import CoreLocation
 
 class GoogleDataProvider {
     var photoCache = [String:UIImage]()
+    var googlePlace: GooglePlace?
     var placesTask: NSURLSessionDataTask?
     var session: NSURLSession {
         return NSURLSession.sharedSession()
@@ -76,5 +77,39 @@ class GoogleDataProvider {
                 }
                 }.resume()
         }
+    }
+    
+    func fetchReviewFromPlaceID(placeID: String) -> ()
+    {
+        let googleMapsApiKey = "AIzaSyAzpVdtLbbRYJb-Ia79HxZB1qzZS17wj5I"
+        let urlString = "https://maps.googleapis.com/maps/api/place/details/json?placeid=\(placeID)&key=\(googleMapsApiKey)"
+        if let task = placesTask where task.taskIdentifier > 0 && task.state == .Running {
+            task.cancel()
+        }
+        
+        //https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&key=AIzaSyAzpVdtLbbRYJb-Ia79HxZB1qzZS17wj5I
+        
+        guard let url = NSURL(string: urlString) else {
+            return
+        }
+        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        placesTask = session.dataTaskWithURL(url) {data, response, error in
+            print(data)
+            print(response)
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            var placeDetailArray = [GoogleDetails]()
+            if let aData = data {
+                let json = JSON(data:aData, options:NSJSONReadingOptions.MutableContainers, error:nil)
+                print(json)
+                if let results = json["results"].arrayObject as? [[String : AnyObject]] {
+                    for rawPlace in results {
+                        let placeDetail = GoogleDetails(dictionary: rawPlace)
+                        placeDetailArray.append(placeDetail)
+                    }
+                }
+            }
+        }
+        placesTask?.resume()
     }
 }

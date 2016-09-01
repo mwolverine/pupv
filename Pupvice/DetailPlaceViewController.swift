@@ -11,6 +11,8 @@ import UIKit
 class DetailPlaceViewController: UIViewController {
     
     var detailPlace: GooglePlace!
+    var detailSpecfic: GoogleDetails?
+    let dataProvider = GoogleDataProvider()
 
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -26,14 +28,21 @@ class DetailPlaceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchDetailPlace()
         nameLabel.text = detailPlace.name
         locationLabel.text = detailPlace.address
-        ratingLabel.text = detailPlace.rating
+        ratingLabel.text = detailSpecfic?.text
         imageView.image = detailPlace.photo
-        costLabel.text = detailPlace.text
+        costLabel.text = detailPlace.rating
         typeLabel.text = detailPlace.phoneNumber
 
         // Do any additional setup after loading the view.
+    }
+    
+    func fetchDetailPlace() {
+        let placeID = detailPlace.placeID
+        dataProvider.fetchReviewFromPlaceID(placeID)
+
     }
     
     override func didReceiveMemoryWarning() {

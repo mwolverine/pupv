@@ -20,7 +20,7 @@ class GooglePlace {
     let phoneNumber: String
     let website: String
     let cost: String
-    var text: String?
+    let placeID: String
     var photoReference: String?
     var photo: UIImage?
     
@@ -35,16 +35,13 @@ class GooglePlace {
         phoneNumber = json["formatted_phone_number"].stringValue
         website = json["website"].stringValue
         cost = json["price_level"].stringValue
+        placeID = json["place_id"].stringValue
         
         let lat = json["geometry"]["location"]["lat"].doubleValue as CLLocationDegrees
         let lng = json["geometry"]["location"]["lng"].doubleValue as CLLocationDegrees
         coordinate = CLLocationCoordinate2DMake(lat, lng)
         
-        for review in json["reviews"].arrayValue {
-            let text = review["text"].stringValue
-            self.text = text
-        }
-        
+
         photoReference = json["photos"][0]["photo_reference"].string
         
         let foundKeyword = "dog park"
