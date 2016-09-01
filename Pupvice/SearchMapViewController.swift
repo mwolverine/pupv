@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMaps
+import GooglePlaces
 
 class SearchMapViewController: UIViewController,UISearchBarDelegate, LocateOnTheMap {
     
@@ -70,7 +71,7 @@ class SearchMapViewController: UIViewController,UISearchBarDelegate, LocateOnThe
                     self.resultsArray.append(result.attributedFullText.string)
                 }
             }
-            self.SearchResultsTableViewController.reloadDataWithArray(self.resultsArray)
+            self.searchResultController.reloadDataWithArray(self.resultsArray)
         }
     }
 }
