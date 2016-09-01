@@ -30,7 +30,7 @@ class DetailPlaceViewController: UIViewController {
         locationLabel.text = detailPlace.address
         ratingLabel.text = detailPlace.rating
         imageView.image = detailPlace.photo
-        costLabel.text = detailPlace.cost
+        costLabel.text = detailPlace.text
         typeLabel.text = detailPlace.phoneNumber
 
         // Do any additional setup after loading the view.

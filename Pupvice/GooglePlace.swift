@@ -11,6 +11,7 @@ import Foundation
 import CoreLocation
 
 class GooglePlace {
+    
     let name: String
     let address: String
     let coordinate: CLLocationCoordinate2D
@@ -19,6 +20,7 @@ class GooglePlace {
     let phoneNumber: String
     let website: String
     let cost: String
+    var text: String?
     var photoReference: String?
     var photo: UIImage?
     
@@ -33,9 +35,15 @@ class GooglePlace {
         phoneNumber = json["formatted_phone_number"].stringValue
         website = json["website"].stringValue
         cost = json["price_level"].stringValue
+        
         let lat = json["geometry"]["location"]["lat"].doubleValue as CLLocationDegrees
         let lng = json["geometry"]["location"]["lng"].doubleValue as CLLocationDegrees
         coordinate = CLLocationCoordinate2DMake(lat, lng)
+        
+        for review in json["reviews"].arrayValue {
+            let text = review["text"].stringValue
+            self.text = text
+        }
         
         photoReference = json["photos"][0]["photo_reference"].string
         

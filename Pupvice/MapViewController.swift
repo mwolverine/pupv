@@ -16,6 +16,7 @@ class PupMapViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var pinImageVerticalConstraint: NSLayoutConstraint!
     var searchedKeywords = ["dog park"]
+    var searchedType = ["park"]
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
     let searchRadius: Double = 2000
@@ -119,7 +120,7 @@ extension PupMapViewController: GMSMapViewDelegate {
         }
     }
     
-    func mapView(mapView: GMSMapView!, markerInfoContents marker: GMSMarker) -> UIView? {
+    func mapView(mapView: GMSMapView, markerInfoContents marker: GMSMarker) -> UIView? {
         let placeMarker = marker as! PlaceMarker
         
         if let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView {

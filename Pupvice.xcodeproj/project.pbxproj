@@ -76,6 +76,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4045E3E01D78C08900E4B228 /* Not use */ = {
+			isa = PBXGroup;
+			children = (
+				4045E3DA1D78957200E4B228 /* SearchMapViewController.swift */,
+				4045E3D81D788EF600E4B228 /* SearchResultsController.swift */,
+			);
+			name = "Not use";
+			sourceTree = "<group>";
+		};
 		405C6A0B1D7500CE00CDBB3E = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +133,7 @@
 		405C6A7D1D7627FA00CDBB3E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4045E3DA1D78957200E4B228 /* SearchMapViewController.swift */,
-				4045E3D81D788EF600E4B228 /* SearchResultsController.swift */,
+				4045E3E01D78C08900E4B228 /* Not use */,
 				405C6A2B1D7534B600CDBB3E /* MainTableViewController.swift */,
 				405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */,
 				405C6A7B1D7627F600CDBB3E /* MapViewController.swift */,
