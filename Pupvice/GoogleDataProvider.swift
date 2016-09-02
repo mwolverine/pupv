@@ -21,7 +21,9 @@ class GoogleDataProvider {
     
     func fetchPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, keywords:[String], completion: (([GooglePlace]) -> Void)) -> ()
     {
-        var urlString = "http://localhost:10000/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true&type=park"
+        //http://localhost:10000
+         //http://192.168.1.48:10000
+        var urlString = "http://192.168.1.48:10000/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true&type=park"
         let keywordsString = keywords.count > 0 ? keywords.joinWithSeparator("|") : "dog park"
         urlString += "&keyword=\(keywordsString)"
         urlString = urlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
@@ -60,7 +62,11 @@ class GoogleDataProvider {
         if let photo = photoCache[reference] as UIImage? {
             completion(photo)
         } else {
-            let urlString = "http://localhost:10000/maps/api/place/photo?maxwidth=200&photoreference=\(reference)"
+            //http://localhost:10000
+            //    let baseURLGeocode = "https://maps.googleapis.com/maps/api/geocode/json?"
+
+            //https://maps.googleapis.com
+            let urlString = "http://192.168.1.48:10000/maps/api/place/photo?maxwidth=200&photoreference=\(reference)"
             UIApplication.sharedApplication().networkActivityIndicatorVisible = true
             session.downloadTaskWithURL(NSURL(string: urlString)!) {url, response, error in
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
