@@ -14,16 +14,17 @@ class GoogleDetails {
     
     var text: String?
     
-    
     init(dictionary:[String : AnyObject])
-    {
-        let json = JSON(dictionary)
-        text = json["reviews"][0]["text"].stringValue
         
-        //        for review in json["reviews"].arrayValue {
-        //            let text = review["text"].stringValue
-        //            self.text = text
-        //        }
+    {
+//        text = json["result"]["reviews"]["text"].string
+        let json = JSON(dictionary)
+        text = json["text"].stringValue
+        
+//                for review in json["reviews"].arrayValue {
+//                    let text = review["text"].stringValue
+//                    self.text = text
+//                }
         
     }
 }

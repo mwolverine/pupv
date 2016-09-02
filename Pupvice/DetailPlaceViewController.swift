@@ -13,7 +13,9 @@ class DetailPlaceViewController: UIViewController {
     var detailPlace: GooglePlace!
     var detailSpecfic: GoogleDetails?
     let dataProvider = GoogleDataProvider()
-
+    var placesDetailArray: [GoogleDetails] = []
+    
+    
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
@@ -23,27 +25,34 @@ class DetailPlaceViewController: UIViewController {
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    
-    
+    func fetchDetailPlace(completion: ()->Void) {
+        let placeID = detailPlace.placeID
+        dataProvider.fetchReviewFromPlaceID(placeID) { reviews in
+            for review: GoogleDetails in reviews {
+                self.placesDetailArray.append(review)
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchDetailPlace()
+        
+        fetchDetailPlace { 
+            
+            self.ratingLabel.text = self.placesDetailArray.first?.text
+            
+        }
         nameLabel.text = detailPlace.name
         locationLabel.text = detailPlace.address
-        ratingLabel.text = detailSpecfic?.text
         imageView.image = detailPlace.photo
         costLabel.text = detailPlace.rating
         typeLabel.text = detailPlace.phoneNumber
-
+        
+        
         // Do any additional setup after loading the view.
     }
     
-    func fetchDetailPlace() {
-        let placeID = detailPlace.placeID
-        dataProvider.fetchReviewFromPlaceID(placeID)
 
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
