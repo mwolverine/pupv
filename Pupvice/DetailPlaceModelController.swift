@@ -17,9 +17,8 @@ class DetailPlaceModelController{
     var placesDetailArray: [GoogleDetails] = []
 
     static let sharedController = DetailPlaceModelController()
-    
-    func fetchDetailPlace(placeID: String, completion: (reviews: [GoogleDetails])->Void) {
 
+    func fetchDetailPlace(placeID: String, completion: (reviews: [GoogleDetails]) -> Void ) {
         dataProvider.fetchReviewFromPlaceID(placeID) { reviews in
             for review: GoogleDetails in reviews {
                 self.placesDetailArray.append(review)

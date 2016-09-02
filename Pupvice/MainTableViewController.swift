@@ -15,9 +15,13 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     var mapView: GMSMapView!
     let locationManager = CLLocationManager()
     var locationValue: CLLocationCoordinate2D!
+    var placesArray: [GooglePlace] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         self.locationManager.requestAlwaysAuthorization()
         
@@ -33,27 +37,31 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-        locationValue = locValue
-//        print("locations = \(locValue.latitude) \(locValue.longitude)")
-        ListModelController.sharedController.fetchNearbyPlaces(locationValue)
-        tableView.reloadData()
-        
+        self.locationValue = locValue
+                print("locations = \(locValue.latitude) \(locValue.longitude)")
+    }
+    
+    func setupView(locationValue: CLLocationCoordinate2D){
+        ListModelController.sharedController.fetchNearbyPlaces(locationValue) { (places) in
+            self.placesArray = places
+            self.tableView.reloadData()
+        }
     }
     
     // MARK: - Table view data source
     
     @IBAction func refreshPlaces(sender: AnyObject) {
-        locationManager
+        setupView(locationValue)
         tableView.reloadData()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ListModelController.sharedController.placesArray.count
+        return placesArray.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("listCell", forIndexPath: indexPath)
-        let place = ListModelController.sharedController.placesArray[indexPath.row]
+        let place = placesArray[indexPath.row]
         cell.textLabel?.text = place.name
         cell.detailTextLabel?.text = place.placeKeyword
         return cell

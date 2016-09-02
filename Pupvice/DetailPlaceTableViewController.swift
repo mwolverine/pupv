@@ -30,10 +30,6 @@ class DetailPlaceTableViewController: UITableViewController {
                 self.placesArray = reviews
                 self.tableView.reloadData()
             })
-            
-//            DetailPlaceModelController.sharedController.fetchDetailPlace(detailPlace.placeID) {
-//                self.tableView.reloadData()
-//            }
         }
         
         print(detailPlace?.placeID)
@@ -43,21 +39,12 @@ class DetailPlaceTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         guard let detailPlace = detailPlace else { return }
         
-        nameLabel.text = "    \(detailPlace.name)"
+        nameLabel.text = "   \(detailPlace.name)"
         ratingLabel.text = "    Rated: \(detailPlace.rating)"
         locationLabel.text = "    Location: \(detailPlace.address)"
         imageView.image = detailPlace.photo
-        //        typeLabel.text = String(detailPlace.phoneNumber)
-        
-        
-        
-        
-        
-        
-        //        tableView.reloadData()
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
