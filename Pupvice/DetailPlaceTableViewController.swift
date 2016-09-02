@@ -13,7 +13,7 @@ class DetailPlaceTableViewController: UITableViewController {
     var detailPlace: GooglePlace!
     let dataProvider = GoogleDataProvider()
     var placesDetailArray: [GoogleDetails] = []
-    
+
     
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -24,25 +24,34 @@ class DetailPlaceTableViewController: UITableViewController {
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
+    override func viewWillAppear(animated: Bool) {
+        
+        
+        
+        DetailPlaceModelController.sharedController.fetchDetailPlace(detailPlace.placeID) {
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        nameLabel.text = "    \(detailPlace.name)"
+        ratingLabel.text = "    Rated: \(detailPlace.rating)"
+        locationLabel.text = "    Location: \(detailPlace.address)"
+        imageView.image = detailPlace.photo
+//        typeLabel.text = String(detailPlace.phoneNumber)
+        
+        tableView.reloadData()
+        
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
-        nameLabel.text = detailPlace.name
-        locationLabel.text = detailPlace.address
-        imageView.image = detailPlace.photo
-        costLabel.text = detailPlace.rating
-        typeLabel.text = detailPlace.phoneNumber
-        tableView.reloadData()
     }
     
 
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let placeID = detailPlace.placeID
-        DetailPlaceModelController.sharedController.fetchDetailPlace(placeID) {
-        }
+  
         return DetailPlaceModelController.sharedController.placesDetailArray.count
     }
 
@@ -50,8 +59,9 @@ class DetailPlaceTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reviewsCell", forIndexPath: indexPath) as? DetailPlaceTableViewCell
         let placeDetail = DetailPlaceModelController.sharedController.placesDetailArray[indexPath.row]
+       
         cell?.reviewLabel.text = placeDetail.text
-        cell?.ratingLabel.text = placeDetail.rating
+        //cell?.ratingLabel.text = placeDetail.rating
         return cell ?? UITableViewCell()
     }
 

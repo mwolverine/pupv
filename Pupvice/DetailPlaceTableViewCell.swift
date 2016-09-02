@@ -12,9 +12,7 @@ class DetailPlaceTableViewCell: UITableViewCell {
 
     @IBOutlet weak var reviewLabel: UILabel!
     
-    @IBOutlet weak var ratingLabel: UILabel!
-    
-    @IBOutlet weak var dateLabel: UILabel!
+    //@IBOutlet weak var ratingLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
