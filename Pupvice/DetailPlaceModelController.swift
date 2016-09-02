@@ -12,6 +12,8 @@ import CoreLocation
 
 class DetailPlaceModelController{
     
+    let dataProvider = GoogleDataProvider()
+
     var placesDetailArray: [GoogleDetails] = []
 
     static let sharedController = DetailPlaceModelController()

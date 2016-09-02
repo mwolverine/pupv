@@ -66,7 +66,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "placeDetailSegue" {
-            if let detailViewController = segue.destinationViewController as? DetailPlaceViewController, indexPath = tableView.indexPathForSelectedRow
+            if let detailViewController = segue.destinationViewController as? DetailPlaceTableViewController, indexPath = tableView.indexPathForSelectedRow
             {
                 let detailPlace = ListModelController.sharedController.placesArray[indexPath.row]
                 detailViewController.detailPlace = detailPlace
