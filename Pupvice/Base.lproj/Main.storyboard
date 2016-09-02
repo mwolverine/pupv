@@ -71,7 +71,7 @@
                                                     <rect key="frame" x="200" y="0.0" width="200" height="30"/>
                                                     <color key="backgroundColor" red="0.14117647058823529" green="0.18431372549019609" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                                    <state key="normal" title="Restaurants">
+                                                    <state key="normal">
                                                         <color key="titleColor" red="0.99008231456874873" green="1" blue="0.98118874264257572" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                 </button>
@@ -79,7 +79,7 @@
                                                     <rect key="frame" x="400" y="0.0" width="200" height="30"/>
                                                     <color key="backgroundColor" red="0.14117647058823529" green="0.18431372549019609" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                                    <state key="normal" title="Stores"/>
+                                                    <state key="normal" title="Refresh"/>
                                                     <connections>
                                                         <action selector="refreshPlaces:" destination="rel-ij-b6f" eventType="touchUpInside" id="Dfe-wk-ZVU"/>
                                                     </connections>
@@ -274,9 +274,9 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="IWM-dH-HTJ"/>
                                 <exclude reference="BFu-5b-D4v"/>
                                 <exclude reference="M68-uA-K1U"/>
-                                <exclude reference="IWM-dH-HTJ"/>
                             </mask>
                         </variation>
                     </view>
@@ -775,16 +775,16 @@
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="IWP-Kd-TbF"/>
-                                            <exclude reference="B9T-Aa-2Wq"/>
                                             <exclude reference="1we-oa-QGf"/>
-                                            <exclude reference="nUb-Ja-yMu"/>
-                                            <exclude reference="XPw-21-Mzh"/>
                                             <exclude reference="9Oi-4V-NOG"/>
-                                            <exclude reference="jB0-Rz-NxG"/>
+                                            <exclude reference="B9T-Aa-2Wq"/>
+                                            <exclude reference="IWP-Kd-TbF"/>
                                             <exclude reference="R7O-cy-5fq"/>
-                                            <exclude reference="v6f-cd-aMN"/>
+                                            <exclude reference="XPw-21-Mzh"/>
+                                            <exclude reference="jB0-Rz-NxG"/>
+                                            <exclude reference="nUb-Ja-yMu"/>
                                             <exclude reference="paf-yU-PJH"/>
+                                            <exclude reference="v6f-cd-aMN"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>

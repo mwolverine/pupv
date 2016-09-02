@@ -17,12 +17,9 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     var locationValue: CLLocationCoordinate2D!
     var placesArray: [GooglePlace] = []
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+
         self.locationManager.requestAlwaysAuthorization()
         
         // For use in foreground
@@ -38,9 +35,9 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         self.locationValue = locValue
-                print("locations = \(locValue.latitude) \(locValue.longitude)")
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
-    
+
     func setupView(locationValue: CLLocationCoordinate2D){
         ListModelController.sharedController.fetchNearbyPlaces(locationValue) { (places) in
             self.placesArray = places
@@ -66,9 +63,6 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         cell.detailTextLabel?.text = place.placeKeyword
         return cell
     }
-    
-    
-    
     
     // MARK: - Navigation
     
