@@ -34,7 +34,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         locationValue = locValue
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
+//        print("locations = \(locValue.latitude) \(locValue.longitude)")
         ListModelController.sharedController.fetchNearbyPlaces(locationValue)
         tableView.reloadData()
         

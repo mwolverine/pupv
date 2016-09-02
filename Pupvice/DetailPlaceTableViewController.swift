@@ -9,12 +9,11 @@
 import UIKit
 
 class DetailPlaceTableViewController: UITableViewController {
-
-    var detailPlace: GooglePlace!
-    let dataProvider = GoogleDataProvider()
-    var placesDetailArray: [GoogleDetails] = []
-
     
+    var detailPlace: GooglePlace?
+    let dataProvider = GoogleDataProvider()
+    
+    var placesArray: [GoogleDetails] = []
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
@@ -26,45 +25,62 @@ class DetailPlaceTableViewController: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         
-        
-        
-        DetailPlaceModelController.sharedController.fetchDetailPlace(detailPlace.placeID) {
+        if let detailPlace = detailPlace {
+            DetailPlaceModelController.sharedController.fetchDetailPlace(detailPlace.placeID, completion: { (reviews) in
+                self.placesArray = reviews
+                self.tableView.reloadData()
+            })
+            
+//            DetailPlaceModelController.sharedController.fetchDetailPlace(detailPlace.placeID) {
+//                self.tableView.reloadData()
+//            }
         }
+        
+        print(detailPlace?.placeID)
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
+        guard let detailPlace = detailPlace else { return }
+        
         nameLabel.text = "    \(detailPlace.name)"
         ratingLabel.text = "    Rated: \(detailPlace.rating)"
         locationLabel.text = "    Location: \(detailPlace.address)"
         imageView.image = detailPlace.photo
-//        typeLabel.text = String(detailPlace.phoneNumber)
+        //        typeLabel.text = String(detailPlace.phoneNumber)
         
-        tableView.reloadData()
+        
+        
+        
+        
+        
+        //        tableView.reloadData()
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
     }
     
-
+    
     // MARK: - Table view data source
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-  
-        return DetailPlaceModelController.sharedController.placesDetailArray.count
+        
+        return placesArray.count
     }
-
+    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reviewsCell", forIndexPath: indexPath) as? DetailPlaceTableViewCell
-        let placeDetail = DetailPlaceModelController.sharedController.placesDetailArray[indexPath.row]
-       
+        let placeDetail = placesArray[indexPath.row]
+        
         cell?.reviewLabel.text = placeDetail.text
         //cell?.ratingLabel.text = placeDetail.rating
         return cell ?? UITableViewCell()
     }
-
-
-
+    
+    
+    
 }

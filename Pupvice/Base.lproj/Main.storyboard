@@ -75,7 +75,7 @@
                                                         <color key="titleColor" red="0.99008231456874873" green="1" blue="0.98118874264257572" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQn-Xj-eNn">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQn-Xj-eNn">
                                                     <rect key="frame" x="400" y="0.0" width="200" height="30"/>
                                                     <color key="backgroundColor" red="0.14117647058823529" green="0.18431372549019609" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
@@ -245,7 +245,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="cHv-4C-Gip"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -823,6 +823,6 @@
         <image name="logo white" width="240" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2cM-OC-8so"/>
+        <segue reference="g5Z-9P-p6e"/>
     </inferredMetricsTieBreakers>
 </document>
