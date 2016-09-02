@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402906501D79E2DC00FA083E /* DetailPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029064F1D79E2DC00FA083E /* DetailPlaceTableViewCell.swift */; };
 		4045E3D91D788EF600E4B228 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3D81D788EF600E4B228 /* SearchResultsController.swift */; };
 		4045E3DB1D78957200E4B228 /* SearchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3DA1D78957200E4B228 /* SearchMapViewController.swift */; };
 		4045E3E31D78D96B00E4B228 /* GoogleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3E21D78D96B00E4B228 /* GoogleDetails.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		2083F83DCC089E4D8C3C7500 /* Pods-Pupvice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pupvice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pupvice/Pods-Pupvice.debug.xcconfig"; sourceTree = "<group>"; };
+		4029064F1D79E2DC00FA083E /* DetailPlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPlaceTableViewCell.swift; sourceTree = "<group>"; };
 		4045E3D81D788EF600E4B228 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		4045E3DA1D78957200E4B228 /* SearchMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMapViewController.swift; sourceTree = "<group>"; };
 		4045E3E21D78D96B00E4B228 /* GoogleDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDetails.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				405C6A1B1D7500CE00CDBB3E /* Main.storyboard */,
+				4029064F1D79E2DC00FA083E /* DetailPlaceTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				405C6A7A1D7627D300CDBB3E /* SearchesTableViewController.swift in Sources */,
 				40E2CFCB1D762D2700B53A80 /* SwiftyJSON.swift in Sources */,
 				405C6A181D7500CE00CDBB3E /* AppDelegate.swift in Sources */,
+				402906501D79E2DC00FA083E /* DetailPlaceTableViewCell.swift in Sources */,
 				4045E3E71D79CD9800E4B228 /* DetailPlaceTableViewController.swift in Sources */,
 				405C6A7C1D7627F600CDBB3E /* MapViewController.swift in Sources */,
 			);

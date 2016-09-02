@@ -13,18 +13,13 @@ import CoreLocation
 class GoogleDetails {
     
     var text: String?
+    var rating: String?
     
     init(dictionary:[String : AnyObject])
         
     {
-//        text = json["result"]["reviews"]["text"].string
         let json = JSON(dictionary)
         text = json["text"].stringValue
-        
-//                for review in json["reviews"].arrayValue {
-//                    let text = review["text"].stringValue
-//                    self.text = text
-//                }
-        
+        rating = json["rating"].stringValue
     }
 }
