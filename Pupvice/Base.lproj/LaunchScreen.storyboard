@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo white" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-hI-jjt">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.22745098039215686" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="kAe-hI-jjt" secondAttribute="bottom" constant="236" id="LKP-kB-Lgx"/>
+                            <constraint firstItem="kAe-hI-jjt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bLS-CZ-2hj"/>
+                            <constraint firstItem="kAe-hI-jjt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="160" id="kZM-qy-ZkV"/>
+                            <constraint firstItem="kAe-hI-jjt" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="216" id="p67-nN-w6d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kAe-hI-jjt" secondAttribute="trailing" constant="160" id="yEk-jp-muQ"/>
+                            <constraint firstItem="kAe-hI-jjt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yF3-E2-KF7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +38,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo white" width="240" height="240"/>
+    </resources>
 </document>

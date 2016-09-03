@@ -105,7 +105,7 @@ class GoogleDataProvider {
             var placesDetailArray = [GoogleDetails]()
             if let aData = data {
                 let json = JSON(data:aData, options:NSJSONReadingOptions.MutableContainers, error:nil)
-//                print(json)
+                print(json)
                 let jsonDictionary = json["result"].dictionaryValue
                 if let reviews = jsonDictionary["reviews"]?.arrayObject as? [[String : AnyObject]] {
                     for review in reviews {

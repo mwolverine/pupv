@@ -29,6 +29,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
+//        setupView(locationValue)
         tableView.reloadData()
     }
     
