@@ -64,7 +64,16 @@ class DetailPlaceTableViewController: UITableViewController {
         let placeDetail = placesArray[indexPath.row]
         
         cell?.reviewLabel.text = placeDetail.text
-        //cell?.ratingLabel.text = placeDetail.rating
+        cell?.nameLabel.text = placeDetail.authorName
+        
+        let rating = String(placeDetail.rating)
+        let intString = rating.componentsSeparatedByCharactersInSet(
+            NSCharacterSet
+                .decimalDigitCharacterSet()
+                .invertedSet)
+            .joinWithSeparator("")
+        cell?.ratingLabel.text = "Happy: \(intString)"
+        
         return cell ?? UITableViewCell()
     }
     
