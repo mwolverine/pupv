@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TNImageSliderViewController
 
 class DetailPlaceTableViewController: UITableViewController {
     
@@ -14,7 +15,8 @@ class DetailPlaceTableViewController: UITableViewController {
     let dataProvider = GoogleDataProvider()
     
     var placesArray: [GoogleDetails] = []
-    
+    var imageSliderVC:TNImageSliderViewController!
+
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -44,10 +46,42 @@ class DetailPlaceTableViewController: UITableViewController {
         nameLabel.text = "   \(detailPlace.name)"
         ratingLabel.text = "    Rated: \(detailPlace.rating)"
         locationLabel.text = "    Location: \(detailPlace.address)"
-        imageView.image = detailPlace.photo
+//        imageView.image = detailPlace.photo
         
+        imageSlider()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
+        
+    }
+    
+    func imageSlider() {
+        
+        print("[ViewController] View did load")
+        
+        let image1 = UIImage(named: "Logo")
+        let image2 = UIImage(named: "Logo")
+        let image3 = UIImage(named: "Logo")
+        
+        if let image1 = image1, let image2 = image2, let image3 = image3 {
+            
+            // 1. Set the image array with UIImage objects
+            imageSliderVC.images = [image1, image2, image3]
+            
+            // 2. If you want, you can set some options
+            var options = TNImageSliderViewOptions()
+            options.pageControlHidden = false
+            options.scrollDirection = .Horizontal
+            options.pageControlCurrentIndicatorTintColor = UIColor.yellowColor()
+            options.autoSlideIntervalInSeconds = 2
+            options.shouldStartFromBeginning = true
+            options.imageContentMode = .ScaleAspectFit
+            
+            imageSliderVC.options = options
+            
+        }else {
+            
+            print("[ViewController] Could not find one of the images in the image catalog")
+        }
     }
     
     
@@ -76,6 +110,19 @@ class DetailPlaceTableViewController: UITableViewController {
         
         return cell ?? UITableViewCell()
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        print("[ViewController] Prepare for segue")
+        
+        if( segue.identifier == "imageSliderSegue" ){
+            
+            imageSliderVC = segue.destinationViewController as! TNImageSliderViewController
+            
+        }
+        
+    }
+    
     
     
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E41B62C38D01125835747EE /* Pods_Pupvice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E484571594C20625212777F /* Pods_Pupvice.framework */; };
 		402906501D79E2DC00FA083E /* DetailPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029064F1D79E2DC00FA083E /* DetailPlaceTableViewCell.swift */; };
 		4045E3D91D788EF600E4B228 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3D81D788EF600E4B228 /* SearchResultsController.swift */; };
 		4045E3DB1D78957200E4B228 /* SearchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3DA1D78957200E4B228 /* SearchMapViewController.swift */; };
@@ -28,11 +29,11 @@
 		40E2CFD21D76874800B53A80 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFD11D76874800B53A80 /* MarkerInfoView.swift */; };
 		40E2CFD51D7687CD00B53A80 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E2CFD41D7687CD00B53A80 /* MarkerInfoView.xib */; };
 		40E2CFD71D7687F000B53A80 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFD61D7687F000B53A80 /* UIView.swift */; };
-		A57874F3DDE15D4974E8FB86 /* libPods-Pupvice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2083F83DCC089E4D8C3C7500 /* Pods-Pupvice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pupvice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pupvice/Pods-Pupvice.debug.xcconfig"; sourceTree = "<group>"; };
+		3E484571594C20625212777F /* Pods_Pupvice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pupvice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4029064F1D79E2DC00FA083E /* DetailPlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPlaceTableViewCell.swift; sourceTree = "<group>"; };
 		4045E3D81D788EF600E4B228 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		4045E3DA1D78957200E4B228 /* SearchMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMapViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		40E2CFD41D7687CD00B53A80 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
 		40E2CFD61D7687F000B53A80 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		55EAEF43DAAF38ECD9765208 /* Pods-Pupvice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pupvice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pupvice/Pods-Pupvice.release.xcconfig"; sourceTree = "<group>"; };
-		5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pupvice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57874F3DDE15D4974E8FB86 /* libPods-Pupvice.a in Frameworks */,
+				0E41B62C38D01125835747EE /* Pods_Pupvice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,10 +114,10 @@
 			children = (
 				405C6A171D7500CE00CDBB3E /* AppDelegate.swift */,
 				40E2CFCC1D76302900B53A80 /* View */,
+				405C6A7D1D7627FA00CDBB3E /* ViewController */,
 				40E2CFD31D76875D00B53A80 /* Marker */,
 				405C6A521D7603BD00CDBB3E /* Model */,
 				405C6A7E1D76280300CDBB3E /* ModelController */,
-				405C6A7D1D7627FA00CDBB3E /* ViewController */,
 				405C6A1E1D7500CE00CDBB3E /* Assets.xcassets */,
 				405C6A201D7500CE00CDBB3E /* LaunchScreen.storyboard */,
 				405C6A231D7500CF00CDBB3E /* Info.plist */,
@@ -181,7 +181,7 @@
 		6211AEF51728F869435DADDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */,
+				3E484571594C20625212777F /* Pods_Pupvice.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

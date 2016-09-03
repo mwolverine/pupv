@@ -7,65 +7,156 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72F8E87C6A10FC25D4D72BD98687DD7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		CFF4B241B07EA205568903D33A1E7FBC /* Pods-Pupvice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A1E6C793503236B601FD8F5EAAB20B /* Pods-Pupvice-dummy.m */; };
+		171775CEAD33C3A1B69051711CB1E671 /* TNImageSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9728FE5B64CCDF11347162C2AF15A63 /* TNImageSliderCollectionViewCell.xib */; };
+		19F6B2057D400E7C22332EF23E212BBD /* TNImageSliderViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE68ED264A8597CAB85802F69A5B81E /* TNImageSliderViewController-dummy.m */; };
+		54D761DF2C62FE31CBEEBDD1ADC4BF96 /* TNImageSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC123D4169180ED9C3BFC440B0D42B /* TNImageSliderViewController.swift */; };
+		560A1207D6A599D125F8C463C7E7FEA5 /* Pods-Pupvice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 108470AA83DBC161E254EC0E4E5669CE /* Pods-Pupvice-dummy.m */; };
+		7A43AA6CDFD49A4AB3ED093B83F3EA23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		997613D82E7878A67B0C26BBF600010F /* TNImageSliderViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27F99A8447CADA86769014329EEC652B /* TNImageSliderViewController.bundle */; };
+		A5415017DA4F673167C4A991CDE9933D /* TNImageSliderCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = E9728FE5B64CCDF11347162C2AF15A63 /* TNImageSliderCollectionViewCell.xib */; };
+		C7FA5B365B7E181BE24ED052D430EB43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D1841BB554E21FC4CAC2C181B49AC411 /* TNImageSliderViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 836568861B7F7D44A7219FA77A0D8C2A /* TNImageSliderViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E14FCD3EE74B66A1598B42FED5A7210D /* TNImageSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D89328E3A6E65B37EA010A9ECD2BF2 /* TNImageSliderCollectionViewCell.swift */; };
+		EB08B2644EF783CFC14B5A63CC3745CD /* Pods-Pupvice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35849129D5FBCC7AD15E68A2C82C5D2B /* Pods-Pupvice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5F12B8F789B6B0B95F6816F504F38642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE99EB37730C2AD1E15E0C609284F41;
+			remoteInfo = TNImageSliderViewController;
+		};
+		F03BA9EAFE484B29B9C086A7E3969F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35F27F1FFE00C1F6291C03A1B0B080EC;
+			remoteInfo = "TNImageSliderViewController-TNImageSliderViewController";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		07790BD46C0A51AE9AF086D8F62242CC /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
-		2091F396E3C0627FDF739037F51B0F43 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		2256E9F2E70DF4827A9AEAF412EDA15E /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		2DF17B5E7D5F87D48E5DDE49A1F859D1 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		3529BEE2AB3409B9E80114D90418786A /* libPods-Pupvice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pupvice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43A1E6C793503236B601FD8F5EAAB20B /* Pods-Pupvice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pupvice-dummy.m"; sourceTree = "<group>"; };
-		74B70147A64EA87FBB49D8E109B64F98 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		7EB068E1F9F49889889C8C9E91195EDE /* Pods-Pupvice-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pupvice-acknowledgements.plist"; sourceTree = "<group>"; };
-		7F009623B5C9305467F3AC138170EE56 /* Pods-Pupvice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pupvice.debug.xcconfig"; sourceTree = "<group>"; };
-		856C44A535330368E5D1FFA65E5287E1 /* Pods-Pupvice-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pupvice-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0408B4AB1AED1B8F17ED4EE9149372C1 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		108470AA83DBC161E254EC0E4E5669CE /* Pods-Pupvice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pupvice-dummy.m"; sourceTree = "<group>"; };
+		1FE58B418C0B8A6C39C3539BA5EB8FC6 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		27F99A8447CADA86769014329EEC652B /* TNImageSliderViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TNImageSliderViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2892AEBB6ED7C880AC62D1B0D71AEB1E /* Pods-Pupvice-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pupvice-acknowledgements.plist"; sourceTree = "<group>"; };
+		297D8EA3D8E9EA9378FCE02E9B52DA33 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE36362A311B03087DD4BD24EFA1627 /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Versions/A/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
+		2E7E4DD0EF11C1722D507B9AB4C26360 /* TNImageSliderViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TNImageSliderViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35849129D5FBCC7AD15E68A2C82C5D2B /* Pods-Pupvice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pupvice-umbrella.h"; sourceTree = "<group>"; };
+		4C8477F9A1D989FED0A9889E6D0CCA13 /* Pods_Pupvice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pupvice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6189CCD940E6006BC837BC7279B81C03 /* TNImageSliderViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TNImageSliderViewController.xcconfig; sourceTree = "<group>"; };
+		6AC94108F5D0CEA905825E758BFF3FAB /* Pods-Pupvice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pupvice.debug.xcconfig"; sourceTree = "<group>"; };
+		6ACA88CECF275C2AB620D377B2D79146 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		72A05A9DD2BABA7BDA7AA11F80BAACD4 /* TNImageSliderViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TNImageSliderViewController-prefix.pch"; sourceTree = "<group>"; };
+		836568861B7F7D44A7219FA77A0D8C2A /* TNImageSliderViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TNImageSliderViewController-umbrella.h"; sourceTree = "<group>"; };
+		85137A7148D036B4E50325D1A637C57D /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		8CAC123D4169180ED9C3BFC440B0D42B /* TNImageSliderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TNImageSliderViewController.swift; path = Pod/Classes/TNImageSliderViewController.swift; sourceTree = "<group>"; };
+		9216B79DCB0D921A79FA8C274FA66485 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		955D3A22EB34AB333524A949DC729F6B /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
-		9792CD29C785187F8F34A22A711C9EE5 /* Pods-Pupvice-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pupvice-frameworks.sh"; sourceTree = "<group>"; };
-		AE6313494A93CE19C79091B94E6E313E /* Pods-Pupvice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pupvice.release.xcconfig"; sourceTree = "<group>"; };
+		967C33A16FBD366B73FD7A8ACCBB6C81 /* ResourceBundle-TNImageSliderViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TNImageSliderViewController-Info.plist"; sourceTree = "<group>"; };
+		A17D5C568D47051260B783189493C7EC /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		AB81B0BEFC7EBEB2E01F20D6E45378D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA5245D376F86319E2DCB1B2EED017C8 /* TNImageSliderViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TNImageSliderViewController.modulemap; sourceTree = "<group>"; };
+		C0957FB4EEA395022081084A94375B48 /* Pods-Pupvice-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pupvice-resources.sh"; sourceTree = "<group>"; };
+		C2D3185F86CF95B12FEF5416FE01F275 /* Pods-Pupvice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pupvice.release.xcconfig"; sourceTree = "<group>"; };
+		C3D89328E3A6E65B37EA010A9ECD2BF2 /* TNImageSliderCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TNImageSliderCollectionViewCell.swift; path = Pod/Classes/TNImageSliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F3C43F60D13364C7ECD86CC90B18CB08 /* Pods-Pupvice-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pupvice-resources.sh"; sourceTree = "<group>"; };
-		F769EDE7CC5A77CDBE3B2309AF3BD5FA /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Versions/A/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
-		F8567FFA809DD02B36CFB593922A14EA /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		D182CF9EF93847AAD3662FB835C3910E /* Pods-Pupvice.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pupvice.modulemap"; sourceTree = "<group>"; };
+		DB9C410FF1DC583B6E0F5B85C5441366 /* Pods-Pupvice-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pupvice-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E9728FE5B64CCDF11347162C2AF15A63 /* TNImageSliderCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TNImageSliderCollectionViewCell.xib; path = Pod/Classes/TNImageSliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		EBE68ED264A8597CAB85802F69A5B81E /* TNImageSliderViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TNImageSliderViewController-dummy.m"; sourceTree = "<group>"; };
+		EFF0CC612ED85049A47D9760CC64D5B7 /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
+		FEB60FF45EFE73F921EDABEF8AAC1496 /* Pods-Pupvice-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pupvice-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A954057ED9C4364045E337AE11B69D94 /* Frameworks */ = {
+		CF1AC6267AB219C9EB41076F27237B09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F8E87C6A10FC25D4D72BD98687DD7A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D22E62DFB48FEC1F8C0AF0C14461C06B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7FA5B365B7E181BE24ED052D430EB43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF6C8B4834A90A0DA3879A82320B4C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A43AA6CDFD49A4AB3ED093B83F3EA23 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		057612C31241123A1B53E2F8FEE23AB0 /* GooglePlaces */ = {
+		0117A29729C44CF81A95E18ABFB3A784 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				8BA44F82F96D164DA342FB09A0BEE150 /* Frameworks */,
-				9595338FF99D6E406412D70BB160C308 /* Resources */,
+				DBCEEAB9F3AE1B3B811E4B7FAB890EEE /* Frameworks */,
+				365F12D75C4CFB4454A74025F5C5D9F8 /* Resources */,
 			);
-			path = GooglePlaces;
+			name = Maps;
 			sourceTree = "<group>";
 		};
-		1CF19B5C0B133081BDFDD7515B70A5DB /* Pods-Pupvice */ = {
+		0534BFFA57F559E715532C582EE0A088 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				856C44A535330368E5D1FFA65E5287E1 /* Pods-Pupvice-acknowledgements.markdown */,
-				7EB068E1F9F49889889C8C9E91195EDE /* Pods-Pupvice-acknowledgements.plist */,
-				43A1E6C793503236B601FD8F5EAAB20B /* Pods-Pupvice-dummy.m */,
-				9792CD29C785187F8F34A22A711C9EE5 /* Pods-Pupvice-frameworks.sh */,
-				F3C43F60D13364C7ECD86CC90B18CB08 /* Pods-Pupvice-resources.sh */,
-				7F009623B5C9305467F3AC138170EE56 /* Pods-Pupvice.debug.xcconfig */,
-				AE6313494A93CE19C79091B94E6E313E /* Pods-Pupvice.release.xcconfig */,
+				9216B79DCB0D921A79FA8C274FA66485 /* GooglePlaces.framework */,
 			);
-			name = "Pods-Pupvice";
-			path = "Target Support Files/Pods-Pupvice";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		182E71151CFCF8A0DE4F1989056D0D5D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D995B1B4928D966982520AD0D7238BD3 /* Pods-Pupvice */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2A4BD4E53E5F9C858A9458C850A60CA7 /* GooglePlacePicker */ = {
+			isa = PBXGroup;
+			children = (
+				FAEEEFB4899E1CF75E69DACC99D53394 /* Frameworks */,
+				B420FBE0D3724464219622CEA9C09645 /* Resources */,
+			);
+			path = GooglePlacePicker;
+			sourceTree = "<group>";
+		};
+		365F12D75C4CFB4454A74025F5C5D9F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A17D5C568D47051260B783189493C7EC /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3AC4B11A12E513CB0D3F7988E284D4A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FE58B418C0B8A6C39C3539BA5EB8FC6 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3C2AEA8A86ADF306F65BCF24A946858A /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				BD380C8A4D736B8C307F16A3E1E85865 /* Base */,
+				0117A29729C44CF81A95E18ABFB3A784 /* Maps */,
+			);
+			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -76,13 +167,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7A999BD5B4C2C01904FC59776164FBE1 /* Maps */ = {
+		7BD6E19C39770EA63E475E50037B3393 /* GooglePlaces */ = {
 			isa = PBXGroup;
 			children = (
-				E06B488730A4D2D60155C0F5B250113B /* Frameworks */,
-				A70C9D5B5ADE1DDE20CC891BF30AD31D /* Resources */,
+				0534BFFA57F559E715532C582EE0A088 /* Frameworks */,
+				3AC4B11A12E513CB0D3F7988E284D4A0 /* Resources */,
 			);
-			name = Maps;
+			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -90,74 +181,62 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C62832EC902B481843EFC870F9D95CC2 /* Pods */,
-				C81834F017F229CA13FE5EA97A1BA876 /* Products */,
-				AD7ED6055684EEEDFCD76C6E95C94C01 /* Targets Support Files */,
+				E6A2152A5D4C8F35B6279CCF91A65D01 /* Pods */,
+				A955DAA90C9B87779E18F73D3A8DE179 /* Products */,
+				182E71151CFCF8A0DE4F1989056D0D5D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8BA44F82F96D164DA342FB09A0BEE150 /* Frameworks */ = {
+		845E8EC39F78E08EE45E87D88FC24918 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				955D3A22EB34AB333524A949DC729F6B /* GooglePlaces.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8D7452F072AE52572A3EDF54A4B20163 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				74B70147A64EA87FBB49D8E109B64F98 /* GoogleMapsBase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8FFA7EAE118844748AD9685060A6B673 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				8D7452F072AE52572A3EDF54A4B20163 /* Frameworks */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		9335B78F64E389AD6BD28E5033911D2C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F769EDE7CC5A77CDBE3B2309AF3BD5FA /* GooglePlacePicker.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		9595338FF99D6E406412D70BB160C308 /* Resources */ = {
+		97F824F6E9C8727979A2131B2484FA38 /* TNImageSliderViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F8567FFA809DD02B36CFB593922A14EA /* GooglePlaces.bundle */,
+				C3D89328E3A6E65B37EA010A9ECD2BF2 /* TNImageSliderCollectionViewCell.swift */,
+				E9728FE5B64CCDF11347162C2AF15A63 /* TNImageSliderCollectionViewCell.xib */,
+				8CAC123D4169180ED9C3BFC440B0D42B /* TNImageSliderViewController.swift */,
+				845E8EC39F78E08EE45E87D88FC24918 /* Resources */,
+				9D51A98504D3DCAD4808BC3D770CF613 /* Support Files */,
+			);
+			path = TNImageSliderViewController;
+			sourceTree = "<group>";
+		};
+		9D51A98504D3DCAD4808BC3D770CF613 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB81B0BEFC7EBEB2E01F20D6E45378D8 /* Info.plist */,
+				967C33A16FBD366B73FD7A8ACCBB6C81 /* ResourceBundle-TNImageSliderViewController-Info.plist */,
+				BA5245D376F86319E2DCB1B2EED017C8 /* TNImageSliderViewController.modulemap */,
+				6189CCD940E6006BC837BC7279B81C03 /* TNImageSliderViewController.xcconfig */,
+				EBE68ED264A8597CAB85802F69A5B81E /* TNImageSliderViewController-dummy.m */,
+				72A05A9DD2BABA7BDA7AA11F80BAACD4 /* TNImageSliderViewController-prefix.pch */,
+				836568861B7F7D44A7219FA77A0D8C2A /* TNImageSliderViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TNImageSliderViewController";
+			sourceTree = "<group>";
+		};
+		A955DAA90C9B87779E18F73D3A8DE179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C8477F9A1D989FED0A9889E6D0CCA13 /* Pods_Pupvice.framework */,
+				27F99A8447CADA86769014329EEC652B /* TNImageSliderViewController.bundle */,
+				2E7E4DD0EF11C1722D507B9AB4C26360 /* TNImageSliderViewController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B420FBE0D3724464219622CEA9C09645 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DE36362A311B03087DD4BD24EFA1627 /* GooglePlacePicker.bundle */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		9C0A1FBBD02B7528347BC7FB84DE24F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				07790BD46C0A51AE9AF086D8F62242CC /* GooglePlacePicker.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A70C9D5B5ADE1DDE20CC891BF30AD31D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2DF17B5E7D5F87D48E5DDE49A1F859D1 /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		AD7ED6055684EEEDFCD76C6E95C94C01 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1CF19B5C0B133081BDFDD7515B70A5DB /* Pods-Pupvice */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -168,69 +247,143 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C62832EC902B481843EFC870F9D95CC2 /* Pods */ = {
+		BD380C8A4D736B8C307F16A3E1E85865 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				E5C0912CEC7444CFF51EFFE502270519 /* GoogleMaps */,
-				CCA175DF4D87459CA14C4E01BCFDEF95 /* GooglePlacePicker */,
-				057612C31241123A1B53E2F8FEE23AB0 /* GooglePlaces */,
+				D8E146B52B6181E4AF9F1DA87C0C9619 /* Frameworks */,
 			);
-			name = Pods;
+			name = Base;
 			sourceTree = "<group>";
 		};
-		C81834F017F229CA13FE5EA97A1BA876 /* Products */ = {
+		D8E146B52B6181E4AF9F1DA87C0C9619 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3529BEE2AB3409B9E80114D90418786A /* libPods-Pupvice.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CCA175DF4D87459CA14C4E01BCFDEF95 /* GooglePlacePicker */ = {
-			isa = PBXGroup;
-			children = (
-				9C0A1FBBD02B7528347BC7FB84DE24F5 /* Frameworks */,
-				9335B78F64E389AD6BD28E5033911D2C /* Resources */,
-			);
-			path = GooglePlacePicker;
-			sourceTree = "<group>";
-		};
-		E06B488730A4D2D60155C0F5B250113B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2091F396E3C0627FDF739037F51B0F43 /* GoogleMaps.framework */,
-				2256E9F2E70DF4827A9AEAF412EDA15E /* GoogleMapsCore.framework */,
+				0408B4AB1AED1B8F17ED4EE9149372C1 /* GoogleMapsBase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E5C0912CEC7444CFF51EFFE502270519 /* GoogleMaps */ = {
+		D995B1B4928D966982520AD0D7238BD3 /* Pods-Pupvice */ = {
 			isa = PBXGroup;
 			children = (
-				8FFA7EAE118844748AD9685060A6B673 /* Base */,
-				7A999BD5B4C2C01904FC59776164FBE1 /* Maps */,
+				297D8EA3D8E9EA9378FCE02E9B52DA33 /* Info.plist */,
+				D182CF9EF93847AAD3662FB835C3910E /* Pods-Pupvice.modulemap */,
+				DB9C410FF1DC583B6E0F5B85C5441366 /* Pods-Pupvice-acknowledgements.markdown */,
+				2892AEBB6ED7C880AC62D1B0D71AEB1E /* Pods-Pupvice-acknowledgements.plist */,
+				108470AA83DBC161E254EC0E4E5669CE /* Pods-Pupvice-dummy.m */,
+				FEB60FF45EFE73F921EDABEF8AAC1496 /* Pods-Pupvice-frameworks.sh */,
+				C0957FB4EEA395022081084A94375B48 /* Pods-Pupvice-resources.sh */,
+				35849129D5FBCC7AD15E68A2C82C5D2B /* Pods-Pupvice-umbrella.h */,
+				6AC94108F5D0CEA905825E758BFF3FAB /* Pods-Pupvice.debug.xcconfig */,
+				C2D3185F86CF95B12FEF5416FE01F275 /* Pods-Pupvice.release.xcconfig */,
 			);
-			path = GoogleMaps;
+			name = "Pods-Pupvice";
+			path = "Target Support Files/Pods-Pupvice";
+			sourceTree = "<group>";
+		};
+		DBCEEAB9F3AE1B3B811E4B7FAB890EEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85137A7148D036B4E50325D1A637C57D /* GoogleMaps.framework */,
+				6ACA88CECF275C2AB620D377B2D79146 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6A2152A5D4C8F35B6279CCF91A65D01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C2AEA8A86ADF306F65BCF24A946858A /* GoogleMaps */,
+				2A4BD4E53E5F9C858A9458C850A60CA7 /* GooglePlacePicker */,
+				7BD6E19C39770EA63E475E50037B3393 /* GooglePlaces */,
+				97F824F6E9C8727979A2131B2484FA38 /* TNImageSliderViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAEEEFB4899E1CF75E69DACC99D53394 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFF0CC612ED85049A47D9760CC64D5B7 /* GooglePlacePicker.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A4F204B4947A5CCB9827F8BA4725D231 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB08B2644EF783CFC14B5A63CC3745CD /* Pods-Pupvice-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60AA7D527112E8797A5DB091C5F1868 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1841BB554E21FC4CAC2C181B49AC411 /* TNImageSliderViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		ABF095C434C9281640BF0846F6BE5FE3 /* Pods-Pupvice */ = {
+		35F27F1FFE00C1F6291C03A1B0B080EC /* TNImageSliderViewController-TNImageSliderViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6B2ADFD039F3BC1A1E92718F3DD1831 /* Build configuration list for PBXNativeTarget "Pods-Pupvice" */;
+			buildConfigurationList = 4FF38F13E52FB30E1ACC495FF5271245 /* Build configuration list for PBXNativeTarget "TNImageSliderViewController-TNImageSliderViewController" */;
 			buildPhases = (
-				7FE1D24BAF679955592AE9E3D5341429 /* Sources */,
-				A954057ED9C4364045E337AE11B69D94 /* Frameworks */,
+				6BDAA32129195142F14B8FE0051CD52A /* Sources */,
+				CF1AC6267AB219C9EB41076F27237B09 /* Frameworks */,
+				BA9ED7A7DA19A8C283F2D069150B9BEF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = "TNImageSliderViewController-TNImageSliderViewController";
+			productName = "TNImageSliderViewController-TNImageSliderViewController";
+			productReference = 27F99A8447CADA86769014329EEC652B /* TNImageSliderViewController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		ACE99EB37730C2AD1E15E0C609284F41 /* TNImageSliderViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D174E9E77BB39D18CAD83B29DF6F18 /* Build configuration list for PBXNativeTarget "TNImageSliderViewController" */;
+			buildPhases = (
+				F5E16E34A1B58F8EAEDB77423E2F01C2 /* Sources */,
+				ECF6C8B4834A90A0DA3879A82320B4C2 /* Frameworks */,
+				B69066C8A0469E7DC1DC62701FC3BE1C /* Resources */,
+				E60AA7D527112E8797A5DB091C5F1868 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1702C9AC581FBAF6DBFE679B68697401 /* PBXTargetDependency */,
+			);
+			name = TNImageSliderViewController;
+			productName = TNImageSliderViewController;
+			productReference = 2E7E4DD0EF11C1722D507B9AB4C26360 /* TNImageSliderViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F663C23DF486CFE835BDE138A85A641A /* Pods-Pupvice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 021F476811566B0C29B73B3113B1A209 /* Build configuration list for PBXNativeTarget "Pods-Pupvice" */;
+			buildPhases = (
+				C07624F6B505A3BC9035CC2633F43180 /* Sources */,
+				D22E62DFB48FEC1F8C0AF0C14461C06B /* Frameworks */,
+				A4F204B4947A5CCB9827F8BA4725D231 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F186B1F641D7DB0AE6196FDDC2C5EEE /* PBXTargetDependency */,
+			);
 			name = "Pods-Pupvice";
 			productName = "Pods-Pupvice";
-			productReference = 3529BEE2AB3409B9E80114D90418786A /* libPods-Pupvice.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 4C8477F9A1D989FED0A9889E6D0CCA13 /* Pods_Pupvice.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -249,25 +402,79 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C81834F017F229CA13FE5EA97A1BA876 /* Products */;
+			productRefGroup = A955DAA90C9B87779E18F73D3A8DE179 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABF095C434C9281640BF0846F6BE5FE3 /* Pods-Pupvice */,
+				F663C23DF486CFE835BDE138A85A641A /* Pods-Pupvice */,
+				ACE99EB37730C2AD1E15E0C609284F41 /* TNImageSliderViewController */,
+				35F27F1FFE00C1F6291C03A1B0B080EC /* TNImageSliderViewController-TNImageSliderViewController */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B69066C8A0469E7DC1DC62701FC3BE1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171775CEAD33C3A1B69051711CB1E671 /* TNImageSliderCollectionViewCell.xib in Resources */,
+				997613D82E7878A67B0C26BBF600010F /* TNImageSliderViewController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9ED7A7DA19A8C283F2D069150B9BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		7FE1D24BAF679955592AE9E3D5341429 /* Sources */ = {
+		6BDAA32129195142F14B8FE0051CD52A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF4B241B07EA205568903D33A1E7FBC /* Pods-Pupvice-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07624F6B505A3BC9035CC2633F43180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560A1207D6A599D125F8C463C7E7FEA5 /* Pods-Pupvice-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E16E34A1B58F8EAEDB77423E2F01C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14FCD3EE74B66A1598B42FED5A7210D /* TNImageSliderCollectionViewCell.swift in Sources */,
+				A5415017DA4F673167C4A991CDE9933D /* TNImageSliderCollectionViewCell.xib in Sources */,
+				19F6B2057D400E7C22332EF23E212BBD /* TNImageSliderViewController-dummy.m in Sources */,
+				54D761DF2C62FE31CBEEBDD1ADC4BF96 /* TNImageSliderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1702C9AC581FBAF6DBFE679B68697401 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TNImageSliderViewController-TNImageSliderViewController";
+			target = 35F27F1FFE00C1F6291C03A1B0B080EC /* TNImageSliderViewController-TNImageSliderViewController */;
+			targetProxy = F03BA9EAFE484B29B9C086A7E3969F7A /* PBXContainerItemProxy */;
+		};
+		9F186B1F641D7DB0AE6196FDDC2C5EEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TNImageSliderViewController;
+			target = ACE99EB37730C2AD1E15E0C609284F41 /* TNImageSliderViewController */;
+			targetProxy = 5F12B8F789B6B0B95F6816F504F38642 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
@@ -305,6 +512,85 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BD32082B32476F269F6AB209F925566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6189CCD940E6006BC837BC7279B81C03 /* TNImageSliderViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TNImageSliderViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/TNImageSliderViewController/ResourceBundle-TNImageSliderViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TNImageSliderViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5C166EF181C1830881B332E12B2717C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6189CCD940E6006BC837BC7279B81C03 /* TNImageSliderViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TNImageSliderViewController/TNImageSliderViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TNImageSliderViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TNImageSliderViewController/TNImageSliderViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TNImageSliderViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C349D3BC41D00048C7DEDFE9D46D234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D3185F86CF95B12FEF5416FE01F275 /* Pods-Pupvice.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pupvice/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pupvice/Pods-Pupvice.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pupvice;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -350,51 +636,108 @@
 			};
 			name = Debug;
 		};
-		B84DEECC3D8DDF674A8375C811C52024 /* Release */ = {
+		6766B3667CBC83D3B8B59758524CA224 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE6313494A93CE19C79091B94E6E313E /* Pods-Pupvice.release.xcconfig */;
+			baseConfigurationReference = 6189CCD940E6006BC837BC7279B81C03 /* TNImageSliderViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Target Support Files/TNImageSliderViewController/TNImageSliderViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TNImageSliderViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TNImageSliderViewController/TNImageSliderViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TNImageSliderViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		E05E55CAD96A9391D36397D2FFB445D1 /* Debug */ = {
+		7328EF3BA4C827995585380DDADE3382 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F009623B5C9305467F3AC138170EE56 /* Pods-Pupvice.debug.xcconfig */;
+			baseConfigurationReference = 6189CCD940E6006BC837BC7279B81C03 /* TNImageSliderViewController.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TNImageSliderViewController";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/TNImageSliderViewController/ResourceBundle-TNImageSliderViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TNImageSliderViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B3361C20FDD705DFF0A4A84038908DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC94108F5D0CEA905825E758BFF3FAB /* Pods-Pupvice.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pupvice/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pupvice/Pods-Pupvice.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_Pupvice;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		021F476811566B0C29B73B3113B1A209 /* Build configuration list for PBXNativeTarget "Pods-Pupvice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3361C20FDD705DFF0A4A84038908DF5 /* Debug */,
+				5C349D3BC41D00048C7DEDFE9D46D234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D174E9E77BB39D18CAD83B29DF6F18 /* Build configuration list for PBXNativeTarget "TNImageSliderViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6766B3667CBC83D3B8B59758524CA224 /* Debug */,
+				5C166EF181C1830881B332E12B2717C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -404,11 +747,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6B2ADFD039F3BC1A1E92718F3DD1831 /* Build configuration list for PBXNativeTarget "Pods-Pupvice" */ = {
+		4FF38F13E52FB30E1ACC495FF5271245 /* Build configuration list for PBXNativeTarget "TNImageSliderViewController-TNImageSliderViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E05E55CAD96A9391D36397D2FFB445D1 /* Debug */,
-				B84DEECC3D8DDF674A8375C811C52024 /* Release */,
+				7328EF3BA4C827995585380DDADE3382 /* Debug */,
+				5BD32082B32476F269F6AB209F925566 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

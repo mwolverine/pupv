@@ -417,12 +417,15 @@
                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2mv-OR-wXm">
+                                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Sw-JO-e3C">
                                                                     <rect key="frame" x="0.0" y="43" width="600" height="132"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="132" id="ymv-YS-ohf"/>
+                                                                        <constraint firstAttribute="height" constant="132" id="rfS-pg-PL2"/>
                                                                     </constraints>
-                                                                </imageView>
+                                                                    <connections>
+                                                                        <segue destination="Ram-OU-M3k" kind="embed" identifier="imageSliderSegue" id="adc-m3-tw0"/>
+                                                                    </connections>
+                                                                </containerView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gx6-NX-muL">
                                                                     <rect key="frame" x="0.0" y="175" width="600" height="15"/>
                                                                     <constraints>
@@ -434,19 +437,11 @@
                                                                 </label>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="2mv-OR-wXm" firstAttribute="bottom" secondItem="adX-rQ-68M" secondAttribute="bottomMargin" id="4sl-vj-ndH"/>
                                                                 <constraint firstItem="Gx6-NX-muL" firstAttribute="leading" secondItem="adX-rQ-68M" secondAttribute="leading" id="Bot-1d-3BI"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Gx6-NX-muL" secondAttribute="trailing" id="Rff-ID-Q2o"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Gx6-NX-muL" secondAttribute="bottom" id="a7O-wV-lxy"/>
-                                                                <constraint firstAttribute="bottom" secondItem="2mv-OR-wXm" secondAttribute="bottom" id="f6w-0l-G3T"/>
-                                                                <constraint firstItem="Gx6-NX-muL" firstAttribute="top" secondItem="2mv-OR-wXm" secondAttribute="bottom" id="yup-yY-hEa"/>
+                                                                <constraint firstItem="Gx6-NX-muL" firstAttribute="top" secondItem="5Sw-JO-e3C" secondAttribute="bottom" id="f1d-OQ-5N4"/>
                                                             </constraints>
-                                                            <variation key="default">
-                                                                <mask key="constraints">
-                                                                    <exclude reference="4sl-vj-ndH"/>
-                                                                    <exclude reference="f6w-0l-G3T"/>
-                                                                </mask>
-                                                            </variation>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
@@ -567,7 +562,6 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="imageView" destination="2mv-OR-wXm" id="YdM-02-wGQ"/>
                         <outlet property="locationLabel" destination="SmP-rQ-2Cg" id="0gk-u0-Tv2"/>
                         <outlet property="nameLabel" destination="sOm-aV-Ffp" id="z6e-Sr-ReJ"/>
                         <outlet property="ratingLabel" destination="IYW-kA-oic" id="eZ6-W8-TLx"/>
@@ -830,6 +824,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFl-fm-kjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="143" y="1135"/>
+        </scene>
+        <!--Image Slider View Controller-->
+        <scene sceneID="gIX-C0-p1C">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Ram-OU-M3k" customClass="TNImageSliderViewController" customModule="TNImageSliderViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TjV-yV-Ooy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="132"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gen-2K-7ma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1675" y="1251"/>
         </scene>
     </scenes>
     <resources>

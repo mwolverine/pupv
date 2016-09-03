@@ -9,17 +9,20 @@ PODS:
     - GooglePlaces (= 2.0.1)
   - GooglePlaces (2.0.1):
     - GoogleMaps/Base (= 2.0.1)
+  - TNImageSliderViewController (1.0.4)
 
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
+  - TNImageSliderViewController
 
 SPEC CHECKSUMS:
   GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
   GooglePlacePicker: e7b11b732e40dbe76e8ab4c5fc2f4a7c32b96578
   GooglePlaces: 72fab1d1651c6df0322f2aad245ffb15b80d3c56
+  TNImageSliderViewController: 2517ca7b658e2cfd35f12e02c3cacac7056e0010
 
-PODFILE CHECKSUM: 3cf2eacce4d336e341ae6ad03e3ac0c851ee7b9b
+PODFILE CHECKSUM: 5f700d767b235c412c25c8d5334ca0c1a4e06a1c
 
 COCOAPODS: 1.0.1

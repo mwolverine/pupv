@@ -9,10 +9,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TNImageSliderViewController-TNImageSliderViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TNImageSliderViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>ABF095C434C9281640BF0846F6BE5FE3</key>
+		<key>35F27F1FFE00C1F6291C03A1B0B080EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ACE99EB37730C2AD1E15E0C609284F41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F663C23DF486CFE835BDE138A85A641A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
