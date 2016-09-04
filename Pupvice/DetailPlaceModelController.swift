@@ -19,7 +19,7 @@ class DetailPlaceModelController{
     
     static let sharedController = DetailPlaceModelController()
     
-    func fetchDetailPlace(placeID: String, completion: (reviews: [GoogleDetails]) -> Void ) {
+    func fetchDetailPlace(placeID: String, completion: (reviews: [GoogleDetails], photos: [GoogleDetailsPhoto]) -> Void ) {
         dataProvider.fetchReviewFromPlaceID(placeID) { (reviews, photos) in
             for review: GoogleDetails in reviews {
                 self.placesDetailArray.append(review)
@@ -31,7 +31,7 @@ class DetailPlaceModelController{
                     self.photoPlacesDetailArray.append(image!)
                 }
             }
-            completion(reviews: reviews)
+            completion(reviews: reviews, photos: photos)
         }
     }
 }

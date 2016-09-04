@@ -17,6 +17,7 @@ class DetailPlaceTableViewController: UITableViewController {
     let dataProvider = GoogleDataProvider()
     
     var placesArray: [GoogleDetails] = []
+    var photosArray: [GoogleDetailsPhoto] = []
 //    var photoPlacesArray: [GoogleDetailsPhoto] = []
     var imageSliderVC:TNImageSliderViewController!
 
@@ -31,10 +32,17 @@ class DetailPlaceTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         
         if let detailPlace = detailPlace {
-            DetailPlaceModelController.sharedController.fetchDetailPlace(detailPlace.placeID, completion: { (reviews) in
+            DetailPlaceModelController.sharedController.fetchDetailPlace(detailPlace.placeID, completion: { (reviews, photoReferences) in
                 self.placesArray = reviews
-                self.tableView.reloadData()
+                self.photosArray = photoReferences
+                 self.tableView.reloadData()
+
             })
+            
+//            fetchDetailPlace(detailPlace.placeID, completion: { (reviews) in
+//                self.placesArray = reviews
+//                self.tableView.reloadData()
+//            })
         }
         
         print(detailPlace?.placeID)
@@ -51,25 +59,30 @@ class DetailPlaceTableViewController: UITableViewController {
         locationLabel.text = "    Location: \(detailPlace.address)"
 //        imageView.image = detailPlace.photo
         
-        imageSlider()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
         
     }
     
+    
     func imageSlider() {
         
         print("[ViewController] View did load")
-        var image = DetailPlaceModelController.sharedController.photoPlacesDetailArray
-        let image1 = image.first
-        let image2 = image.first
-        let image3 = UIImage(named: "Logo")
+        let imageArray: [UIImage?] = DetailPlaceModelController.sharedController.photoPlacesDetailArray
+
+        //let image0 = imageArray.first
+        let image1 = imageArray[0]
+        let image2 = imageArray[1]
+        let image3 = imageArray[2]
+
         
         if let image1 = image1, let image2 = image2, let image3 = image3
         {
-            
-            // 1. Set the image array with UIImage objects
+//
+//             1. Set the image array with UIImage objects
             imageSliderVC.images = [image1, image2, image3]
+
+
             
             // 2. If you want, you can set some options
             var options = TNImageSliderViewOptions()
@@ -83,7 +96,7 @@ class DetailPlaceTableViewController: UITableViewController {
             imageSliderVC.options = options
             
         } else {
-            
+        
             print("[ViewController] Could not find one of the images in the image catalog")
         }
     }
