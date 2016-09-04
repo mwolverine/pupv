@@ -13,17 +13,27 @@ import CoreLocation
 class DetailPlaceModelController{
     
     let dataProvider = GoogleDataProvider()
-
+    
     var placesDetailArray: [GoogleDetails] = []
-
+    var photoPlacesDetailArray: [UIImage] = []
+    
     static let sharedController = DetailPlaceModelController()
-
+    
     func fetchDetailPlace(placeID: String, completion: (reviews: [GoogleDetails]) -> Void ) {
-        dataProvider.fetchReviewFromPlaceID(placeID) { reviews in
+        dataProvider.fetchReviewFromPlaceID(placeID) { (reviews, photos) in
             for review: GoogleDetails in reviews {
                 self.placesDetailArray.append(review)
+            }
+            guard let photos = photos else { return }
+            let photoReferences = photos.flatMap { $0.photoReference }
+            for reference in photoReferences {
+                self.dataProvider.fetchPhotoFromReference(reference) { (image) in
+                    self.photoPlacesDetailArray.append(image!)
+                }
             }
             completion(reviews: reviews)
         }
     }
 }
+
+

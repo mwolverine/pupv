@@ -12,9 +12,12 @@ import TNImageSliderViewController
 class DetailPlaceTableViewController: UITableViewController {
     
     var detailPlace: GooglePlace?
+//    var photoPlaces: GoogleDetailsPhoto?
+
     let dataProvider = GoogleDataProvider()
     
     var placesArray: [GoogleDetails] = []
+//    var photoPlacesArray: [GoogleDetailsPhoto] = []
     var imageSliderVC:TNImageSliderViewController!
 
     @IBOutlet weak var nameLabel: UILabel!
@@ -57,12 +60,13 @@ class DetailPlaceTableViewController: UITableViewController {
     func imageSlider() {
         
         print("[ViewController] View did load")
-        
-        let image1 = UIImage(named: "Logo")
-        let image2 = UIImage(named: "Logo")
+        var image = DetailPlaceModelController.sharedController.photoPlacesDetailArray
+        let image1 = image.first
+        let image2 = image.first
         let image3 = UIImage(named: "Logo")
         
-        if let image1 = image1, let image2 = image2, let image3 = image3 {
+        if let image1 = image1, let image2 = image2, let image3 = image3
+        {
             
             // 1. Set the image array with UIImage objects
             imageSliderVC.images = [image1, image2, image3]
@@ -78,7 +82,7 @@ class DetailPlaceTableViewController: UITableViewController {
             
             imageSliderVC.options = options
             
-        }else {
+        } else {
             
             print("[ViewController] Could not find one of the images in the image catalog")
         }

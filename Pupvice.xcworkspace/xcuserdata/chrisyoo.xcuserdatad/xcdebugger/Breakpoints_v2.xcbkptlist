@@ -115,13 +115,109 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pupvice/DetailPlaceTableViewController.swift"
-            timestampString = "494634649.309439"
+            filePath = "Pupvice/DetailPlaceModelController.swift"
+            timestampString = "494642682.049465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchDetailPlace(_:completion:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pupvice.DetailPlaceModelController.(fetchDetailPlace (Swift.String, completion : (reviews : Swift.Array&lt;Pupvice.GoogleDetails&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Pupvice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceModelController.swift"
+                  timestampString = "494642738.763517"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "1850">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pupvice.DetailPlaceModelController.(fetchDetailPlace (Swift.String, completion : (reviews : Swift.Array&lt;Pupvice.GoogleDetails&gt;) -&gt; ()) -&gt; ()).(closure #1).(closure #2)"
+                  moduleName = "Pupvice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceModelController.swift"
+                  timestampString = "494642738.764155"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pupvice/DetailPlaceTableViewController.swift"
+            timestampString = "494642483.089664"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "imageSlider()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pupvice.DetailPlaceTableViewController.imageSlider () -&gt; ()"
+                  moduleName = "Pupvice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceTableViewController.swift"
+                  timestampString = "494642483.092736"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "390">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pupvice.DetailPlaceTableViewController.imageSlider () -&gt; ()"
+                  moduleName = "Pupvice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chrisyoo/Desktop/PupVice/Pupvice/Pupvice/Pupvice/DetailPlaceTableViewController.swift"
+                  timestampString = "494642483.092955"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "445">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pupvice/DetailPlaceTableViewController.swift"
+            timestampString = "494642701.901898"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "imageSlider()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -132,11 +228,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pupvice/DetailPlaceTableViewController.swift"
-            timestampString = "494634650.65358"
+            timestampString = "494642704.017228"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "imageSlider()"
             landmarkType = "5">
          </BreakpointContent>

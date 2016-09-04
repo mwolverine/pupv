@@ -1,4 +1,12 @@
 //
+//  GoogleDetailsPhoto.swift
+//  Pupvice
+//
+//  Created by Chris Yoo on 9/3/16.
+//  Copyright © 2016 Chris Yoo. All rights reserved.
+//
+
+//
 //  GoogleDetails.swift
 //  Pupvice
 //
@@ -10,11 +18,8 @@ import UIKit
 import Foundation
 import CoreLocation
 
-class GoogleDetails {
+class GoogleDetailsPhoto {
     
-    var text: String?
-    var rating: Int?
-    var authorName: String?
     var photoReference: String?
     var photo: UIImage?
     
@@ -22,11 +27,6 @@ class GoogleDetails {
         
     {
         let json = JSON(dictionary)
-        text = json["text"].stringValue
-        rating = json["rating"].intValue
-        authorName = json["author_name"].stringValue
-        
-        photoReference = json["photos"][0]["photo_reference"].string
-
+        photoReference = json["photo_reference"].string
     }
 }

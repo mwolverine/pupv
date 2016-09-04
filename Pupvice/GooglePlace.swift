@@ -40,11 +40,12 @@ class GooglePlace {
         let lat = json["geometry"]["location"]["lat"].doubleValue as CLLocationDegrees
         let lng = json["geometry"]["location"]["lng"].doubleValue as CLLocationDegrees
         coordinate = CLLocationCoordinate2DMake(lat, lng)
-        
 
         photoReference = json["photos"][0]["photo_reference"].string
         
         let foundKeyword = "dog park"
+        placeKeyword = foundKeyword
+        
         //    let possibleKeywords = acceptedKeywords.count > 0 ? acceptedKeywords : ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant"]
         //    for keyword in json["keyword"].arrayObject as! [String] {
         //      if possibleKeywords.contains(keyword) {
@@ -52,6 +53,5 @@ class GooglePlace {
         //        break
         //      }
         //    }
-        placeKeyword = foundKeyword
     }
 }
