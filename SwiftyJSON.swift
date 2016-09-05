@@ -371,7 +371,7 @@ public struct JSONGenerator : GeneratorType {
         switch self.type {
         case .Array:
             if let o = self.arrayGenerate!.next() {
-                return (String(self.arrayIndex++), JSON(o))
+                return (String(self.arrayIndex += arrayIndex), JSON(o))
             } else {
                 return nil
             }
