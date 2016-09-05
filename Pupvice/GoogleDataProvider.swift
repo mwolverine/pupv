@@ -22,7 +22,7 @@ class GoogleDataProvider {
     func fetchPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, keywords:[String], completion: (([GooglePlace]) -> Void)) -> ()
     {
         let googleMapsApiKey = "AIzaSyAzpVdtLbbRYJb-Ia79HxZB1qzZS17wj5I"
-
+        
         var urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true&type=park"
         let keywordsString = keywords.count > 0 ? keywords.joinWithSeparator("|") : "dog park"
         urlString += "&keyword=\(keywordsString)&key=\(googleMapsApiKey)"
@@ -63,7 +63,7 @@ class GoogleDataProvider {
             completion(photo)
         } else {
             let googleMapsApiKey = "AIzaSyAzpVdtLbbRYJb-Ia79HxZB1qzZS17wj5I"
-
+            
             let urlString = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photoreference=\(reference)&key=\(googleMapsApiKey)"
             UIApplication.sharedApplication().networkActivityIndicatorVisible = true
             session.downloadTaskWithURL(NSURL(string: urlString)!) {url, response, error in
@@ -84,7 +84,7 @@ class GoogleDataProvider {
         }
     }
     
-    func fetchReviewFromPlaceID(placeID: String, completion: (([GoogleDetails]) -> Void)) -> ()
+    func fetchReviewFromPlaceID(placeID: String, completion: (([GoogleDetails], [GoogleDetailsPhoto]) -> Void)) -> ()
     {
         let googleMapsApiKey = "AIzaSyAzpVdtLbbRYJb-Ia79HxZB1qzZS17wj5I"
         let urlString = "https://maps.googleapis.com/maps/api/place/details/json?placeid=\(placeID)&key=\(googleMapsApiKey)"
@@ -97,25 +97,32 @@ class GoogleDataProvider {
         
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         placesTask = session.dataTaskWithURL(url) {data, response, error in
-//            print(data)
-//            print(response)
+            //            print(data)
+            //            print(response)
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             var placesDetailArray = [GoogleDetails]()
+            var photosPlacesDetailArray = [GoogleDetailsPhoto]()
+
             if let aData = data {
                 let json = JSON(data:aData, options:NSJSONReadingOptions.MutableContainers, error:nil)
-//                print(json)
+                //                print(json)
                 let jsonDictionary = json["result"].dictionaryValue
                 if let reviews = jsonDictionary["reviews"]?.arrayObject as? [[String : AnyObject]] {
                     for review in reviews {
                         let placeDetails = GoogleDetails(dictionary: review)
                         placesDetailArray.append(placeDetails)
-                        //how do i move placesDetailArray information to the detailplacecontroller???
+                    }
+                }
+                if let photos = jsonDictionary["photos"]?.arrayObject as? [[String : AnyObject]] {
+                    for photo in photos{
+                        let photoPlaceDetails = GoogleDetailsPhoto(dictionary: photo)
+                        photosPlacesDetailArray.append(photoPlaceDetails)
                     }
                 }
                 
             }
             dispatch_async(dispatch_get_main_queue()) {
-                completion(placesDetailArray)
+                completion(placesDetailArray, photosPlacesDetailArray)
             }
         }
         placesTask?.resume()

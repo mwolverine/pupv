@@ -16,9 +16,9 @@ class DetailPlaceModelController{
 
     static let sharedController = DetailPlaceModelController()
 
-    func fetchDetailPlace(placeID: String, completion: (reviews: [GoogleDetails]) -> Void ) {
-        dataProvider.fetchReviewFromPlaceID(placeID) { reviews in
-            completion(reviews: reviews)
+    func fetchDetailPlace(placeID: String, completion: (reviews: [GoogleDetails], photos: [GoogleDetailsPhoto]) -> Void ) {
+        dataProvider.fetchReviewFromPlaceID(placeID) { (reviews, photos) in
+            completion(reviews: reviews, photos: photos)
         }
     }
 }

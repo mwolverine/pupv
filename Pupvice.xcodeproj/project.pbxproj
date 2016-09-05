@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		402906501D79E2DC00FA083E /* DetailPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029064F1D79E2DC00FA083E /* DetailPlaceTableViewCell.swift */; };
+		402906A61D7DEF0900FA083E /* GoogleDetailsPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402906A51D7DEF0900FA083E /* GoogleDetailsPhoto.swift */; };
 		4045E3D91D788EF600E4B228 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3D81D788EF600E4B228 /* SearchResultsController.swift */; };
 		4045E3DB1D78957200E4B228 /* SearchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3DA1D78957200E4B228 /* SearchMapViewController.swift */; };
 		4045E3E31D78D96B00E4B228 /* GoogleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3E21D78D96B00E4B228 /* GoogleDetails.swift */; };
@@ -28,12 +29,13 @@
 		40E2CFD21D76874800B53A80 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFD11D76874800B53A80 /* MarkerInfoView.swift */; };
 		40E2CFD51D7687CD00B53A80 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E2CFD41D7687CD00B53A80 /* MarkerInfoView.xib */; };
 		40E2CFD71D7687F000B53A80 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CFD61D7687F000B53A80 /* UIView.swift */; };
-		A57874F3DDE15D4974E8FB86 /* libPods-Pupvice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */; };
+		5573D57A33DC6C49B01797DD /* Pods_Pupvice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DF5BECA4444B27259C3440 /* Pods_Pupvice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2083F83DCC089E4D8C3C7500 /* Pods-Pupvice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pupvice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pupvice/Pods-Pupvice.debug.xcconfig"; sourceTree = "<group>"; };
 		4029064F1D79E2DC00FA083E /* DetailPlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPlaceTableViewCell.swift; sourceTree = "<group>"; };
+		402906A51D7DEF0900FA083E /* GoogleDetailsPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDetailsPhoto.swift; sourceTree = "<group>"; };
 		4045E3D81D788EF600E4B228 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		4045E3DA1D78957200E4B228 /* SearchMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMapViewController.swift; sourceTree = "<group>"; };
 		4045E3E21D78D96B00E4B228 /* GoogleDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDetails.swift; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		40E2CFD41D7687CD00B53A80 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
 		40E2CFD61D7687F000B53A80 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		55EAEF43DAAF38ECD9765208 /* Pods-Pupvice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pupvice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pupvice/Pods-Pupvice.release.xcconfig"; sourceTree = "<group>"; };
-		5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pupvice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DF5BECA4444B27259C3440 /* Pods_Pupvice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pupvice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57874F3DDE15D4974E8FB86 /* libPods-Pupvice.a in Frameworks */,
+				5573D57A33DC6C49B01797DD /* Pods_Pupvice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +134,7 @@
 				405C6A531D76052F00CDBB3E /* GooglePlace.swift */,
 				4045E3E21D78D96B00E4B228 /* GoogleDetails.swift */,
 				40AC493D1D768E420007F65E /* PlaceMarker.swift */,
+				402906A51D7DEF0900FA083E /* GoogleDetailsPhoto.swift */,
 				40E2CFCA1D762D2700B53A80 /* SwiftyJSON.swift */,
 			);
 			name = Model;
@@ -181,7 +184,7 @@
 		6211AEF51728F869435DADDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5FC6DFFF64FD99819099F299 /* libPods-Pupvice.a */,
+				B8DF5BECA4444B27259C3440 /* Pods_Pupvice.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				405C6A181D7500CE00CDBB3E /* AppDelegate.swift in Sources */,
 				402906501D79E2DC00FA083E /* DetailPlaceTableViewCell.swift in Sources */,
 				4045E3E71D79CD9800E4B228 /* DetailPlaceTableViewController.swift in Sources */,
+				402906A61D7DEF0900FA083E /* GoogleDetailsPhoto.swift in Sources */,
 				405C6A7C1D7627F600CDBB3E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
