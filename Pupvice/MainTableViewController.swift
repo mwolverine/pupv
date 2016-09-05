@@ -35,11 +35,14 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         self.locationValue = locValue
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
+//        print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
 
     func setupView(locationValue: CLLocationCoordinate2D){
         ListModelController.sharedController.fetchNearbyPlaces(locationValue) { (places) in
+            for place in places {
+                print(place.name)
+            }
             self.placesArray = places
             self.tableView.reloadData()
         }
@@ -49,7 +52,6 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     @IBAction func refreshPlaces(sender: AnyObject) {
         setupView(locationValue)
-        tableView.reloadData()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -70,7 +72,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         if segue.identifier == "placeDetailSegue" {
             if let detailViewController = segue.destinationViewController as? DetailPlaceTableViewController, indexPath = tableView.indexPathForSelectedRow
             {
-                let detailPlace = ListModelController.sharedController.placesArray[indexPath.row]
+                let detailPlace = placesArray[indexPath.row]
                 detailViewController.detailPlace = detailPlace
                 
             }
