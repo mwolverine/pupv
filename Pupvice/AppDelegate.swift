@@ -19,6 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         GMSServices.provideAPIKey(googleMapsApiKey)
+        
+        UINavigationBar.appearance().tintColor = UIColor(red: 255.0/255.0, green: 255.0/225.0, blue: 255.0/225.0, alpha: 1.0)
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0.0/255.0, green: 40.0/225.0, blue: 102/225.0, alpha: 1.0)
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "Chalkboard SE", size: 20)!]
+    
         return true
     }
 

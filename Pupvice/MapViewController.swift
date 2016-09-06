@@ -25,6 +25,10 @@ class PupMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let logo = UIImage(named: "LogoWithName")
+        let imageView = UIImageView(image: logo)
+        self.navigationItem.titleView = imageView
+        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         

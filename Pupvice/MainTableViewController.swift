@@ -19,6 +19,10 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let logo = UIImage(named: "LogoWithName")
+        let imageView = UIImageView(image: logo)
+        self.navigationItem.titleView = imageView
 
         self.locationManager.requestAlwaysAuthorization()
         

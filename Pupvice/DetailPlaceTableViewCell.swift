@@ -10,7 +10,7 @@ import UIKit
 
 class DetailPlaceTableViewCell: UITableViewCell {
 
-   
+
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var reviewLabel: UILabel!

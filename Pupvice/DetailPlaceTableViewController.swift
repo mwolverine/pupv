@@ -43,6 +43,11 @@ class DetailPlaceTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let logo = UIImage(named: "LogoWithName")
+        let imageView = UIImageView(image: logo)
+        self.navigationItem.titleView = imageView
+        
         guard let detailPlace = detailPlace else { return }
         
         nameLabel.text = "   \(detailPlace.name)"
@@ -66,10 +71,7 @@ class DetailPlaceTableViewController: UITableViewController {
     }
     
     func imageSlider() {
-        print("[ViewController] View did load")
-    
             imageSliderVC.images = imagesArray
-            
             var options = TNImageSliderViewOptions()
             options.pageControlHidden = false
             options.scrollDirection = .Horizontal
@@ -77,9 +79,7 @@ class DetailPlaceTableViewController: UITableViewController {
             options.autoSlideIntervalInSeconds = 4
             options.shouldStartFromBeginning = true
             options.imageContentMode = .ScaleAspectFit
-            
             imageSliderVC.options = options
-
     }
     
     // MARK: - Table view data source
