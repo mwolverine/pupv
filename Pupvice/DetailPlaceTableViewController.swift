@@ -26,7 +26,6 @@ class DetailPlaceTableViewController: UITableViewController {
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var hoursLabel: UILabel!
     @IBOutlet weak var costLabel: UILabel!
-    //    @IBOutlet weak var imageView: UIImageView!
     
     override func viewWillAppear(animated: Bool) {
         
@@ -69,27 +68,18 @@ class DetailPlaceTableViewController: UITableViewController {
     func imageSlider() {
         print("[ViewController] View did load")
     
-//        if let image1 = image1, let image2 = image2, let image3 = image3 {
-        
-            // 1. Set the image array with UIImage objects
             imageSliderVC.images = imagesArray
             
             var options = TNImageSliderViewOptions()
             options.pageControlHidden = false
             options.scrollDirection = .Horizontal
             options.pageControlCurrentIndicatorTintColor = UIColor.yellowColor()
-            options.autoSlideIntervalInSeconds = 2
+            options.autoSlideIntervalInSeconds = 4
             options.shouldStartFromBeginning = true
             options.imageContentMode = .ScaleAspectFit
             
             imageSliderVC.options = options
-            
-//        }else {
-//            
-//            print("[ViewController] Could not find one of the images in the image catalog")
-        
-//        }
-        
+
     }
     
     // MARK: - Table view data source
@@ -125,8 +115,5 @@ class DetailPlaceTableViewController: UITableViewController {
             imageSliderVC = segue.destinationViewController as! TNImageSliderViewController
             
         }
-        
     }
-    
-    
 }
