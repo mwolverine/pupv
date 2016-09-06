@@ -114,16 +114,13 @@ class GoogleDataProvider {
 
             if let aData = data {
                 let json = JSON(data:aData, options:NSJSONReadingOptions.MutableContainers, error:nil)
-                //                print(json)
                 let jsonDictionary = json["result"].dictionaryValue
-                
                 if let reviews = jsonDictionary["reviews"]?.arrayObject as? [[String : AnyObject]] {
                     for review in reviews {
                         let placeDetails = GoogleDetails(dictionary: review)
                         placesDetailArray.append(placeDetails)
                     }
                 }
-                
                 if let photos = jsonDictionary["photos"]?.arrayObject as? [[String : AnyObject]] {
                     for photo in photos{
                         let photoPlaceDetails = GoogleDetailsPhoto(dictionary: photo)

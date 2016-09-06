@@ -13,6 +13,9 @@ import CoreLocation
 class DetailPlaceModelController{
     
     let dataProvider = GoogleDataProvider()
+    var GlobalMainQueue: dispatch_queue_t {
+        return dispatch_get_main_queue()
+    }
     
     var images: [UIImage] = []
     
@@ -25,14 +28,17 @@ class DetailPlaceModelController{
     }
     
     func fetchDetailPhoto(imageReferences: [GoogleDetailsPhoto], completion: (images: [UIImage])->Void) {
+        images = []
         for reference in imageReferences {
             guard let reference = reference.photoReference else { return }
-            dataProvider.fetchPhotoFromReference(reference) { (image) in
-                guard let image = image else { return }
-                self.images.append(image)
-                completion(images: self.images)
-            }
-
+            dispatch_async(dispatch_get_main_queue(), {
+                self.dataProvider.fetchPhotoFromReference(reference) { (image) in
+                    guard let image = image else { return }
+                    self.images.append(image)
+                    completion(images: self.images)
+                }
+            })
         }
     }
 }
+

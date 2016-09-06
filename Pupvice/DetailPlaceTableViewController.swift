@@ -59,32 +59,20 @@ class DetailPlaceTableViewController: UITableViewController {
     
     func setImages() {
         let imageReferences = GoogleDataProvider.photosPlacesDetailArray
-        let downloadGroup = dispatch_group_create()
         
-        dispatch_group_enter(downloadGroup)
         DetailPlaceModelController.sharedController.fetchDetailPhoto(imageReferences, completion: { (images) in
             self.imagesArray = DetailPlaceModelController.sharedController.images
-            print(self.imagesArray.count)
+            self.imageSlider()
         })
-        dispatch_group_leave(downloadGroup)
-        imageSlider()
-
-        print(imagesArray.count)
     }
     
     func imageSlider() {
         print("[ViewController] View did load")
-        print(imagesArray.count)
+    
+//        if let image1 = image1, let image2 = image2, let image3 = image3 {
         
-        
-        let image1 = imagesArray.first
-        let image2 = imagesArray.first
-        let image3 = imagesArray.first
-        
-        if let image1 = image1, let image2 = image2, let image3 = image3 {
-            
             // 1. Set the image array with UIImage objects
-            imageSliderVC.images = [image1, image2, image3]
+            imageSliderVC.images = imagesArray
             
             var options = TNImageSliderViewOptions()
             options.pageControlHidden = false
@@ -96,11 +84,11 @@ class DetailPlaceTableViewController: UITableViewController {
             
             imageSliderVC.options = options
             
-        }else {
-            
-            print("[ViewController] Could not find one of the images in the image catalog")
-            
-        }
+//        }else {
+//            
+//            print("[ViewController] Could not find one of the images in the image catalog")
+        
+//        }
         
     }
     

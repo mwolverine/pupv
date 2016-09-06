@@ -40,8 +40,6 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
 
     func setupView(locationValue: CLLocationCoordinate2D){
         ListModelController.sharedController.fetchNearbyPlaces(locationValue) { (places) in
-            for place in places {
-            }
             self.placesArray = places
             self.tableView.reloadData()
         }
