@@ -16,7 +16,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     let locationManager = CLLocationManager()
     var locationValue: CLLocationCoordinate2D!
     var placesArray: [GooglePlace] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,7 +41,6 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     func setupView(locationValue: CLLocationCoordinate2D){
         ListModelController.sharedController.fetchNearbyPlaces(locationValue) { (places) in
             for place in places {
-                print(place.name)
             }
             self.placesArray = places
             self.tableView.reloadData()

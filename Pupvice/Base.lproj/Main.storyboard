@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IdZ-a2-opy">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -363,9 +362,6 @@
                                                     <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
                                                     <state key="normal" title="Stores"/>
-                                                    <connections>
-                                                        <action selector="refreshPlaces:" destination="QnI-ip-FaK" eventType="touchUpInside" id="zoF-W9-t3r"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -417,12 +413,15 @@
                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2mv-OR-wXm">
+                                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AwT-Hs-4sU">
                                                                     <rect key="frame" x="0.0" y="43" width="600" height="132"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="132" id="ymv-YS-ohf"/>
+                                                                        <constraint firstAttribute="height" constant="132" id="IMp-CQ-Wyw"/>
                                                                     </constraints>
-                                                                </imageView>
+                                                                    <connections>
+                                                                        <segue destination="dQT-u1-3MT" kind="embed" identifier="imageSliderSegue" id="Jej-i5-1ib"/>
+                                                                    </connections>
+                                                                </containerView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gx6-NX-muL">
                                                                     <rect key="frame" x="0.0" y="175" width="600" height="15"/>
                                                                     <constraints>
@@ -434,19 +433,10 @@
                                                                 </label>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="2mv-OR-wXm" firstAttribute="bottom" secondItem="adX-rQ-68M" secondAttribute="bottomMargin" id="4sl-vj-ndH"/>
                                                                 <constraint firstItem="Gx6-NX-muL" firstAttribute="leading" secondItem="adX-rQ-68M" secondAttribute="leading" id="Bot-1d-3BI"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Gx6-NX-muL" secondAttribute="trailing" id="Rff-ID-Q2o"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Gx6-NX-muL" secondAttribute="bottom" id="a7O-wV-lxy"/>
-                                                                <constraint firstAttribute="bottom" secondItem="2mv-OR-wXm" secondAttribute="bottom" id="f6w-0l-G3T"/>
-                                                                <constraint firstItem="Gx6-NX-muL" firstAttribute="top" secondItem="2mv-OR-wXm" secondAttribute="bottom" id="yup-yY-hEa"/>
                                                             </constraints>
-                                                            <variation key="default">
-                                                                <mask key="constraints">
-                                                                    <exclude reference="4sl-vj-ndH"/>
-                                                                    <exclude reference="f6w-0l-G3T"/>
-                                                                </mask>
-                                                            </variation>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
@@ -567,7 +557,6 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="imageView" destination="2mv-OR-wXm" id="YdM-02-wGQ"/>
                         <outlet property="locationLabel" destination="SmP-rQ-2Cg" id="0gk-u0-Tv2"/>
                         <outlet property="nameLabel" destination="sOm-aV-Ffp" id="z6e-Sr-ReJ"/>
                         <outlet property="ratingLabel" destination="IYW-kA-oic" id="eZ6-W8-TLx"/>
@@ -831,12 +820,30 @@
             </objects>
             <point key="canvasLocation" x="143" y="1135"/>
         </scene>
+        <!--Image Slider View Controller-->
+        <scene sceneID="1yI-Mo-bPn">
+            <objects>
+                <viewController id="dQT-u1-3MT" customClass="TNImageSliderViewController" customModule="TNImageSliderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t8b-Ep-dre"/>
+                        <viewControllerLayoutGuide type="bottom" id="3kB-Mo-fEB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8ZH-Ee-VeG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="132"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ex-mi-4Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765" y="1146"/>
+        </scene>
     </scenes>
     <resources>
         <image name="location" width="30" height="55"/>
         <image name="logo white" width="240" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="g5Z-9P-p6e"/>
+        <segue reference="2cM-OC-8so"/>
     </inferredMetricsTieBreakers>
 </document>

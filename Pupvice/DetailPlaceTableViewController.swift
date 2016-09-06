@@ -11,13 +11,14 @@ import TNImageSliderViewController
 
 class DetailPlaceTableViewController: UITableViewController {
     
-    var imageSliderVC:TNImageSliderViewController!
+    var imageSliderVC: TNImageSliderViewController!
     
     var detailPlace: GooglePlace?
     let dataProvider = GoogleDataProvider()
     
     var placesArray: [GoogleDetails] = []
     var photosArray: [GoogleDetailsPhoto] = []
+    var imagesArray: [UIImage] = []
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
@@ -25,7 +26,7 @@ class DetailPlaceTableViewController: UITableViewController {
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var hoursLabel: UILabel!
     @IBOutlet weak var costLabel: UILabel!
-//    @IBOutlet weak var imageView: UIImageView!
+    //    @IBOutlet weak var imageView: UIImageView!
     
     override func viewWillAppear(animated: Bool) {
         
@@ -34,8 +35,10 @@ class DetailPlaceTableViewController: UITableViewController {
             DetailPlaceModelController.sharedController.fetchDetailPlace(placeID, completion: { (reviews, photos) in
                 self.placesArray = reviews
                 self.photosArray = photos
+                
                 self.tableView.reloadData()
             })
+            
         }
     }
     
@@ -46,25 +49,43 @@ class DetailPlaceTableViewController: UITableViewController {
         nameLabel.text = "   \(detailPlace.name)"
         ratingLabel.text = "    Rated: \(detailPlace.rating)"
         locationLabel.text = "    Location: \(detailPlace.address)"
-        imageView.image = detailPlace.photo
-        
+        // imageView.image = detailPlace.photo
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
+        let notification = NSNotificationCenter.defaultCenter()
+        
+        notification.addObserver(self, selector: #selector(setImages), name: notificationName, object: nil)
+    }
+    
+    func setImages() {
+        let imageReferences = GoogleDataProvider.photosPlacesDetailArray
+        let downloadGroup = dispatch_group_create()
+        
+        dispatch_group_enter(downloadGroup)
+        DetailPlaceModelController.sharedController.fetchDetailPhoto(imageReferences, completion: { (images) in
+            self.imagesArray = DetailPlaceModelController.sharedController.images
+            print(self.imagesArray.count)
+        })
+        dispatch_group_leave(downloadGroup)
+        imageSlider()
+
+        print(imagesArray.count)
     }
     
     func imageSlider() {
         print("[ViewController] View did load")
+        print(imagesArray.count)
         
-        let image1 = UIImage(named: "image-1")
-        let image2 = UIImage(named: "image-2")
-        let image3 = UIImage(named: "image-3")
+        
+        let image1 = imagesArray.first
+        let image2 = imagesArray.first
+        let image3 = imagesArray.first
         
         if let image1 = image1, let image2 = image2, let image3 = image3 {
             
             // 1. Set the image array with UIImage objects
             imageSliderVC.images = [image1, image2, image3]
             
-            // 2. If you want, you can set some options
             var options = TNImageSliderViewOptions()
             options.pageControlHidden = false
             options.scrollDirection = .Horizontal
@@ -80,7 +101,7 @@ class DetailPlaceTableViewController: UITableViewController {
             print("[ViewController] Could not find one of the images in the image catalog")
             
         }
-
+        
     }
     
     // MARK: - Table view data source
@@ -111,11 +132,13 @@ class DetailPlaceTableViewController: UITableViewController {
         
         print("[ViewController] Prepare for segue")
         
-        if( segue.identifier == "seg_imageSlider" ){
+        if( segue.identifier == "imageSliderSegue" ){
             
             imageSliderVC = segue.destinationViewController as! TNImageSliderViewController
             
         }
         
     }
+    
+    
 }

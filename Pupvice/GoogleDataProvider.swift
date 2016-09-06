@@ -10,6 +10,8 @@ import UIKit
 import Foundation
 import CoreLocation
 
+public var notificationName = "PhotosPlacesArrayNotification"
+
 class GoogleDataProvider {
     
     var photoCache = [String:UIImage]()
@@ -17,6 +19,13 @@ class GoogleDataProvider {
     var placesTask: NSURLSessionDataTask?
     var session: NSURLSession {
         return NSURLSession.sharedSession()
+    }
+    
+    static var photosPlacesDetailArray: [GoogleDetailsPhoto] = [] {
+        didSet {
+            let notification = NSNotificationCenter.defaultCenter()
+            notification.postNotificationName(notificationName, object: nil)
+        }
     }
     
     func fetchPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, keywords:[String], completion: (([GooglePlace]) -> Void)) -> ()
@@ -107,19 +116,21 @@ class GoogleDataProvider {
                 let json = JSON(data:aData, options:NSJSONReadingOptions.MutableContainers, error:nil)
                 //                print(json)
                 let jsonDictionary = json["result"].dictionaryValue
+                
                 if let reviews = jsonDictionary["reviews"]?.arrayObject as? [[String : AnyObject]] {
                     for review in reviews {
                         let placeDetails = GoogleDetails(dictionary: review)
                         placesDetailArray.append(placeDetails)
                     }
                 }
+                
                 if let photos = jsonDictionary["photos"]?.arrayObject as? [[String : AnyObject]] {
                     for photo in photos{
                         let photoPlaceDetails = GoogleDetailsPhoto(dictionary: photo)
                         photosPlacesDetailArray.append(photoPlaceDetails)
                     }
                 }
-                
+                GoogleDataProvider.photosPlacesDetailArray = photosPlacesDetailArray
             }
             dispatch_async(dispatch_get_main_queue()) {
                 completion(placesDetailArray, photosPlacesDetailArray)

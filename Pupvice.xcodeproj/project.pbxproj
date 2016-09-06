@@ -144,9 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				4045E3E01D78C08900E4B228 /* Not use */,
-				405C6A2B1D7534B600CDBB3E /* MainTableViewController.swift */,
 				405C6A791D7627D300CDBB3E /* SearchesTableViewController.swift */,
 				405C6A7B1D7627F600CDBB3E /* MapViewController.swift */,
+				405C6A2B1D7534B600CDBB3E /* MainTableViewController.swift */,
 				4045E3E61D79CD9800E4B228 /* DetailPlaceTableViewController.swift */,
 			);
 			name = ViewController;
