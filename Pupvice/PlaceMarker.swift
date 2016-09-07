@@ -11,6 +11,7 @@ import GoogleMaps
 
 class PlaceMarker: GMSMarker {
     let place: GooglePlace
+    var placeID: String?
     
     init(place: GooglePlace) {
         self.place = place
@@ -20,6 +21,7 @@ class PlaceMarker: GMSMarker {
         icon = UIImage(named: place.placeKeyword+"_pin")
         groundAnchor = CGPoint(x: 0.5, y: 1)
         appearAnimation = kGMSMarkerAnimationPop
+        placeID = place.placeID
     }
 }
 

@@ -11,8 +11,6 @@ import GoogleMaps
 
 class PupMapViewController: UIViewController {
     
-    
-    
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var mapCenterPinImage: UIImageView!
     @IBOutlet weak var addressLabel: UILabel!
@@ -131,7 +129,6 @@ extension PupMapViewController: GMSMapViewDelegate {
         
         if let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView {
             infoView.nameLabel.text = placeMarker.place.name
-            
             if let photo = placeMarker.place.photo {
                 infoView.placePhoto.image = photo
             } else {
@@ -142,6 +139,7 @@ extension PupMapViewController: GMSMapViewDelegate {
         } else {
             return nil
         }
+        
     }
     
     func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
@@ -154,4 +152,5 @@ extension PupMapViewController: GMSMapViewDelegate {
         mapView.selectedMarker = nil
         return false
     }
+    
 }

@@ -254,7 +254,7 @@
                   moduleName = "Pupvice"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chrisyoo/Desktop/DevMountain/pupv/Pupvice/DetailPlaceModelController.swift"
-                  timestampString = "494957210.145469"
+                  timestampString = "494959814.81376"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
@@ -269,7 +269,7 @@
                   moduleName = "Pupvice"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chrisyoo/Desktop/DevMountain/pupv/Pupvice/DetailPlaceModelController.swift"
-                  timestampString = "494957210.145663"
+                  timestampString = "494959814.813968"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -302,7 +302,7 @@
                   moduleName = "Pupvice"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chrisyoo/Desktop/DevMountain/pupv/Pupvice/DetailPlaceModelController.swift"
-                  timestampString = "494957210.146899"
+                  timestampString = "494959814.815199"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "40"
@@ -317,7 +317,7 @@
                   moduleName = "Pupvice"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chrisyoo/Desktop/DevMountain/pupv/Pupvice/DetailPlaceModelController.swift"
-                  timestampString = "494957210.147098"
+                  timestampString = "494959814.815498"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "40"
@@ -325,6 +325,70 @@
                   offsetFromSymbolStart = "200">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pupvice/MarkerInfoView.swift"
+            timestampString = "494959452.494651"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "detailButtonTouched(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pupvice/MarkerInfoView.swift"
+            timestampString = "494957927.740449"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "detailButtonTouched(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pupvice/SearchMapViewController.swift"
+            timestampString = "494959812.046036"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "searchBar(_:textDidChange:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pupvice/AppDelegate.swift"
+            timestampString = "494959815.887822"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
