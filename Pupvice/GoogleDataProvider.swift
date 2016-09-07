@@ -72,7 +72,6 @@ class GoogleDataProvider {
             completion(photo)
         } else {
             let googleMapsApiKey = "AIzaSyAzpVdtLbbRYJb-Ia79HxZB1qzZS17wj5I"
-            
             let urlString = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photoreference=\(reference)&key=\(googleMapsApiKey)"
             UIApplication.sharedApplication().networkActivityIndicatorVisible = true
             session.downloadTaskWithURL(NSURL(string: urlString)!) {url, response, error in

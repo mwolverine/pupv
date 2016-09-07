@@ -37,7 +37,6 @@ class DetailPlaceTableViewController: UITableViewController {
                 
                 self.tableView.reloadData()
             })
-            
         }
     }
     
@@ -63,23 +62,31 @@ class DetailPlaceTableViewController: UITableViewController {
     
     func setImages() {
         let imageReferences = GoogleDataProvider.photosPlacesDetailArray
-        
-        DetailPlaceModelController.sharedController.fetchDetailPhoto(imageReferences, completion: { (images) in
-            self.imagesArray = DetailPlaceModelController.sharedController.images
-            self.imageSlider()
-        })
+        //bit slow //show but takes time
+        if imageReferences.count == 0 {
+            let image1 = UIImage(named: "noImage")
+            if let image1 = image1 {
+                self.imageSliderVC.images = [image1] }
+        } else {
+            DetailPlaceModelController.sharedController.fetchDetailPhoto(imageReferences, completion: { (images) in
+                self.imagesArray = DetailPlaceModelController.sharedController.images
+                self.imageSlider()
+                self.imageSliderVC.images = self.imagesArray
+            })
+        }
     }
-    
+
     func imageSlider() {
-            imageSliderVC.images = imagesArray
-            var options = TNImageSliderViewOptions()
-            options.pageControlHidden = false
-            options.scrollDirection = .Horizontal
-            options.pageControlCurrentIndicatorTintColor = UIColor.yellowColor()
-            options.autoSlideIntervalInSeconds = 4
-            options.shouldStartFromBeginning = true
-            options.imageContentMode = .ScaleAspectFit
-            imageSliderVC.options = options
+        
+        var options = TNImageSliderViewOptions()
+        options.pageControlHidden = false
+        options.scrollDirection = .Horizontal
+        options.pageControlCurrentIndicatorTintColor = UIColor.yellowColor()
+        options.autoSlideIntervalInSeconds = 3
+        options.shouldStartFromBeginning = true
+        options.imageContentMode = .ScaleAspectFit
+        imageSliderVC.options = options
+        
     }
     
     // MARK: - Table view data source

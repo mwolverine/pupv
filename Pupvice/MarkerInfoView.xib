@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -23,17 +22,10 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="38" id="DeP-wt-0hq"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rA1-tz-Abp">
-                    <rect key="frame" x="52" y="112" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="detailButtonTouched:" destination="U0O-1c-KyX" eventType="touchUpInside" id="3gB-Uc-Q4h"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -43,10 +35,8 @@
                 <constraint firstItem="ygY-c3-ptW" firstAttribute="top" secondItem="U0O-1c-KyX" secondAttribute="top" id="BAj-Tt-and"/>
                 <constraint firstItem="CYy-Is-Olv" firstAttribute="leading" secondItem="U0O-1c-KyX" secondAttribute="leading" constant="25" id="F2w-Pt-Wat"/>
                 <constraint firstAttribute="trailing" secondItem="ygY-c3-ptW" secondAttribute="trailing" constant="8" id="ZLw-i3-1L3"/>
-                <constraint firstItem="rA1-tz-Abp" firstAttribute="bottom" secondItem="U0O-1c-KyX" secondAttribute="bottomMargin" id="b1H-Y1-9gw"/>
                 <constraint firstAttribute="trailing" secondItem="CYy-Is-Olv" secondAttribute="trailing" constant="25" id="cyl-rc-5Lu"/>
                 <constraint firstAttribute="centerX" secondItem="CYy-Is-Olv" secondAttribute="centerX" id="eu4-m9-5pZ"/>
-                <constraint firstItem="rA1-tz-Abp" firstAttribute="centerX" secondItem="CYy-Is-Olv" secondAttribute="centerX" id="lMG-iJ-LEE"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">

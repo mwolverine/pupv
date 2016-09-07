@@ -26,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "Chalkboard SE", size: 20)!]
     
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Chalkboard SE", size: 17)!], forState: .Normal) // your textattributes here
+
+        
         return true
     }
 

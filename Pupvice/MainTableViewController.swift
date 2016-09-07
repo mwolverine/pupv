@@ -63,7 +63,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         let cell = tableView.dequeueReusableCellWithIdentifier("listCell", forIndexPath: indexPath)
         let place = placesArray[indexPath.row]
         cell.textLabel?.text = place.name
-        cell.detailTextLabel?.text = place.placeKeyword
+        cell.detailTextLabel?.text = place.rating
         return cell
     }
     
