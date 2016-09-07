@@ -11,6 +11,8 @@ import GoogleMaps
 
 class PupMapViewController: UIViewController {
     
+    
+    
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var mapCenterPinImage: UIImageView!
     @IBOutlet weak var addressLabel: UILabel!
@@ -133,7 +135,7 @@ extension PupMapViewController: GMSMapViewDelegate {
             if let photo = placeMarker.place.photo {
                 infoView.placePhoto.image = photo
             } else {
-                infoView.placePhoto.image = UIImage(named: "generic")
+                infoView.placePhoto.image = UIImage(named: "Logo")
             }
             
             return infoView

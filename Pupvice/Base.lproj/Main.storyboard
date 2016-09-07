@@ -13,9 +13,6 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -298,7 +295,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="IIw-mZ-bDc"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -316,7 +313,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="18" id="TnT-au-jEk"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -325,7 +322,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="18" id="9hZ-A5-Dyp"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -758,7 +755,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ex-mi-4Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1765" y="1146"/>
+            <point key="canvasLocation" x="1690" y="1142"/>
         </scene>
     </scenes>
     <resources>
@@ -766,6 +763,6 @@
         <image name="logo white" width="240" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2cM-OC-8so"/>
+        <segue reference="g5Z-9P-p6e"/>
     </inferredMetricsTieBreakers>
 </document>
