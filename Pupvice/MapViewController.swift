@@ -15,11 +15,12 @@ class PupMapViewController: UIViewController {
     @IBOutlet weak var mapCenterPinImage: UIImageView!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var pinImageVerticalConstraint: NSLayoutConstraint!
+    
     var searchedKeywords: [String] = []
     var searchedType: [String] = []
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
-    let searchRadius: Double = 4000
+    let searchRadius: Double = 6000
 
     
     @IBAction func dogParkButtonTapped(sender: AnyObject) {

@@ -16,7 +16,36 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     let locationManager = CLLocationManager()
     var locationValue: CLLocationCoordinate2D!
     var placesArray: [GooglePlace] = []
+    var searchedKeywords: [String] = []
+    var searchedType: [String] = []
 
+    @IBAction func dogParkButtonTapped(sender: AnyObject) {
+        searchedType = ["park"]
+        searchedKeywords = ["dog+park"]
+        setupView(locationValue)
+    }
+    
+    @IBAction func restaurantsButtonTapped(sender: AnyObject) {
+        searchedType = ["restaurant"]
+        //bakery|bar|cafe|
+        searchedKeywords = ["dog+friendly"]
+        setupView(locationValue)
+    }
+    
+    @IBAction func lodgingButtonTapped(sender: AnyObject) {
+        searchedType = ["lodging"]
+        //bakery|bar|cafe|
+        searchedKeywords = ["dog+friendly"]
+        setupView(locationValue)
+    }
+    
+    @IBAction func storesButtonTapped(sender: AnyObject) {
+        searchedType = ["pet_store"]
+        searchedKeywords = ["dog"]
+        setupView(locationValue)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,7 +72,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     }
 
     func setupView(locationValue: CLLocationCoordinate2D){
-        ListModelController.sharedController.fetchNearbyPlaces(locationValue) { (places) in
+        ListModelController.sharedController.fetchNearbyPlaces(locationValue, types: searchedType, keywords: searchedKeywords) { (places) in
             self.placesArray = places
             self.tableView.reloadData()
         }

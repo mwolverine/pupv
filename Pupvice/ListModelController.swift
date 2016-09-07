@@ -14,15 +14,12 @@ class ListModelController {
     
     static let sharedController = ListModelController()
     
-    var searchedKeywords = ["dog park"]
-    var searchedType = ["park"]
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
-    let searchRadius: Double = 4000
+    let searchRadius: Double = 6000
     
-    
-    func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D, completion: (places: [GooglePlace])->Void) {
-        dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedType, keywords: searchedKeywords) { places in
+    func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D, types: [String], keywords: [String], completion: (places: [GooglePlace])->Void) {
+        dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: types, keywords: keywords) { places in
             completion(places: places)
         }
     }

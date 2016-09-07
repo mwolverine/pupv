@@ -16,38 +16,57 @@
                         <color key="separatorColor" red="0.0" green="0.22845008389999999" blue="0.40147860740000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.0" green="0.22845008389999999" blue="0.40147860740000002" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="usF-WT-TmJ">
-                            <rect key="frame" x="0.0" y="64" width="600" height="30"/>
+                            <rect key="frame" x="0.0" y="64" width="600" height="35"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iEC-ZT-mBa">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="35"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpq-YP-fBK">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
                                             <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                             <state key="normal" title="Parks"/>
+                                            <connections>
+                                                <action selector="dogParkButtonTapped:" destination="rel-ij-b6f" eventType="touchUpInside" id="lyk-Ye-lpg"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3i-82-nJV">
-                                            <rect key="frame" x="200" y="0.0" width="200" height="30"/>
+                                            <rect key="frame" x="150" y="0.0" width="150" height="35"/>
                                             <color key="backgroundColor" red="0.14117647058823529" green="0.18431372549019609" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                            <state key="normal">
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                            <state key="normal" title="Restaurants">
                                                 <color key="titleColor" red="0.99008231456874873" green="1" blue="0.98118874264257572" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQn-Xj-eNn">
-                                            <rect key="frame" x="400" y="0.0" width="200" height="30"/>
-                                            <color key="backgroundColor" red="0.14117647058823529" green="0.18431372549019609" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                            <state key="normal" title="Refresh"/>
                                             <connections>
-                                                <action selector="refreshPlaces:" destination="rel-ij-b6f" eventType="touchUpInside" id="Dfe-wk-ZVU"/>
+                                                <action selector="restaurantsButtonTapped:" destination="rel-ij-b6f" eventType="touchUpInside" id="QLc-6Q-YaG"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuV-3B-x1b">
+                                            <rect key="frame" x="300" y="0.0" width="150" height="35"/>
+                                            <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                            <state key="normal" title="Lodging">
+                                                <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="lodgingButtonTapped:" destination="rel-ij-b6f" eventType="touchUpInside" id="No2-mV-16g"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdN-Ph-Sau">
+                                            <rect key="frame" x="450" y="0.0" width="150" height="35"/>
+                                            <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                            <state key="normal" title="Stores">
+                                                <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="storesButtonTapped:" destination="rel-ij-b6f" eventType="touchUpInside" id="sW6-U4-gXW"/>
                                             </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="30" id="oQw-6b-8j9"/>
+                                        <constraint firstAttribute="height" constant="35" id="oQw-6b-8j9"/>
                                     </constraints>
                                 </stackView>
                             </subviews>
@@ -60,7 +79,7 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listCell" textLabel="8am-Ff-57a" detailTextLabel="rMw-HW-bXa" style="IBUITableViewCellStyleValue1" id="hPK-RT-U1V">
-                                <rect key="frame" x="0.0" y="122" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="127" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hPK-RT-U1V" id="sq9-pP-FWG">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -92,9 +111,14 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vof-Cr-FXe">
-                        <barButtonItem key="rightBarButtonItem" title="Map" id="7Df-Cn-oRv">
+                        <barButtonItem key="leftBarButtonItem" title="Map" id="HDI-xq-FAg">
                             <connections>
-                                <segue destination="pMF-7u-eZ4" kind="show" id="2cM-OC-8so"/>
+                                <segue destination="pMF-7u-eZ4" kind="show" id="pnw-Hp-2qo"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="7Df-Cn-oRv">
+                            <connections>
+                                <action selector="refreshPlaces:" destination="rel-ij-b6f" id="h2v-fZ-RRA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -149,8 +173,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uao-B8-qv7">
                                         <rect key="frame" x="150" y="0.0" width="150" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                        <state key="normal" title="Restaurant">
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                        <state key="normal" title="Restaurants">
                                             <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -160,7 +184,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ji-mT-ZSy">
                                         <rect key="frame" x="300" y="0.0" width="150" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Lodging">
                                             <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -171,7 +195,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-Yc-nX2">
                                         <rect key="frame" x="450" y="0.0" width="150" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Stores"/>
                                         <connections>
                                             <action selector="storesButtonTapped:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="7K2-ld-jSV"/>
@@ -269,38 +293,10 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cSd-aD-UYn">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="306"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="296"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KXc-ng-Bde">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oic-vH-wJZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
-                                                    <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                                    <state key="normal" title="Parks"/>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLn-hK-NzN">
-                                                    <rect key="frame" x="200" y="0.0" width="200" height="30"/>
-                                                    <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                                    <state key="normal" title="Restaurants">
-                                                        <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MS-Qz-UNJ">
-                                                    <rect key="frame" x="400" y="0.0" width="200" height="30"/>
-                                                    <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                                    <state key="normal" title="Stores"/>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="fGm-JJ-CcH"/>
-                                            </constraints>
-                                        </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="adX-rQ-68M">
-                                            <rect key="frame" x="0.0" y="30" width="600" height="276"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="296"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rae-R5-olT">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="5"/>
@@ -348,16 +344,16 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AwT-Hs-4sU">
-                                                    <rect key="frame" x="0.0" y="86" width="600" height="180"/>
+                                                    <rect key="frame" x="0.0" y="86" width="600" height="200"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="180" id="IMp-CQ-Wyw"/>
+                                                        <constraint firstAttribute="height" constant="200" id="IMp-CQ-Wyw"/>
                                                     </constraints>
                                                     <connections>
                                                         <segue destination="dQT-u1-3MT" kind="embed" identifier="imageSliderSegue" id="Jej-i5-1ib"/>
                                                     </connections>
                                                 </containerView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gx6-NX-muL">
-                                                    <rect key="frame" x="0.0" y="266" width="600" height="10"/>
+                                                    <rect key="frame" x="0.0" y="286" width="600" height="10"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="3FN-Ki-TOs"/>
                                                         <constraint firstAttribute="height" constant="10" id="h7Q-DW-6Ik"/>
@@ -502,7 +498,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3kB-Mo-fEB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8ZH-Ee-VeG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -516,6 +512,6 @@
         <image name="location" width="30" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="g5Z-9P-p6e"/>
+        <segue reference="pnw-Hp-2qo"/>
     </inferredMetricsTieBreakers>
 </document>
