@@ -28,13 +28,16 @@ class GoogleDataProvider {
         }
     }
     
-    func fetchPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, keywords:[String], completion: (([GooglePlace]) -> Void)) -> ()
+    func fetchPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, types:[String], keywords:[String], completion: (([GooglePlace]) -> Void)) -> ()
     {
         let googleMapsApiKey = "AIzaSyAzpVdtLbbRYJb-Ia79HxZB1qzZS17wj5I"
         
-        var urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true&type=park"
+        var urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true"
+        
+        let typesString = types.count > 0 ? types.joinWithSeparator("|") : "park"
         let keywordsString = keywords.count > 0 ? keywords.joinWithSeparator("|") : "dog park"
-        urlString += "&keyword=\(keywordsString)&key=\(googleMapsApiKey)"
+        
+        urlString += "&type=\(typesString)&keyword=\(keywordsString)&key=\(googleMapsApiKey)"
         urlString = urlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
         
         if let task = placesTask where task.taskIdentifier > 0 && task.state == .Running {

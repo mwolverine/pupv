@@ -138,24 +138,44 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBP-ga-ElR">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="37"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Parks"/>
+                                        <connections>
+                                            <action selector="dogParkButtonTapped:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="DGX-51-waA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uao-B8-qv7">
-                                        <rect key="frame" x="200" y="0.0" width="200" height="37"/>
+                                        <rect key="frame" x="150" y="0.0" width="150" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                        <state key="normal" title="Restaurants">
+                                        <state key="normal" title="Restaurant">
                                             <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="restaurantsButtonTapped:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="ef8-BW-tnZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ji-mT-ZSy">
+                                        <rect key="frame" x="300" y="0.0" width="150" height="37"/>
+                                        <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Lodging">
+                                            <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lodgingButtonTapped:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="9Ms-Ju-GoQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-Yc-nX2">
-                                        <rect key="frame" x="400" y="0.0" width="200" height="37"/>
+                                        <rect key="frame" x="450" y="0.0" width="150" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Stores"/>
+                                        <connections>
+                                            <action selector="storesButtonTapped:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="7K2-ld-jSV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

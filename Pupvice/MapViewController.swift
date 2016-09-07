@@ -15,12 +15,41 @@ class PupMapViewController: UIViewController {
     @IBOutlet weak var mapCenterPinImage: UIImageView!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var pinImageVerticalConstraint: NSLayoutConstraint!
-    var searchedKeywords = ["dog park"]
-    var searchedType = ["park"]
+    var searchedKeywords: [String] = []
+    var searchedType: [String] = []
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
     let searchRadius: Double = 4000
 
+    
+    @IBAction func dogParkButtonTapped(sender: AnyObject) {
+        searchedType = ["park"]
+        searchedKeywords = ["dog+park"]
+        fetchNearbyPlaces(mapView.camera.target)
+    }
+    
+    @IBAction func restaurantsButtonTapped(sender: AnyObject) {
+        searchedType = ["restaurant"]
+        //bakery|bar|cafe|
+        searchedKeywords = ["dog+friendly"]
+        fetchNearbyPlaces(mapView.camera.target)
+    }
+    
+    @IBAction func lodgingButtonTapped(sender: AnyObject) {
+        searchedType = ["lodging"]
+        //bakery|bar|cafe|
+        searchedKeywords = ["dog+friendly"]
+        fetchNearbyPlaces(mapView.camera.target)
+    }
+    
+    @IBAction func storesButtonTapped(sender: AnyObject) {
+        searchedType = ["pet_store"]
+        searchedKeywords = ["dog"]
+        fetchNearbyPlaces(mapView.camera.target)
+
+    }
+    
+    //veterinary_care lodging
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +95,7 @@ class PupMapViewController: UIViewController {
 
     func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
         mapView.clear()
-        dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, keywords: searchedKeywords) { places in
+        dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedType, keywords: searchedKeywords) { places in
             for place: GooglePlace in places {
                 let marker = PlaceMarker(place: place)
                 marker.map = self.mapView

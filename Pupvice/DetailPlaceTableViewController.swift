@@ -52,7 +52,7 @@ class DetailPlaceTableViewController: UITableViewController {
         nameLabel.text = "   \(detailPlace.name)"
         ratingLabel.text = "    Rated: \(detailPlace.rating)"
         locationLabel.text = "    Location: \(detailPlace.address)"
-        // imageView.image = detailPlace.photo
+
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
         let notification = NSNotificationCenter.defaultCenter()
@@ -64,9 +64,11 @@ class DetailPlaceTableViewController: UITableViewController {
         let imageReferences = GoogleDataProvider.photosPlacesDetailArray
         //bit slow //show but takes time
         if imageReferences.count == 0 {
-            let image1 = UIImage(named: "noImage")
-            if let image1 = image1 {
-                self.imageSliderVC.images = [image1] }
+            if let image1 = UIImage(named: "noImage") {
+                dispatch_async(dispatch_get_main_queue(), { 
+                    self.imageSliderVC.images = [image1]
+                })
+            }
         } else {
             DetailPlaceModelController.sharedController.fetchDetailPhoto(imageReferences, completion: { (images) in
                 self.imagesArray = DetailPlaceModelController.sharedController.images
