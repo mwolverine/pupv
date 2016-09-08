@@ -35,7 +35,7 @@
                                             <rect key="frame" x="150" y="0.0" width="150" height="35"/>
                                             <color key="backgroundColor" red="0.14117647058823529" green="0.18431372549019609" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
-                                            <state key="normal" title="Restaurants">
+                                            <state key="normal" title="Food">
                                                 <color key="titleColor" red="0.99008231456874873" green="1" blue="0.98118874264257572" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <connections>
@@ -174,7 +174,7 @@
                                         <rect key="frame" x="150" y="0.0" width="150" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
-                                        <state key="normal" title="Restaurants">
+                                        <state key="normal" title="Food">
                                             <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
