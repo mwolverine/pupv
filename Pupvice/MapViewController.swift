@@ -22,14 +22,31 @@ class PupMapViewController: UIViewController {
     let dataProvider = GoogleDataProvider()
     let searchRadius: Double = 6000
 
+    @IBOutlet weak var parkOutlet: UIButton!
+    @IBOutlet weak var foodOutlet: UIButton!
+    @IBOutlet weak var lodgingOutlet: UIButton!
+    @IBOutlet weak var storeOutlet: UIButton!
+    @IBOutlet weak var vetOutlet: UIButton!
     
     @IBAction func dogParkButtonTapped(sender: AnyObject) {
+        parkOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
+        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        
         searchedType = ["park"]
         searchedKeywords = ["dog+park"]
         fetchNearbyPlaces(mapView.camera.target)
     }
     
     @IBAction func restaurantsButtonTapped(sender: AnyObject) {
+        parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        foodOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
+        lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+
         searchedType = ["restaurant"]
         //bakery|bar|cafe|
         searchedKeywords = ["dog+friendly"]
@@ -37,6 +54,12 @@ class PupMapViewController: UIViewController {
     }
     
     @IBAction func lodgingButtonTapped(sender: AnyObject) {
+        parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        lodgingOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
+        storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+
         searchedType = ["lodging"]
         //bakery|bar|cafe|
         searchedKeywords = ["dog+friendly"]
@@ -44,17 +67,35 @@ class PupMapViewController: UIViewController {
     }
     
     @IBAction func storesButtonTapped(sender: AnyObject) {
+        parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        storeOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
+        vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        
         searchedType = ["pet_store"]
         searchedKeywords = ["dog"]
         fetchNearbyPlaces(mapView.camera.target)
 
     }
     
+    @IBAction func vetButtonTapped(sender: AnyObject) {
+        parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        vetOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
+        
+        searchedType = ["veterinary_care"]
+        searchedKeywords = ["dog"]
+        fetchNearbyPlaces(mapView.camera.target)
+    }
+    
     //veterinary_care lodging
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         let logo = UIImage(named: "LogoWithName")
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView

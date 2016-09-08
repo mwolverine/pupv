@@ -52,7 +52,7 @@ class DetailPlaceTableViewController: UITableViewController {
         nameLabel.text = "   \(detailPlace.name)"
         ratingLabel.text = "    Rated: \(detailPlace.rating)"
         locationLabel.text = "    Location: \(detailPlace.address)"
-
+        
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
         let notification = NSNotificationCenter.defaultCenter()
@@ -65,7 +65,7 @@ class DetailPlaceTableViewController: UITableViewController {
         //bit slow //show but takes time
         if imageReferences.count == 0 {
             if let image1 = UIImage(named: "noImage") {
-                dispatch_async(dispatch_get_main_queue(), { 
+                dispatch_async(dispatch_get_main_queue(), {
                     self.imageSliderVC.images = [image1]
                 })
             }
@@ -77,18 +77,34 @@ class DetailPlaceTableViewController: UITableViewController {
             })
         }
     }
-
+    
     func imageSlider() {
         
         var options = TNImageSliderViewOptions()
         options.pageControlHidden = false
         options.scrollDirection = .Horizontal
         options.pageControlCurrentIndicatorTintColor = UIColor.yellowColor()
-        options.autoSlideIntervalInSeconds = 3
+        options.autoSlideIntervalInSeconds = 4
         options.shouldStartFromBeginning = true
         options.imageContentMode = .ScaleAspectFit
         imageSliderVC.options = options
         
+    }
+    
+    @IBAction func directionsButtonTapped(sender: AnyObject) {
+        directionsToLocation()
+    }
+    
+    func directionsToLocation() {
+        
+        guard let latitude = detailPlace?.coordinate.latitude else { return }
+        guard let longtitude = detailPlace?.coordinate.longitude else { return}
+        let url: String =  "comgooglemaps://?saddr=&daddr=\(latitude),\(longtitude)&directionsmode=driving"
+        if (UIApplication.sharedApplication().canOpenURL(NSURL(string:"comgooglemaps://")!)) {
+            UIApplication.sharedApplication().openURL(NSURL(string: url)!)
+        } else {
+            NSLog("Can't use comgooglemaps://");
+        }
     }
     
     // MARK: - Table view data source

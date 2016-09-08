@@ -222,13 +222,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pupvice/DetailPlaceTableViewController.swift"
-            timestampString = "494979674.046423"
+            timestampString = "495065772.608555"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
             endingLineNumber = "69"
             landmarkName = "setImages()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pupvice/MapViewController.swift"
+            timestampString = "495063554.097663"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "PupMapViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pupvice.PupMapViewController.vetOutlet.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "Pupvice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chrisyoo/Desktop/DevMountain/pupv/Pupvice/MapViewController.swift"
+                  timestampString = "495067371.378308"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pupvice.PupMapViewController.vetOutlet.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "Pupvice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chrisyoo/Desktop/DevMountain/pupv/Pupvice/MapViewController.swift"
+                  timestampString = "495067371.378437"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pupvice.PupMapViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Pupvice.PupMapViewController"
+                  moduleName = "Pupvice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chrisyoo/Desktop/DevMountain/pupv/Pupvice/MapViewController.swift"
+                  timestampString = "495067371.378634"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "700">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pupvice.PupMapViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Pupvice.PupMapViewController&gt;"
+                  moduleName = "Pupvice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chrisyoo/Desktop/DevMountain/pupv/Pupvice/MapViewController.swift"
+                  timestampString = "495067371.378775"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "640">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
