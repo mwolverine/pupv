@@ -16,6 +16,7 @@ class PupMapViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var pinImageVerticalConstraint: NSLayoutConstraint!
     
+    var googlePlace: GooglePlace?
     var searchedKeywords: [String] = []
     var searchedType: [String] = []
     let locationManager = CLLocationManager()
@@ -206,12 +207,19 @@ extension PupMapViewController: GMSMapViewDelegate {
                 infoView.placePhoto.image = UIImage(named: "Logo")
             }
             
+            let googlePlaceInfo = placeMarker.place
+            googlePlace = googlePlaceInfo
             return infoView
         } else {
             return nil
         }
         
     }
+    
+    
+    
+    
+ 
     
     func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
         mapCenterPinImage.fadeOut(0.25)
