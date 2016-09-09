@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 
-class PupMapViewController: UIViewController {
+class PupMapViewController: UIViewController, detailButtonTouchedDelegate {
     
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var mapCenterPinImage: UIImageView!
@@ -21,8 +21,8 @@ class PupMapViewController: UIViewController {
     var searchedType: [String] = []
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
-    let searchRadius: Double = 6000
-
+    let searchRadius: Double = 3000
+    
     @IBOutlet weak var parkOutlet: UIButton!
     @IBOutlet weak var foodOutlet: UIButton!
     @IBOutlet weak var lodgingOutlet: UIButton!
@@ -47,7 +47,7 @@ class PupMapViewController: UIViewController {
         lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
-
+        
         searchedType = ["restaurant"]
         //bakery|bar|cafe|
         searchedKeywords = ["dog+friendly"]
@@ -60,7 +60,7 @@ class PupMapViewController: UIViewController {
         lodgingOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
         storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
-
+        
         searchedType = ["lodging"]
         //bakery|bar|cafe|
         searchedKeywords = ["dog+friendly"]
@@ -77,7 +77,7 @@ class PupMapViewController: UIViewController {
         searchedType = ["pet_store"]
         searchedKeywords = ["dog"]
         fetchNearbyPlaces(mapView.camera.target)
-
+        
     }
     
     @IBAction func vetButtonTapped(sender: AnyObject) {
@@ -96,7 +96,7 @@ class PupMapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
         let logo = UIImage(named: "LogoWithName")
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
@@ -107,14 +107,14 @@ class PupMapViewController: UIViewController {
         mapView.delegate = self
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "Searches Segue" {
-            let navigationController = segue.destinationViewController as! UINavigationController
-            let controller = navigationController.topViewController as! SearchesTableViewController
-            controller.selectedSearches = searchedKeywords
-            controller.delegate = self
-        }
-    }
+    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    //        if segue.identifier == "Searches Segue" {
+    //            let navigationController = segue.destinationViewController as! UINavigationController
+    //            let controller = navigationController.topViewController as! SearchesTableViewController
+    //            controller.selectedSearches = searchedKeywords
+    //            controller.delegate = self
+    //        }
+    //    }
     
     func reverseGeocodeCoordinate(coordinate: CLLocationCoordinate2D) {
         let geocoder = GMSGeocoder()
@@ -135,7 +135,7 @@ class PupMapViewController: UIViewController {
             }
         }
     }
-
+    
     func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
         mapView.clear()
         dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedType, keywords: searchedKeywords) { places in
@@ -145,11 +145,47 @@ class PupMapViewController: UIViewController {
             }
         }
     }
-
+    
     @IBAction func refreshPlaces(sender: AnyObject) {
         fetchNearbyPlaces(mapView.camera.target)
     }
     
+    
+    //delegate not working
+    func detailButtonTouched(sender: MarkerInfoView) {
+        self.performSegueWithIdentifier("MapToDetailViewSegue", sender: sender)
+    }
+    
+    @IBAction func mapToDetailView(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("MapToDetailViewSegue", sender: sender)
+    }
+    
+    
+    @IBAction func directionsFromMap(sender: AnyObject){
+        directionsToLocation()
+    }
+    
+    func directionsToLocation() {
+        
+        guard let latitude = googlePlace?.coordinate.latitude else { return }
+        guard let longtitude = googlePlace?.coordinate.longitude else { return}
+        let url: String =  "comgooglemaps://?saddr=&daddr=\(latitude),\(longtitude)&directionsmode=driving"
+        if (UIApplication.sharedApplication().canOpenURL(NSURL(string:"comgooglemaps://")!)) {
+            UIApplication.sharedApplication().openURL(NSURL(string: url)!)
+        } else {
+            NSLog("Can't use comgooglemaps://");
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "MapToDetailViewSegue"
+        {
+            if let destinationVC = segue.destinationViewController as? DetailPlaceTableViewController {
+                destinationVC.detailPlace = googlePlace
+            }
+        }
+    }
 }
 
 // MARK: - SearchesTableViewControllerDelegate
@@ -183,7 +219,7 @@ extension PupMapViewController: CLLocationManagerDelegate {
 // MARK: - GMSMapViewDelegate
 extension PupMapViewController: GMSMapViewDelegate {
     func mapView(mapView: GMSMapView, idleAtCameraPosition position: GMSCameraPosition) {
-
+        
         reverseGeocodeCoordinate(position.target)
     }
     
@@ -216,10 +252,6 @@ extension PupMapViewController: GMSMapViewDelegate {
         
     }
     
-    
-    
-    
- 
     
     func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
         mapCenterPinImage.fadeOut(0.25)

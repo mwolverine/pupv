@@ -24,6 +24,7 @@ extension UIView {
             activity.center = lockView.center
             lockView.addSubview(activity)
             activity.startAnimating()
+
             addSubview(lockView)
             
             UIView.animateWithDuration(0.2) {

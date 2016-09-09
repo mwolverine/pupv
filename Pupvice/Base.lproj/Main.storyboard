@@ -180,7 +180,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBP-ga-ElR">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="37"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <state key="normal" title="Parks"/>
@@ -189,7 +189,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uao-B8-qv7">
-                                        <rect key="frame" x="120" y="0.0" width="120" height="37"/>
+                                        <rect key="frame" x="86" y="0.0" width="85" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Food">
@@ -200,7 +200,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ji-mT-ZSy">
-                                        <rect key="frame" x="240" y="0.0" width="120" height="37"/>
+                                        <rect key="frame" x="171" y="0.0" width="86" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Lodging">
@@ -211,7 +211,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-Yc-nX2">
-                                        <rect key="frame" x="360" y="0.0" width="120" height="37"/>
+                                        <rect key="frame" x="257" y="0.0" width="86" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Stores"/>
@@ -220,7 +220,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgG-hV-1n1">
-                                        <rect key="frame" x="480" y="0.0" width="120" height="37"/>
+                                        <rect key="frame" x="343" y="0.0" width="86" height="37"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Vet">
@@ -228,6 +228,20 @@
                                         </state>
                                         <connections>
                                             <action selector="vetButtonTapped:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="MZ1-7d-J5r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAM-3m-z9W">
+                                        <rect key="frame" x="429" y="0.0" width="85" height="37"/>
+                                        <state key="normal" title="Info(t)"/>
+                                        <connections>
+                                            <action selector="mapToDetailView:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="TWO-Dk-5Hy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGE-9b-Tej">
+                                        <rect key="frame" x="514" y="0.0" width="86" height="37"/>
+                                        <state key="normal" title="Path(t)"/>
+                                        <connections>
+                                            <action selector="directionsFromMap:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="k9H-pl-YYh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -245,7 +259,7 @@
                                 </variation>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="O3g-Ny-epY">
-                                <rect key="frame" x="285" y="245" width="30" height="55"/>
+                                <rect key="frame" x="285" y="341" width="30" height="55"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCk-r6-v7P">
                                 <rect key="frame" x="0.0" y="560" width="600" height="40"/>
@@ -273,6 +287,7 @@
                             <constraint firstAttribute="bottom" secondItem="mCk-r6-v7P" secondAttribute="bottom" id="cRf-du-W6K"/>
                             <constraint firstAttribute="centerX" secondItem="O3g-Ny-epY" secondAttribute="centerX" id="dCh-Mm-MHz"/>
                             <constraint firstAttribute="trailing" secondItem="mCk-r6-v7P" secondAttribute="trailing" id="frg-nc-Eb6"/>
+                            <constraint firstItem="O3g-Ny-epY" firstAttribute="top" secondItem="yQF-SZ-LNq" secondAttribute="bottom" constant="240" id="fzT-Vu-jnm"/>
                             <constraint firstItem="yQF-SZ-LNq" firstAttribute="top" secondItem="CX5-Jk-b04" secondAttribute="bottom" id="kLY-9p-Btk"/>
                             <constraint firstItem="beI-DD-XzI" firstAttribute="top" secondItem="A3z-f4-6WY" secondAttribute="bottom" id="mZP-e4-Zok"/>
                             <constraint firstItem="yQF-SZ-LNq" firstAttribute="top" secondItem="CX5-Jk-b04" secondAttribute="bottom" constant="58" id="ncp-Ab-U39"/>
@@ -282,9 +297,10 @@
                             <mask key="constraints">
                                 <exclude reference="ncp-Ab-U39"/>
                                 <exclude reference="Ovd-Mb-dCH"/>
-                                <exclude reference="IWM-dH-HTJ"/>
+                                <exclude reference="458-uY-0kc"/>
                                 <exclude reference="BFu-5b-D4v"/>
                                 <exclude reference="M68-uA-K1U"/>
+                                <exclude reference="IWM-dH-HTJ"/>
                             </mask>
                         </variation>
                     </view>
@@ -306,6 +322,7 @@
                         <outlet property="pinImageVerticalConstraint" destination="458-uY-0kc" id="oew-uy-5Cj"/>
                         <outlet property="storeOutlet" destination="Qcs-Yc-nX2" id="JOe-oi-ITm"/>
                         <outlet property="vetOutlet" destination="fgG-hV-1n1" id="Acu-pB-c7q"/>
+                        <segue destination="QnI-ip-FaK" kind="show" identifier="MapToDetailViewSegue" id="M6V-6K-W3S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xUf-TU-k9q" sceneMemberID="firstResponder"/>
@@ -467,7 +484,7 @@
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIC-8I-mBo">
                                                     <rect key="frame" x="0.0" y="30" width="590" height="28"/>
-                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -545,4 +562,7 @@
     <resources>
         <image name="location" width="30" height="55"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SsJ-Ch-ioj"/>
+    </inferredMetricsTieBreakers>
 </document>
