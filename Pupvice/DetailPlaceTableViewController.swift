@@ -84,7 +84,7 @@ class DetailPlaceTableViewController: UITableViewController {
         options.pageControlHidden = false
         options.scrollDirection = .Horizontal
         options.pageControlCurrentIndicatorTintColor = UIColor.yellowColor()
-        options.autoSlideIntervalInSeconds = 2
+        options.autoSlideIntervalInSeconds = 3
         options.shouldStartFromBeginning = true
         options.imageContentMode = .ScaleAspectFit
         imageSliderVC.options = options
