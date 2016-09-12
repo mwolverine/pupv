@@ -10,20 +10,10 @@ import UIKit
 
 class MarkerInfoView: UIView {
     
-    
-    weak var delegate: detailButtonTouchedDelegate?
       
     @IBOutlet weak var placePhoto: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
-    @IBAction func detailButtonTouched(sender: AnyObject) {
-        userInteractionEnabled = true
-        if let delegate = delegate {
-            delegate.detailButtonTouched(self)
-        }
-    }
+  
 }
 
-protocol detailButtonTouchedDelegate: class {
-    func detailButtonTouched(sender: MarkerInfoView)
-}

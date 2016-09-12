@@ -177,19 +177,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yQF-SZ-LNq">
-                                <rect key="frame" x="0.0" y="64" width="600" height="37"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBP-ga-ElR">
-                                        <rect key="frame" x="0.0" y="0.0" width="86" height="37"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Parks"/>
                                         <connections>
                                             <action selector="dogParkButtonTapped:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="DGX-51-waA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uao-B8-qv7">
-                                        <rect key="frame" x="86" y="0.0" width="85" height="37"/>
+                                        <rect key="frame" x="120" y="0.0" width="120" height="35"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Food">
@@ -200,7 +200,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ji-mT-ZSy">
-                                        <rect key="frame" x="171" y="0.0" width="86" height="37"/>
+                                        <rect key="frame" x="240" y="0.0" width="120" height="35"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Lodging">
@@ -211,7 +211,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-Yc-nX2">
-                                        <rect key="frame" x="257" y="0.0" width="86" height="37"/>
+                                        <rect key="frame" x="360" y="0.0" width="120" height="35"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Stores"/>
@@ -220,7 +220,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgG-hV-1n1">
-                                        <rect key="frame" x="343" y="0.0" width="86" height="37"/>
+                                        <rect key="frame" x="480" y="0.0" width="120" height="35"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <state key="normal" title="Vet">
@@ -230,24 +230,10 @@
                                             <action selector="vetButtonTapped:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="MZ1-7d-J5r"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAM-3m-z9W">
-                                        <rect key="frame" x="429" y="0.0" width="85" height="37"/>
-                                        <state key="normal" title="Info(t)"/>
-                                        <connections>
-                                            <action selector="mapToDetailView:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="TWO-Dk-5Hy"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGE-9b-Tej">
-                                        <rect key="frame" x="514" y="0.0" width="86" height="37"/>
-                                        <state key="normal" title="Path(t)"/>
-                                        <connections>
-                                            <action selector="directionsFromMap:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="k9H-pl-YYh"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3z-f4-6WY" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="101" width="600" height="455"/>
+                                <rect key="frame" x="0.0" y="99" width="600" height="457"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="401" id="z3c-cG-sdz"/>
@@ -259,8 +245,55 @@
                                 </variation>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="O3g-Ny-epY">
-                                <rect key="frame" x="285" y="341" width="30" height="55"/>
+                                <rect key="frame" x="285" y="339" width="30" height="55"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3J6-ar-JdB">
+                                <rect key="frame" x="240" y="290" width="120" height="20"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaI-Y6-A08">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="YXQ-BZ-YO2"/>
+                                            <constraint firstAttribute="height" constant="20" id="xQD-jo-Z8T"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
+                                        <state key="normal" title="Info">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mapToDetailView:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="Bji-pf-JdY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dus-0u-G3a">
+                                        <rect key="frame" x="60" y="0.0" width="60" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="T6u-gJ-4ks"/>
+                                            <constraint firstAttribute="height" constant="20" id="z86-XK-lxj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
+                                        <state key="normal" title="Path">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="directionsFromMap:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="OlF-3E-KjR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Dus-0u-G3a" firstAttribute="leading" secondItem="3J6-ar-JdB" secondAttribute="leading" constant="-225" id="741-Lg-ZxZ"/>
+                                    <constraint firstItem="Dus-0u-G3a" firstAttribute="top" secondItem="3J6-ar-JdB" secondAttribute="top" constant="-290" id="b7H-As-wHd"/>
+                                    <constraint firstAttribute="height" constant="20" id="qyi-LB-VvB"/>
+                                    <constraint firstAttribute="width" constant="120" id="sOl-ej-LXE"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="741-Lg-ZxZ"/>
+                                        <exclude reference="b7H-As-wHd"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCk-r6-v7P">
                                 <rect key="frame" x="0.0" y="560" width="600" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
@@ -282,12 +315,14 @@
                             <constraint firstItem="beI-DD-XzI" firstAttribute="top" secondItem="A3z-f4-6WY" secondAttribute="bottom" constant="400" id="M68-uA-K1U"/>
                             <constraint firstItem="A3z-f4-6WY" firstAttribute="top" secondItem="Aai-Xr-5F3" secondAttribute="top" constant="37" id="Ovd-Mb-dCH"/>
                             <constraint firstAttribute="trailing" secondItem="A3z-f4-6WY" secondAttribute="trailing" id="PLf-OS-Nq7"/>
+                            <constraint firstItem="3J6-ar-JdB" firstAttribute="centerY" secondItem="Aai-Xr-5F3" secondAttribute="centerY" id="UR6-ps-mG4"/>
                             <constraint firstAttribute="trailing" secondItem="yQF-SZ-LNq" secondAttribute="trailing" id="b0y-gd-9WG"/>
                             <constraint firstItem="mCk-r6-v7P" firstAttribute="leading" secondItem="Aai-Xr-5F3" secondAttribute="leading" id="bsD-69-AeG"/>
                             <constraint firstAttribute="bottom" secondItem="mCk-r6-v7P" secondAttribute="bottom" id="cRf-du-W6K"/>
                             <constraint firstAttribute="centerX" secondItem="O3g-Ny-epY" secondAttribute="centerX" id="dCh-Mm-MHz"/>
                             <constraint firstAttribute="trailing" secondItem="mCk-r6-v7P" secondAttribute="trailing" id="frg-nc-Eb6"/>
                             <constraint firstItem="O3g-Ny-epY" firstAttribute="top" secondItem="yQF-SZ-LNq" secondAttribute="bottom" constant="240" id="fzT-Vu-jnm"/>
+                            <constraint firstItem="3J6-ar-JdB" firstAttribute="centerX" secondItem="O3g-Ny-epY" secondAttribute="centerX" id="gMA-5k-7mh"/>
                             <constraint firstItem="yQF-SZ-LNq" firstAttribute="top" secondItem="CX5-Jk-b04" secondAttribute="bottom" id="kLY-9p-Btk"/>
                             <constraint firstItem="beI-DD-XzI" firstAttribute="top" secondItem="A3z-f4-6WY" secondAttribute="bottom" id="mZP-e4-Zok"/>
                             <constraint firstItem="yQF-SZ-LNq" firstAttribute="top" secondItem="CX5-Jk-b04" secondAttribute="bottom" constant="58" id="ncp-Ab-U39"/>
@@ -314,6 +349,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addressLabel" destination="mCk-r6-v7P" id="qf1-Sb-tg0"/>
+                        <outlet property="detailButtonOutlet" destination="GaI-Y6-A08" id="ncc-b6-rdA"/>
+                        <outlet property="detailViewStack" destination="3J6-ar-JdB" id="TXf-4V-fLe"/>
+                        <outlet property="directionPathButtonOutlet" destination="Dus-0u-G3a" id="fM3-0w-g3M"/>
                         <outlet property="foodOutlet" destination="Uao-B8-qv7" id="8zt-ZX-lFv"/>
                         <outlet property="lodgingOutlet" destination="5Ji-mT-ZSy" id="z4r-f5-d99"/>
                         <outlet property="mapCenterPinImage" destination="O3g-Ny-epY" id="NTO-mI-y8W"/>
@@ -355,7 +393,7 @@
                                                         <constraint firstAttribute="height" constant="5" id="RM7-ES-mOU"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOm-aV-Ffp">
@@ -391,7 +429,7 @@
                                                         <constraint firstAttribute="height" constant="15" id="4Fq-df-zSP"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AwT-Hs-4sU">
@@ -410,7 +448,7 @@
                                                         <constraint firstAttribute="height" constant="10" id="h7Q-DW-6Ik"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -459,7 +497,7 @@
                                                                 <constraint firstAttribute="width" constant="530" id="Nlh-Jq-MdG"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="13"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVy-Lb-gYo">
@@ -469,7 +507,7 @@
                                                                 <constraint firstAttribute="width" constant="60" id="Ocx-R0-E0d"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="13"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -485,7 +523,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIC-8I-mBo">
                                                     <rect key="frame" x="0.0" y="30" width="590" height="28"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -563,6 +601,6 @@
         <image name="location" width="30" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SsJ-Ch-ioj"/>
+        <segue reference="M6V-6K-W3S"/>
     </inferredMetricsTieBreakers>
 </document>

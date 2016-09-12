@@ -9,12 +9,19 @@
 import UIKit
 import GoogleMaps
 
-class PupMapViewController: UIViewController, detailButtonTouchedDelegate {
+class PupMapViewController: UIViewController {
     
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var mapCenterPinImage: UIImageView!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var pinImageVerticalConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var detailViewStack: UIStackView!
+    
+    
+    @IBOutlet weak var detailButtonOutlet: UIButton!
+    @IBOutlet weak var directionPathButtonOutlet: UIButton!
+    
     
     var googlePlace: GooglePlace?
     var searchedKeywords: [String] = []
@@ -104,6 +111,12 @@ class PupMapViewController: UIViewController, detailButtonTouchedDelegate {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
+        detailViewStack.userInteractionEnabled = false
+        detailButtonOutlet.hidden = true
+        detailButtonOutlet.enabled = false
+        directionPathButtonOutlet.hidden = true
+        directionPathButtonOutlet.enabled = false
+        
         mapView.delegate = self
     }
     
@@ -152,12 +165,8 @@ class PupMapViewController: UIViewController, detailButtonTouchedDelegate {
     
     
     //delegate not working
-    func detailButtonTouched(sender: MarkerInfoView) {
-        self.performSegueWithIdentifier("MapToDetailViewSegue", sender: sender)
-    }
     
     @IBAction func mapToDetailView(sender: AnyObject) {
-        
         self.performSegueWithIdentifier("MapToDetailViewSegue", sender: sender)
     }
     
@@ -229,13 +238,24 @@ extension PupMapViewController: GMSMapViewDelegate {
         if (gesture) {
             mapCenterPinImage.fadeIn(0.25)
             mapView.selectedMarker = nil
+            detailViewStack.userInteractionEnabled = false
+            detailButtonOutlet.hidden = true
+            detailButtonOutlet.enabled = false
+            directionPathButtonOutlet.hidden = true
+            directionPathButtonOutlet.enabled = false
+            
         }
     }
     
     func mapView(mapView: GMSMapView, markerInfoContents marker: GMSMarker) -> UIView? {
+        
+        
         let placeMarker = marker as! PlaceMarker
         
+        
         if let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView {
+            
+            
             infoView.nameLabel.text = placeMarker.place.name
             if let photo = placeMarker.place.photo {
                 infoView.placePhoto.image = photo
@@ -245,6 +265,21 @@ extension PupMapViewController: GMSMapViewDelegate {
             
             let googlePlaceInfo = placeMarker.place
             googlePlace = googlePlaceInfo
+            
+            let seconds = 0.2
+            let delay = seconds * Double(NSEC_PER_SEC)
+            let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+            
+            dispatch_after(dispatchTime, dispatch_get_main_queue(), {
+                
+                self.detailViewStack.userInteractionEnabled = true
+                self.detailButtonOutlet.hidden = false
+                self.detailButtonOutlet.enabled = true
+                self.directionPathButtonOutlet.hidden = false
+                self.directionPathButtonOutlet.enabled = true
+                
+            })
+
             return infoView
         } else {
             return nil
@@ -255,12 +290,18 @@ extension PupMapViewController: GMSMapViewDelegate {
     
     func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
         mapCenterPinImage.fadeOut(0.25)
+        detailViewStack.userInteractionEnabled = false
+        detailButtonOutlet.hidden = true
+        detailButtonOutlet.enabled = false
+        directionPathButtonOutlet.hidden = true
+        directionPathButtonOutlet.enabled = false
         return false
     }
     
     func didTapMyLocationButtonForMapView(mapView: GMSMapView) -> Bool {
         mapCenterPinImage.fadeIn(0.25)
         mapView.selectedMarker = nil
+        
         return false
     }
     
