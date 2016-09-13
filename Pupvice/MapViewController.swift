@@ -244,17 +244,15 @@ extension PupMapViewController: GMSMapViewDelegate {
             directionPathButtonOutlet.hidden = true
             directionPathButtonOutlet.enabled = false
             
+            
+            
         }
     }
     
     func mapView(mapView: GMSMapView, markerInfoContents marker: GMSMarker) -> UIView? {
         
-        
         let placeMarker = marker as! PlaceMarker
-        
-        
         if let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView {
-            
             
             infoView.nameLabel.text = placeMarker.place.name
             if let photo = placeMarker.place.photo {
@@ -287,7 +285,6 @@ extension PupMapViewController: GMSMapViewDelegate {
         
     }
     
-    
     func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
         mapCenterPinImage.fadeOut(0.25)
         detailViewStack.userInteractionEnabled = false
@@ -303,6 +300,14 @@ extension PupMapViewController: GMSMapViewDelegate {
         mapView.selectedMarker = nil
         
         return false
+    }
+    
+    func mapView(mapView: GMSMapView, didTapAtCoordinate: CLLocationCoordinate2D){
+        detailViewStack.userInteractionEnabled = false
+        detailButtonOutlet.hidden = true
+        detailButtonOutlet.enabled = false
+        directionPathButtonOutlet.hidden = true
+        directionPathButtonOutlet.enabled = false
     }
     
 }
