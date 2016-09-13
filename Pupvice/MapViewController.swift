@@ -37,6 +37,8 @@ class PupMapViewController: UIViewController {
     @IBOutlet weak var vetOutlet: UIButton!
     
     @IBAction func dogParkButtonTapped(sender: AnyObject) {
+        removeButtonsFromScreen()
+
         parkOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
         foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
@@ -49,6 +51,8 @@ class PupMapViewController: UIViewController {
     }
     
     @IBAction func restaurantsButtonTapped(sender: AnyObject) {
+        removeButtonsFromScreen()
+
         parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         foodOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
         lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
@@ -62,6 +66,8 @@ class PupMapViewController: UIViewController {
     }
     
     @IBAction func lodgingButtonTapped(sender: AnyObject) {
+        removeButtonsFromScreen()
+
         parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         lodgingOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
@@ -75,6 +81,8 @@ class PupMapViewController: UIViewController {
     }
     
     @IBAction func storesButtonTapped(sender: AnyObject) {
+        removeButtonsFromScreen()
+
         parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
@@ -88,6 +96,8 @@ class PupMapViewController: UIViewController {
     }
     
     @IBAction func vetButtonTapped(sender: AnyObject) {
+        removeButtonsFromScreen()
+
         parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
@@ -111,12 +121,8 @@ class PupMapViewController: UIViewController {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
-        detailViewStack.userInteractionEnabled = false
-        detailButtonOutlet.hidden = true
-        detailButtonOutlet.enabled = false
-        directionPathButtonOutlet.hidden = true
-        directionPathButtonOutlet.enabled = false
-        
+        removeButtonsFromScreen()
+        dogParkButtonTapped(self)
         mapView.delegate = self
     }
     
@@ -128,6 +134,14 @@ class PupMapViewController: UIViewController {
     //            controller.delegate = self
     //        }
     //    }
+    
+    func removeButtonsFromScreen(){
+        detailViewStack.userInteractionEnabled = false
+        detailButtonOutlet.hidden = true
+        detailButtonOutlet.enabled = false
+        directionPathButtonOutlet.hidden = true
+        directionPathButtonOutlet.enabled = false
+    }
     
     func reverseGeocodeCoordinate(coordinate: CLLocationCoordinate2D) {
         let geocoder = GMSGeocoder()
@@ -162,9 +176,6 @@ class PupMapViewController: UIViewController {
     @IBAction func refreshPlaces(sender: AnyObject) {
         fetchNearbyPlaces(mapView.camera.target)
     }
-    
-    
-    //delegate not working
     
     @IBAction func mapToDetailView(sender: AnyObject) {
         self.performSegueWithIdentifier("MapToDetailViewSegue", sender: sender)
@@ -238,14 +249,7 @@ extension PupMapViewController: GMSMapViewDelegate {
         if (gesture) {
             mapCenterPinImage.fadeIn(0.25)
             mapView.selectedMarker = nil
-            detailViewStack.userInteractionEnabled = false
-            detailButtonOutlet.hidden = true
-            detailButtonOutlet.enabled = false
-            directionPathButtonOutlet.hidden = true
-            directionPathButtonOutlet.enabled = false
-            
-            
-            
+            removeButtonsFromScreen()
         }
     }
     
@@ -264,50 +268,36 @@ extension PupMapViewController: GMSMapViewDelegate {
             let googlePlaceInfo = placeMarker.place
             googlePlace = googlePlaceInfo
             
-            let seconds = 0.2
+            let seconds = 0.25
             let delay = seconds * Double(NSEC_PER_SEC)
             let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
             
             dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-                
                 self.detailViewStack.userInteractionEnabled = true
                 self.detailButtonOutlet.hidden = false
                 self.detailButtonOutlet.enabled = true
                 self.directionPathButtonOutlet.hidden = false
                 self.directionPathButtonOutlet.enabled = true
-                
             })
-
             return infoView
         } else {
             return nil
         }
-        
     }
     
     func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
         mapCenterPinImage.fadeOut(0.25)
-        detailViewStack.userInteractionEnabled = false
-        detailButtonOutlet.hidden = true
-        detailButtonOutlet.enabled = false
-        directionPathButtonOutlet.hidden = true
-        directionPathButtonOutlet.enabled = false
+        removeButtonsFromScreen()
         return false
     }
     
     func didTapMyLocationButtonForMapView(mapView: GMSMapView) -> Bool {
         mapCenterPinImage.fadeIn(0.25)
         mapView.selectedMarker = nil
-        
         return false
     }
     
     func mapView(mapView: GMSMapView, didTapAtCoordinate: CLLocationCoordinate2D){
-        detailViewStack.userInteractionEnabled = false
-        detailButtonOutlet.hidden = true
-        detailButtonOutlet.enabled = false
-        directionPathButtonOutlet.hidden = true
-        directionPathButtonOutlet.enabled = false
+        removeButtonsFromScreen()
     }
-    
 }

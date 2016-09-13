@@ -103,20 +103,25 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
+
         }
-        searchedType = ["park"]
-        searchedKeywords = ["dog+park"]
-//        setupView(locationValue)
+        
+        dogParkButtonTapped(self)
 
         tableView.reloadData()
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        let isFirstLocation = self.locationValue == nil
         self.locationValue = locValue
+        if isFirstLocation {
+        setupView(locationValue)
+        }
     }
 
-    func setupView(locationValue: CLLocationCoordinate2D){
+    func setupView(locationValue: CLLocationCoordinate2D?){
+        guard let locationValue = locationValue else { return }
         ListModelController.sharedController.fetchNearbyPlaces(locationValue, types: searchedType, keywords: searchedKeywords) { (places) in
             self.placesArray = places
             self.tableView.reloadData()
