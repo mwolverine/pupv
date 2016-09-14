@@ -115,7 +115,7 @@ class PupMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let logo = UIImage(named: "LogoWithName")
+        let logo = UIImage(named: "logoWithNameSmall")
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
         

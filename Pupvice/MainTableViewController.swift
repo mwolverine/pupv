@@ -93,7 +93,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         
         self.navigationController!.navigationBar.topItem!.title = "back"
         
-        let logo = UIImage(named: "LogoWithName")
+        let logo = UIImage(named: "logoWithNameSmall")
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
 

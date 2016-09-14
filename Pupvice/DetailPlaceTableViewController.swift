@@ -43,15 +43,15 @@ class DetailPlaceTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let logo = UIImage(named: "LogoWithName")
+        let logo = UIImage(named: "logoWithNameSmall")
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
         
         guard let detailPlace = detailPlace else { return }
         
-        nameLabel.text = "   \(detailPlace.name)"
-        ratingLabel.text = "    rated: \(detailPlace.rating)"
-        locationLabel.text = "    location: \(detailPlace.address)"
+        nameLabel.text = "  \(detailPlace.name)"
+        ratingLabel.text = "   Rated: \(detailPlace.rating)"
+        locationLabel.text = "   Location: \(detailPlace.address)"
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
