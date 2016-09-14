@@ -50,8 +50,8 @@ class DetailPlaceTableViewController: UITableViewController {
         guard let detailPlace = detailPlace else { return }
         
         nameLabel.text = "   \(detailPlace.name)"
-        ratingLabel.text = "    Rated: \(detailPlace.rating)"
-        locationLabel.text = "    Location: \(detailPlace.address)"
+        ratingLabel.text = "    rated: \(detailPlace.rating)"
+        locationLabel.text = "    location: \(detailPlace.address)"
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140

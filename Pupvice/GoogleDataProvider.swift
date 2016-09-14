@@ -34,6 +34,8 @@ class GoogleDataProvider {
         
         var urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true"
         
+        //        var urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&rankby=distance&sensor=true" THIS IS BY DISTANCE
+        
         let typesString = types.count > 0 ? types.joinWithSeparator("|") : "park"
         let keywordsString = keywords.count > 0 ? keywords.joinWithSeparator("|") : "dog park"
         
@@ -113,7 +115,7 @@ class GoogleDataProvider {
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             var placesDetailArray = [GoogleDetails]()
             var photosPlacesDetailArray = [GoogleDetailsPhoto]()
-
+            
             if let aData = data {
                 let json = JSON(data:aData, options:NSJSONReadingOptions.MutableContainers, error:nil)
                 let jsonDictionary = json["result"].dictionaryValue

@@ -154,15 +154,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pupvice/GoogleDataProvider.swift"
-            timestampString = "494976274.22397"
+            timestampString = "495568987.913125"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "fetchPlacesNearCoordinate(_:radius:types:keywords:completion:)"
             landmarkType = "5">
          </BreakpointContent>
