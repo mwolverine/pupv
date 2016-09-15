@@ -360,14 +360,14 @@
                         <color key="separatorColor" red="0.0" green="0.22845008389999999" blue="0.40147860740000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.0" green="0.22845008389999999" blue="0.40147860740000002" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="yPr-qe-wct">
-                            <rect key="frame" x="0.0" y="64" width="600" height="299"/>
+                            <rect key="frame" x="0.0" y="64" width="600" height="291"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cSd-aD-UYn">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="299"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="291"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="adX-rQ-68M">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="299"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="291"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rae-R5-olT">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
@@ -423,22 +423,6 @@
                                                         <segue destination="dQT-u1-3MT" kind="embed" identifier="imageSliderSegue" id="Jej-i5-1ib"/>
                                                     </connections>
                                                 </containerView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gx6-NX-muL">
-                                                    <rect key="frame" x="0.0" y="291" width="600" height="8"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="3FN-Ki-TOs"/>
-                                                        <constraint firstAttribute="height" constant="8" id="h7Q-DW-6Ik"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="3FN-Ki-TOs"/>
-                                                        </mask>
-                                                    </variation>
-                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="sOm-aV-Ffp" firstAttribute="top" secondItem="adX-rQ-68M" secondAttribute="top" constant="5" id="qzz-nd-hdk"/>
@@ -461,7 +445,7 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reviewsCell" rowHeight="69" id="cFY-U3-qnd" customClass="DetailPlaceTableViewCell" customModule="Pupvice" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="391" width="600" height="69"/>
+                                <rect key="frame" x="0.0" y="383" width="600" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cFY-U3-qnd" id="bs6-fW-Gt8">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="68"/>

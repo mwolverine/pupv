@@ -27,6 +27,7 @@ class DetailPlaceTableViewController: UITableViewController {
     @IBOutlet weak var hoursLabel: UILabel!
     @IBOutlet weak var costLabel: UILabel!
     
+//    @IBOutlet weak var whiteLabel: UILabel!
     override func viewWillAppear(animated: Bool) {
         
         if let detailPlace = detailPlace {
@@ -37,6 +38,7 @@ class DetailPlaceTableViewController: UITableViewController {
                 
                 self.tableView.reloadData()
             })
+            
         }
     }
     
@@ -94,7 +96,6 @@ class DetailPlaceTableViewController: UITableViewController {
         options.shouldStartFromBeginning = true
         options.imageContentMode = .ScaleAspectFit
         imageSliderVC.options = options
-        
     }
     
     @IBAction func directionsButtonTapped(sender: AnyObject) {
@@ -113,9 +114,19 @@ class DetailPlaceTableViewController: UITableViewController {
         }
     }
     
+//    func whiteLabelChange() {
+//        if String(detailPlace!.name) == "" {
+//            whiteLabel.hidden = true
+//        }
+//        else {
+//            whiteLabel.hidden = false
+//        }
+//    }
+    
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return placesArray.count
     }
     
@@ -134,8 +145,11 @@ class DetailPlaceTableViewController: UITableViewController {
             .joinWithSeparator("")
         cell?.ratingLabel.text = "Happy: \(intString)"
         
+        
         return cell ?? UITableViewCell()
     }
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
