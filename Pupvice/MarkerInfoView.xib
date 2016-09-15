@@ -20,7 +20,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CYy-Is-Olv">
-                    <rect key="frame" x="5" y="30" width="140" height="95"/>
+                    <rect key="frame" x="5" y="32" width="140" height="88"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="130" id="2jI-G1-D0c"/>
                         <constraint firstAttribute="height" constant="100" id="VoN-HR-rIU"/>
@@ -37,7 +37,7 @@
             <constraints>
                 <constraint firstItem="CYy-Is-Olv" firstAttribute="top" secondItem="ygY-c3-ptW" secondAttribute="bottom" constant="5" id="6ao-CS-Ncv"/>
                 <constraint firstAttribute="bottom" secondItem="CYy-Is-Olv" secondAttribute="bottom" constant="12" id="6gn-sn-XI1"/>
-                <constraint firstAttribute="bottom" secondItem="CYy-Is-Olv" secondAttribute="bottom" constant="25" id="8UM-W0-sGs"/>
+                <constraint firstAttribute="bottom" secondItem="CYy-Is-Olv" secondAttribute="bottom" constant="30" id="8UM-W0-sGs"/>
                 <constraint firstItem="ygY-c3-ptW" firstAttribute="leading" secondItem="U0O-1c-KyX" secondAttribute="leading" constant="5" id="Akh-ID-tYD"/>
                 <constraint firstItem="ygY-c3-ptW" firstAttribute="top" secondItem="U0O-1c-KyX" secondAttribute="top" constant="5" id="BAj-Tt-and"/>
                 <constraint firstItem="CYy-Is-Olv" firstAttribute="leading" secondItem="U0O-1c-KyX" secondAttribute="leading" constant="25" id="F2w-Pt-Wat"/>
@@ -46,7 +46,7 @@
                 <constraint firstAttribute="centerX" secondItem="CYy-Is-Olv" secondAttribute="centerX" id="eu4-m9-5pZ"/>
                 <constraint firstItem="CYy-Is-Olv" firstAttribute="leading" secondItem="U0O-1c-KyX" secondAttribute="leading" constant="5" id="eug-B9-d4D"/>
                 <constraint firstAttribute="trailing" secondItem="CYy-Is-Olv" secondAttribute="trailing" constant="5" id="lNg-55-g8e"/>
-                <constraint firstItem="CYy-Is-Olv" firstAttribute="top" secondItem="ygY-c3-ptW" secondAttribute="bottom" constant="5" id="vlG-tf-KvY"/>
+                <constraint firstItem="CYy-Is-Olv" firstAttribute="top" secondItem="ygY-c3-ptW" secondAttribute="bottom" constant="7" id="vlG-tf-KvY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">

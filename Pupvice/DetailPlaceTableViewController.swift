@@ -50,7 +50,13 @@ class DetailPlaceTableViewController: UITableViewController {
         guard let detailPlace = detailPlace else { return }
         
         nameLabel.text = "  \(detailPlace.name)"
-        ratingLabel.text = "   Rated: \(detailPlace.rating)"
+        if String(detailPlace.rating) == "" {
+            ratingLabel.text = "   Rated: n/a"
+        }
+        else {
+            ratingLabel.text = "   Rated: \(detailPlace.rating)"
+        }
+        
         locationLabel.text = "   Location: \(detailPlace.address)"
         
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -83,7 +89,7 @@ class DetailPlaceTableViewController: UITableViewController {
         var options = TNImageSliderViewOptions()
         options.pageControlHidden = false
         options.scrollDirection = .Horizontal
-        options.pageControlCurrentIndicatorTintColor = UIColor.yellowColor()
+        options.pageControlCurrentIndicatorTintColor = UIColor.whiteColor()
         options.autoSlideIntervalInSeconds = 3
         options.shouldStartFromBeginning = true
         options.imageContentMode = .ScaleAspectFit

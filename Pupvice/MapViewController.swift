@@ -263,7 +263,7 @@ extension PupMapViewController: GMSMapViewDelegate {
             if let photo = placeMarker.place.photo {
                 infoView.placePhoto.image = photo
             } else {
-                infoView.placePhoto.image = UIImage(named: "Logo")
+                infoView.placePhoto.image = UIImage(named: "logoFace")
             }
             
             let googlePlaceInfo = placeMarker.place
