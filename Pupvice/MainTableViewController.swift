@@ -18,16 +18,16 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     var placesArray: [GooglePlace] = []
     var searchedKeywords: [String] = []
     var searchedType: [String] = []
-
+    
     @IBOutlet weak var parkOutlet: UIButton!
-//    @IBOutlet weak var foodOutlet: UIButton!
+    //    @IBOutlet weak var foodOutlet: UIButton!
     @IBOutlet weak var lodgingOutlet: UIButton!
     @IBOutlet weak var storeOutlet: UIButton!
     @IBOutlet weak var vetOutlet: UIButton!
     
     @IBAction func dogParkButtonTapped(sender: AnyObject) {
         parkOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
-//        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        //        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
@@ -37,22 +37,22 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         setupView(locationValue)
     }
     
-//    @IBAction func restaurantsButtonTapped(sender: AnyObject) {
-//        parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
-//        foodOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
-//        lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
-//        storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
-//        vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
-//        
-//        searchedType = ["restaurant"]
-//        //bakery|bar|cafe|
-//        searchedKeywords = ["dog+friendly"]
-//        setupView(locationValue)
-//    }
+    //    @IBAction func restaurantsButtonTapped(sender: AnyObject) {
+    //        parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+    //        foodOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
+    //        lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+    //        storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+    //        vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+    //
+    //        searchedType = ["restaurant"]
+    //        //bakery|bar|cafe|
+    //        searchedKeywords = ["dog+friendly"]
+    //        setupView(locationValue)
+    //    }
     
     @IBAction func lodgingButtonTapped(sender: AnyObject) {
         parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
-//        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        //        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         lodgingOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
         storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
@@ -65,7 +65,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     @IBAction func storesButtonTapped(sender: AnyObject) {
         parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
-//        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        //        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         storeOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
         vetOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
@@ -78,7 +78,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     @IBAction func vetButtonTapped(sender: AnyObject) {
         parkOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
-//        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
+        //        foodOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         lodgingOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         storeOutlet.backgroundColor = UIColor(red: 36.0/255.0, green: 47/255.0, blue: 65/255.0, alpha: 1.0)
         vetOutlet.backgroundColor = UIColor(red: 85.0/255.0, green: 85/255.0, blue: 85/255.0, alpha: 1.0)
@@ -96,7 +96,7 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         let logo = UIImage(named: "logoWithNameSmall")
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
-
+        
         self.locationManager.requestAlwaysAuthorization()
         
         // For use in foreground
@@ -105,11 +105,11 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
-
+            
         }
         
         dogParkButtonTapped(self)
-
+        
         tableView.reloadData()
     }
     
@@ -118,10 +118,10 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         let isFirstLocation = self.locationValue == nil
         self.locationValue = locValue
         if isFirstLocation {
-        setupView(locationValue)
+            setupView(locationValue)
         }
     }
-
+    
     func setupView(locationValue: CLLocationCoordinate2D?){
         guard let locationValue = locationValue else { return }
         ListModelController.sharedController.fetchNearbyPlaces(locationValue, types: searchedType, keywords: searchedKeywords) { (places) in
@@ -144,7 +144,12 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
         let cell = tableView.dequeueReusableCellWithIdentifier("listCell", forIndexPath: indexPath)
         let place = placesArray[indexPath.row]
         cell.textLabel?.text = place.name
-        cell.detailTextLabel?.text = place.rating
+        if String(place.rating) == "" {
+            cell.detailTextLabel?.text = "n/a"
+        }
+        else {
+            cell.detailTextLabel?.text = place.rating
+        }
         return cell
     }
     
