@@ -27,7 +27,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
                                             <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                            <state key="normal" title="park"/>
+                                            <state key="normal" title="parks"/>
                                             <connections>
                                                 <action selector="dogParkButtonTapped:" destination="rel-ij-b6f" eventType="touchUpInside" id="lyk-Ye-lpg"/>
                                             </connections>
@@ -36,7 +36,7 @@
                                             <rect key="frame" x="150" y="0.0" width="150" height="40"/>
                                             <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                            <state key="normal" title="store">
+                                            <state key="normal" title="stores">
                                                 <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <connections>
@@ -47,7 +47,7 @@
                                             <rect key="frame" x="300" y="0.0" width="150" height="40"/>
                                             <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                            <state key="normal" title="vet">
+                                            <state key="normal" title="vets">
                                                 <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <connections>
@@ -246,7 +246,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                        <state key="normal" title="park"/>
+                                        <state key="normal" title="parks"/>
                                         <connections>
                                             <action selector="dogParkButtonTapped:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="DGX-51-waA"/>
                                         </connections>
@@ -255,7 +255,7 @@
                                         <rect key="frame" x="150" y="0.0" width="150" height="40"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="store"/>
+                                        <state key="normal" title="stores"/>
                                         <connections>
                                             <action selector="storesButtonTapped:" destination="pMF-7u-eZ4" eventType="touchUpInside" id="7K2-ld-jSV"/>
                                         </connections>
@@ -264,7 +264,7 @@
                                         <rect key="frame" x="300" y="0.0" width="150" height="40"/>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="vet">
+                                        <state key="normal" title="vets">
                                             <color key="titleColor" red="0.99008231459999996" green="1" blue="0.9811887426" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -672,6 +672,6 @@
         <image name="location" width="30" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SsJ-Ch-ioj"/>
+        <segue reference="M6V-6K-W3S"/>
     </inferredMetricsTieBreakers>
 </document>
