@@ -141,16 +141,17 @@ class MainTableViewController: UITableViewController, CLLocationManagerDelegate 
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("listCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("listCell", forIndexPath: indexPath) as? MainListTableViewCell
+        
         let place = placesArray[indexPath.row]
-        cell.textLabel?.text = place.name
+        cell?.nameLabel.text = place.name
         if String(place.rating) == "" {
-            cell.detailTextLabel?.text = "n/a"
+            cell?.ratingLabel?.text = "n/a"
         }
         else {
-            cell.detailTextLabel?.text = place.rating
+            cell?.ratingLabel?.text = place.rating
         }
-        return cell
+        return cell ?? UITableViewCell()
     }
     
     // MARK: - Navigation

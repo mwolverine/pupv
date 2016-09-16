@@ -14,6 +14,7 @@
 		4045E3E31D78D96B00E4B228 /* GoogleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3E21D78D96B00E4B228 /* GoogleDetails.swift */; };
 		4045E3E71D79CD9800E4B228 /* DetailPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3E61D79CD9800E4B228 /* DetailPlaceTableViewController.swift */; };
 		4045E3E91D79D17800E4B228 /* DetailPlaceModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045E3E81D79D17800E4B228 /* DetailPlaceModelController.swift */; };
+		404A4E9C1D8C71E6000E16E5 /* MainListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4E9B1D8C71E6000E16E5 /* MainListTableViewCell.swift */; };
 		405C6A181D7500CE00CDBB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C6A171D7500CE00CDBB3E /* AppDelegate.swift */; };
 		405C6A1D1D7500CE00CDBB3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405C6A1B1D7500CE00CDBB3E /* Main.storyboard */; };
 		405C6A1F1D7500CE00CDBB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405C6A1E1D7500CE00CDBB3E /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		4045E3E21D78D96B00E4B228 /* GoogleDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDetails.swift; sourceTree = "<group>"; };
 		4045E3E61D79CD9800E4B228 /* DetailPlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPlaceTableViewController.swift; sourceTree = "<group>"; };
 		4045E3E81D79D17800E4B228 /* DetailPlaceModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPlaceModelController.swift; sourceTree = "<group>"; };
+		404A4E9B1D8C71E6000E16E5 /* MainListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListTableViewCell.swift; sourceTree = "<group>"; };
 		405C6A141D7500CE00CDBB3E /* Pupvice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pupvice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405C6A171D7500CE00CDBB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		405C6A1C1D7500CE00CDBB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				405C6A1B1D7500CE00CDBB3E /* Main.storyboard */,
+				404A4E9B1D8C71E6000E16E5 /* MainListTableViewCell.swift */,
 				4029064F1D79E2DC00FA083E /* DetailPlaceTableViewCell.swift */,
 			);
 			name = View;
@@ -322,6 +325,7 @@
 				4045E3E91D79D17800E4B228 /* DetailPlaceModelController.swift in Sources */,
 				4045E3D91D788EF600E4B228 /* SearchResultsController.swift in Sources */,
 				4045E3E31D78D96B00E4B228 /* GoogleDetails.swift in Sources */,
+				404A4E9C1D8C71E6000E16E5 /* MainListTableViewCell.swift in Sources */,
 				40E2CFD21D76874800B53A80 /* MarkerInfoView.swift in Sources */,
 				40AC493E1D768E420007F65E /* PlaceMarker.swift in Sources */,
 				405C6A7A1D7627D300CDBB3E /* SearchesTableViewController.swift in Sources */,
