@@ -175,6 +175,7 @@ class PupMapViewController: UIViewController {
     }
     
     @IBAction func refreshPlaces(sender: AnyObject) {
+        removeButtonsFromScreen()
         fetchNearbyPlaces(mapView.camera.target)
     }
     
@@ -210,13 +211,13 @@ class PupMapViewController: UIViewController {
 }
 
 // MARK: - SearchesTableViewControllerDelegate
-extension PupMapViewController: SearchesTableViewControllerDelegate {
-    func searchesController(controller: SearchesTableViewController, didSelectSearch searches: [String]) {
-        searchedKeywords = controller.selectedSearches.sort()
-        dismissViewControllerAnimated(true, completion: nil)
-        fetchNearbyPlaces(mapView.camera.target)
-    }
-}
+//extension PupMapViewController: SearchesTableViewControllerDelegate {
+//    func searchesController(controller: SearchesTableViewController, didSelectSearch searches: [String]) {
+//        searchedKeywords = controller.selectedSearches.sort()
+//        dismissViewControllerAnimated(true, completion: nil)
+//        fetchNearbyPlaces(mapView.camera.target)
+//    }
+//}
 
 // MARK: - CLLocationManagerDelegate
 extension PupMapViewController: CLLocationManagerDelegate {
@@ -230,7 +231,7 @@ extension PupMapViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 13, bearing: 0, viewingAngle: 0)
             locationManager.stopUpdatingLocation()
             fetchNearbyPlaces(location.coordinate)
         }
